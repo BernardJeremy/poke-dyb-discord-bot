@@ -2,6 +2,9 @@ require('dotenv').config();
 
 const { Client, GatewayIntentBits } = require('discord.js');
 
+const buildCard = require('./messages/cardBuilder');
+const pokedex = require('./data/pokedex.json');
+
 const main = async () => {
   const client = new Client(
     {
@@ -22,7 +25,11 @@ const main = async () => {
   });
 
   client.on('messageCreate', (message) => {
-    console.log(message.content);
+    if (message.author.bot) {
+      return;
+    }
+
+    message.reply(buildCard(pokedex.at(149)));
   });
 };
 

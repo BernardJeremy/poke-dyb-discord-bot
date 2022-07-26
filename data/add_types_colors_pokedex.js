@@ -28,6 +28,8 @@ const newPokedex = basePokedex.map((pokemonData) => ({
   color: colours[baseTypes.find(
     (currentBaseType) => currentBaseType.french === pokemonData.types[0],
   ).english],
+  rarityLevel: 100,
+  craftingPrice: 20,
 }));
 
 const jsonContent = JSON.stringify(newPokedex);

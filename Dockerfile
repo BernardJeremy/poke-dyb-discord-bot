@@ -11,5 +11,7 @@ RUN npm install
 COPY . /usr/src/app
 
 ENV BOT_TOKEN=
+ENV DUST_EMOJI_ID=
+ENV COIN_EMOJI_ID=
 
 CMD [ "node", "index.js" ]

@@ -1,0 +1,74 @@
+[
+  {
+    "french": "Normal",
+    "english": "Normal"
+  },
+  {
+    "french": "Combat",
+    "english": "Fighting"
+  },
+  {
+    "french": "Vol",
+    "english": "Flying"
+  },
+  {
+    "french": "Poison",
+    "english": "Poison"
+  },
+  {
+    "french": "Sol",
+    "english": "Ground"
+  },
+  {
+    "french": "Roche",
+    "english": "Rock"
+  },
+  {
+    "french": "Insecte",
+    "english": "Bug"
+  },
+  {
+    "french": "Spectre",
+    "english": "Ghost"
+  },
+  {
+    "french": "Acier",
+    "english": "Steel"
+  },
+  {
+    "french": "Feu",
+    "english": "Fire"
+  },
+  {
+    "french": "Eau",
+    "english": "Water"
+  },
+  {
+    "french": "Plante",
+    "english": "Grass"
+  },
+  {
+    "french": "Electrique",
+    "english": "Electric"
+  },
+  {
+    "french": "Psy",
+    "english": "Psychic"
+  },
+  {
+    "french": "Glace",
+    "english": "Ice"
+  },
+  {
+    "french": "Dragon",
+    "english": "Dragon"
+  },
+  {
+    "french": "Ténèbre",
+    "english": "Dark"
+  },
+  {
+    "french": "Fée",
+    "english": "Fairy"
+  }
+]

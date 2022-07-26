@@ -1,9 +1,9 @@
 require('dotenv').config();
 
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client, Collection, GatewayIntentBits } = require('discord.js');
 
-const buildCard = require('./messages/cardBuilder');
-const pokedex = require('./data/pokedex.json');
+const botCommands = require('./commands');
+const messageParser = require('./messages/messageParser');
 
 const main = async () => {
   const client = new Client(
@@ -14,6 +14,11 @@ const main = async () => {
         GatewayIntentBits.MessageContent,
       ],
     },
+  );
+
+  client.commands = new Collection();
+  Object.keys(botCommands).map(
+    (key) => client.commands.set(botCommands[key].name, botCommands[key]),
   );
 
   const TOKEN = process.env.BOT_TOKEN;
@@ -28,8 +33,18 @@ const main = async () => {
     if (message.author.bot) {
       return;
     }
+    const messageContext = messageParser(message);
+    if (!client.commands.has(messageContext.command)) {
+      return;
+    }
 
-    message.reply(buildCard(pokedex.at(149)));
+    try {
+      client.commands.get(messageContext.command).execute(message, messageContext);
+    } catch (error) {
+      console.error(`There was an error trying to execute command : ${messageContext.command}`);
+      console.error(error);
+      client.reply(`There was an error trying to execute command : ${messageContext.command}`);
+    }
   });
 };
 

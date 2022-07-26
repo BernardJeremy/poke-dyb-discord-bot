@@ -2653,7 +2653,7 @@
       ],
       "color": "#96D9D6",
       "rarityLevel": 2,
-      "craftingPrice": 350
+      "craftingPrice": -1
   },
   {
       "id": 145,
@@ -2672,7 +2672,7 @@
       ],
       "color": "#F7D02C",
       "rarityLevel": 2,
-      "craftingPrice": 350
+      "craftingPrice": -1
   },
   {
       "id": 146,
@@ -2691,7 +2691,7 @@
       ],
       "color": "#EE8130",
       "rarityLevel": 2,
-      "craftingPrice": 350
+      "craftingPrice": -1
   },
   {
       "id": 147,
@@ -2782,6 +2782,6 @@
       ],
       "color": "#F95587",
       "rarityLevel": 1,
-      "craftingPrice": 740
+      "craftingPrice": 1024
   }
 ]

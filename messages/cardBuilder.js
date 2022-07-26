@@ -24,10 +24,12 @@ const buildCard = ({
     .setThumbnail(`https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/thumbnails/${padId(id)}.png`)
     .setFooter({ text: name, iconURL: `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/sprites/${padId(id)}MS.png` });
 
+  const priceStr = craftingPrice < 0 ? '-' : `${craftingPrice} ${DUST_EMOJI}`;
+
   exampleEmbed.addFields(
     { name: 'Type', value: types.join('/'), inline: true },
     { name: 'Rareté', value: `${rarityLevel}%`, inline: true },
-    { name: 'Prix/craft', value: `${craftingPrice} ${DUST_EMOJI}`, inline: true },
+    { name: 'Craft', value: priceStr, inline: true },
   );
 
   return { embeds: [exampleEmbed] };

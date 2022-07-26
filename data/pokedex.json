@@ -15,8 +15,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 180
   },
   {
       "id": 2,
@@ -34,8 +34,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 7,
+      "craftingPrice": 260
   },
   {
       "id": 3,
@@ -53,8 +53,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 4,
+      "craftingPrice": 360
   },
   {
       "id": 4,
@@ -71,8 +71,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 180
   },
   {
       "id": 5,
@@ -89,8 +89,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 7,
+      "craftingPrice": 260
   },
   {
       "id": 6,
@@ -108,8 +108,8 @@
           "Vol"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 4,
+      "craftingPrice": 360
   },
   {
       "id": 7,
@@ -126,8 +126,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 180
   },
   {
       "id": 8,
@@ -144,8 +144,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 7,
+      "craftingPrice": 260
   },
   {
       "id": 9,
@@ -162,8 +162,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 4,
+      "craftingPrice": 365
   },
   {
       "id": 10,
@@ -180,7 +180,7 @@
           "Insecte"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
+      "rarityLevel": 80,
       "craftingPrice": 20
   },
   {
@@ -198,7 +198,7 @@
           "Insecte"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
+      "rarityLevel": 80,
       "craftingPrice": 20
   },
   {
@@ -217,8 +217,8 @@
           "Vol"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 70,
+      "craftingPrice": 40
   },
   {
       "id": 13,
@@ -236,8 +236,8 @@
           "Poison"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 70,
+      "craftingPrice": 40
   },
   {
       "id": 14,
@@ -255,8 +255,8 @@
           "Poison"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 70,
+      "craftingPrice": 40
   },
   {
       "id": 15,
@@ -274,8 +274,8 @@
           "Poison"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 16,
@@ -312,8 +312,8 @@
           "Vol"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 18,
@@ -331,8 +331,8 @@
           "Vol"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 80
   },
   {
       "id": 19,
@@ -367,8 +367,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 21,
@@ -386,8 +386,8 @@
           "Vol"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 80,
+      "craftingPrice": 40
   },
   {
       "id": 22,
@@ -405,8 +405,8 @@
           "Vol"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 80
   },
   {
       "id": 23,
@@ -423,8 +423,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 80,
+      "craftingPrice": 40
   },
   {
       "id": 24,
@@ -441,8 +441,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 25,
@@ -459,8 +459,8 @@
           "Electrique"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 400
   },
   {
       "id": 26,
@@ -477,8 +477,8 @@
           "Electrique"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 180
   },
   {
       "id": 27,
@@ -495,8 +495,8 @@
           "Sol"
       ],
       "color": "#E2BF65",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 80
   },
   {
       "id": 28,
@@ -513,8 +513,8 @@
           "Sol"
       ],
       "color": "#E2BF65",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 100
   },
   {
       "id": 29,
@@ -531,8 +531,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 30,
@@ -549,8 +549,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 31,
@@ -568,8 +568,8 @@
           "Sol"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 100
   },
   {
       "id": 32,
@@ -586,8 +586,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 33,
@@ -604,8 +604,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 34,
@@ -623,8 +623,8 @@
           "Sol"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 100
   },
   {
       "id": 35,
@@ -641,8 +641,8 @@
           "Fée"
       ],
       "color": "#D685AD",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 36,
@@ -659,8 +659,8 @@
           "Fée"
       ],
       "color": "#D685AD",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 100
   },
   {
       "id": 37,
@@ -677,8 +677,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 140
   },
   {
       "id": 38,
@@ -695,8 +695,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 15,
+      "craftingPrice": 120
   },
   {
       "id": 39,
@@ -714,8 +714,8 @@
           "Fée"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 40,
@@ -733,8 +733,8 @@
           "Fée"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 100
   },
   {
       "id": 41,
@@ -771,8 +771,8 @@
           "Vol"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 120
   },
   {
       "id": 43,
@@ -790,8 +790,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 70,
+      "craftingPrice": 40
   },
   {
       "id": 44,
@@ -809,8 +809,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 45,
@@ -828,8 +828,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 46,
@@ -847,8 +847,8 @@
           "Plante"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 47,
@@ -866,8 +866,8 @@
           "Plante"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 48,
@@ -885,8 +885,8 @@
           "Poison"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 49,
@@ -904,8 +904,8 @@
           "Poison"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 50,
@@ -922,8 +922,8 @@
           "Sol"
       ],
       "color": "#E2BF65",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 60
   },
   {
       "id": 51,
@@ -940,8 +940,8 @@
           "Sol"
       ],
       "color": "#E2BF65",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 140
   },
   {
       "id": 52,
@@ -958,8 +958,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 53,
@@ -976,8 +976,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 120
   },
   {
       "id": 54,
@@ -994,8 +994,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 55,
@@ -1012,8 +1012,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 120
   },
   {
       "id": 56,
@@ -1030,8 +1030,8 @@
           "Combat"
       ],
       "color": "#C22E28",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 57,
@@ -1048,8 +1048,8 @@
           "Combat"
       ],
       "color": "#C22E28",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 120
   },
   {
       "id": 58,
@@ -1066,8 +1066,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 80
   },
   {
       "id": 59,
@@ -1084,8 +1084,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 140
   },
   {
       "id": 60,
@@ -1102,8 +1102,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 61,
@@ -1120,8 +1120,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 120
   },
   {
       "id": 62,
@@ -1139,8 +1139,8 @@
           "Combat"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 180
   },
   {
       "id": 63,
@@ -1157,8 +1157,8 @@
           "Psy"
       ],
       "color": "#F95587",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 80
   },
   {
       "id": 64,
@@ -1175,8 +1175,8 @@
           "Psy"
       ],
       "color": "#F95587",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 15,
+      "craftingPrice": 120
   },
   {
       "id": 65,
@@ -1193,8 +1193,8 @@
           "Psy"
       ],
       "color": "#F95587",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 240
   },
   {
       "id": 66,
@@ -1211,8 +1211,8 @@
           "Combat"
       ],
       "color": "#C22E28",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 60
   },
   {
       "id": 67,
@@ -1229,8 +1229,8 @@
           "Combat"
       ],
       "color": "#C22E28",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 68,
@@ -1247,8 +1247,8 @@
           "Combat"
       ],
       "color": "#C22E28",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 240
   },
   {
       "id": 69,
@@ -1266,8 +1266,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 70,
@@ -1285,8 +1285,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 71,
@@ -1304,8 +1304,8 @@
           "Poison"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 72,
@@ -1323,8 +1323,8 @@
           "Poison"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 60,
+      "craftingPrice": 60
   },
   {
       "id": 73,
@@ -1342,8 +1342,8 @@
           "Poison"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 74,
@@ -1361,8 +1361,8 @@
           "Sol"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 80,
+      "craftingPrice": 40
   },
   {
       "id": 75,
@@ -1380,8 +1380,8 @@
           "Sol"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 76,
@@ -1399,8 +1399,8 @@
           "Sol"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 240
   },
   {
       "id": 77,
@@ -1417,8 +1417,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 60
   },
   {
       "id": 78,
@@ -1435,8 +1435,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 160
   },
   {
       "id": 79,
@@ -1454,8 +1454,8 @@
           "Psy"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 80,
@@ -1473,8 +1473,8 @@
           "Psy"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 120
   },
   {
       "id": 81,
@@ -1492,8 +1492,8 @@
           "Acier"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 82,
@@ -1511,8 +1511,8 @@
           "Acier"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 140
   },
   {
       "id": 83,
@@ -1530,8 +1530,8 @@
           "Vol"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 84,
@@ -1549,8 +1549,8 @@
           "Vol"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 85,
@@ -1568,8 +1568,8 @@
           "Vol"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 120
   },
   {
       "id": 86,
@@ -1586,8 +1586,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 100
   },
   {
       "id": 87,
@@ -1605,8 +1605,8 @@
           "Glace"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 160
   },
   {
       "id": 88,
@@ -1623,8 +1623,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 89,
@@ -1641,8 +1641,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 140
   },
   {
       "id": 90,
@@ -1659,8 +1659,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 91,
@@ -1678,8 +1678,8 @@
           "Glace"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 140
   },
   {
       "id": 92,
@@ -1697,8 +1697,8 @@
           "Poison"
       ],
       "color": "#735797",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 80
   },
   {
       "id": 93,
@@ -1716,8 +1716,8 @@
           "Poison"
       ],
       "color": "#735797",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 120
   },
   {
       "id": 94,
@@ -1735,8 +1735,8 @@
           "Poison"
       ],
       "color": "#735797",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 5,
+      "craftingPrice": 450
   },
   {
       "id": 95,
@@ -1754,8 +1754,8 @@
           "Sol"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 180
   },
   {
       "id": 96,
@@ -1772,8 +1772,8 @@
           "Psy"
       ],
       "color": "#F95587",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 97,
@@ -1790,8 +1790,8 @@
           "Psy"
       ],
       "color": "#F95587",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 98,
@@ -1808,8 +1808,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 80
   },
   {
       "id": 99,
@@ -1826,8 +1826,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 110
   },
   {
       "id": 100,
@@ -1844,8 +1844,8 @@
           "Electrique"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 80
   },
   {
       "id": 101,
@@ -1862,8 +1862,8 @@
           "Electrique"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 80,
+      "craftingPrice": 100
   },
   {
       "id": 102,
@@ -1881,8 +1881,8 @@
           "Psy"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 103,
@@ -1900,8 +1900,8 @@
           "Psy"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 15,
+      "craftingPrice": 190
   },
   {
       "id": 104,
@@ -1918,8 +1918,8 @@
           "Sol"
       ],
       "color": "#E2BF65",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 80
   },
   {
       "id": 105,
@@ -1936,8 +1936,8 @@
           "Sol"
       ],
       "color": "#E2BF65",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 25,
+      "craftingPrice": 160
   },
   {
       "id": 106,
@@ -1954,8 +1954,8 @@
           "Combat"
       ],
       "color": "#C22E28",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 220
   },
   {
       "id": 107,
@@ -1972,8 +1972,8 @@
           "Combat"
       ],
       "color": "#C22E28",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 220
   },
   {
       "id": 108,
@@ -1990,8 +1990,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 25,
+      "craftingPrice": 190
   },
   {
       "id": 109,
@@ -2008,8 +2008,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 110,
@@ -2026,8 +2026,8 @@
           "Poison"
       ],
       "color": "#A33EA1",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 110
   },
   {
       "id": 111,
@@ -2045,8 +2045,8 @@
           "Roche"
       ],
       "color": "#E2BF65",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 110
   },
   {
       "id": 112,
@@ -2064,8 +2064,8 @@
           "Roche"
       ],
       "color": "#E2BF65",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 260
   },
   {
       "id": 113,
@@ -2082,8 +2082,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 25,
+      "craftingPrice": 180
   },
   {
       "id": 114,
@@ -2100,8 +2100,8 @@
           "Plante"
       ],
       "color": "#7AC74C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 220
   },
   {
       "id": 115,
@@ -2118,8 +2118,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 220
   },
   {
       "id": 116,
@@ -2136,8 +2136,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 80
   },
   {
       "id": 117,
@@ -2154,8 +2154,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 120
   },
   {
       "id": 118,
@@ -2172,8 +2172,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 50,
+      "craftingPrice": 80
   },
   {
       "id": 119,
@@ -2190,8 +2190,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 120
   },
   {
       "id": 120,
@@ -2208,8 +2208,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 130
   },
   {
       "id": 121,
@@ -2227,8 +2227,8 @@
           "Psy"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 180
   },
   {
       "id": 122,
@@ -2246,8 +2246,8 @@
           "Fée"
       ],
       "color": "#F95587",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 180
   },
   {
       "id": 123,
@@ -2265,8 +2265,8 @@
           "Vol"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 180
   },
   {
       "id": 124,
@@ -2284,8 +2284,8 @@
           "Psy"
       ],
       "color": "#96D9D6",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 25,
+      "craftingPrice": 140
   },
   {
       "id": 125,
@@ -2302,8 +2302,8 @@
           "Electrique"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 140
   },
   {
       "id": 126,
@@ -2320,8 +2320,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 30,
+      "craftingPrice": 130
   },
   {
       "id": 127,
@@ -2338,8 +2338,8 @@
           "Insecte"
       ],
       "color": "#A6B91A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 140
   },
   {
       "id": 128,
@@ -2356,8 +2356,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 20,
+      "craftingPrice": 140
   },
   {
       "id": 129,
@@ -2393,8 +2393,8 @@
           "Vol"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 0,
+      "craftingPrice": 400
   },
   {
       "id": 131,
@@ -2412,8 +2412,8 @@
           "Glace"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 0,
+      "craftingPrice": 320
   },
   {
       "id": 132,
@@ -2430,8 +2430,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 0,
+      "craftingPrice": 380
   },
   {
       "id": 133,
@@ -2448,8 +2448,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 40,
+      "craftingPrice": 200
   },
   {
       "id": 134,
@@ -2466,8 +2466,8 @@
           "Eau"
       ],
       "color": "#6390F0",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 0,
+      "craftingPrice": 300
   },
   {
       "id": 135,
@@ -2484,8 +2484,8 @@
           "Electrique"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 0,
+      "craftingPrice": 300
   },
   {
       "id": 136,
@@ -2502,8 +2502,8 @@
           "Feu"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 0,
+      "craftingPrice": 300
   },
   {
       "id": 137,
@@ -2520,8 +2520,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 0,
+      "craftingPrice": 500
   },
   {
       "id": 138,
@@ -2539,8 +2539,8 @@
           "Eau"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 220
   },
   {
       "id": 139,
@@ -2558,8 +2558,8 @@
           "Eau"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 5,
+      "craftingPrice": 280
   },
   {
       "id": 140,
@@ -2577,8 +2577,8 @@
           "Eau"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 10,
+      "craftingPrice": 220
   },
   {
       "id": 141,
@@ -2596,8 +2596,8 @@
           "Eau"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 5,
+      "craftingPrice": 280
   },
   {
       "id": 142,
@@ -2615,8 +2615,8 @@
           "Vol"
       ],
       "color": "#B6A136",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 5,
+      "craftingPrice": 280
   },
   {
       "id": 143,
@@ -2633,8 +2633,8 @@
           "Normal"
       ],
       "color": "#A8A77A",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 5,
+      "craftingPrice": 280
   },
   {
       "id": 144,
@@ -2652,8 +2652,8 @@
           "Vol"
       ],
       "color": "#96D9D6",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 2,
+      "craftingPrice": 350
   },
   {
       "id": 145,
@@ -2671,8 +2671,8 @@
           "Vol"
       ],
       "color": "#F7D02C",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 2,
+      "craftingPrice": 350
   },
   {
       "id": 146,
@@ -2690,8 +2690,8 @@
           "Vol"
       ],
       "color": "#EE8130",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 2,
+      "craftingPrice": 350
   },
   {
       "id": 147,
@@ -2708,8 +2708,8 @@
           "Dragon"
       ],
       "color": "#6F35FC",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 4,
+      "craftingPrice": 420
   },
   {
       "id": 148,
@@ -2726,8 +2726,8 @@
           "Dragon"
       ],
       "color": "#6F35FC",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 3,
+      "craftingPrice": 480
   },
   {
       "id": 149,
@@ -2745,8 +2745,8 @@
           "Vol"
       ],
       "color": "#6F35FC",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 2,
+      "craftingPrice": 540
   },
   {
       "id": 150,
@@ -2763,8 +2763,8 @@
           "Psy"
       ],
       "color": "#F95587",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 0,
+      "craftingPrice": 630
   },
   {
       "id": 151,
@@ -2781,7 +2781,7 @@
           "Psy"
       ],
       "color": "#F95587",
-      "rarityLevel": 100,
-      "craftingPrice": 20
+      "rarityLevel": 1,
+      "craftingPrice": 740
   }
 ]

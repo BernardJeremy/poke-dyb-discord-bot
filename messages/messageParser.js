@@ -13,7 +13,6 @@ const getUserData = (msg, userId) => {
     id: userData.user.id,
     username: userData.user.username,
     nickname: userData.nickname || '',
-    isBotAdmin: userData.user.id === process.env.BOT_ADMIN_ID,
   };
 };
 

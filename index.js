@@ -2,6 +2,8 @@ require('dotenv').config();
 
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 
+const usersModel = require('./models/users');
+
 const botCommands = require('./commands');
 const messageParser = require('./messages/messageParser');
 
@@ -33,7 +35,14 @@ const main = async () => {
     if (message.author.bot) {
       return;
     }
+
     const messageContext = messageParser(message);
+
+    const user = usersModel.getOneUser(messageContext.author.id);
+    if (!user) {
+      usersModel.createUser(messageContext.author);
+    }
+
     if (!client.commands.has(messageContext.command)) {
       return;
     }

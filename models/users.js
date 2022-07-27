@@ -27,8 +27,6 @@ const createUser = (userAccountData) => {
     isAdmin: false,
   };
 
-  console.log(userData);
-
   users.push(userData);
 
   dbManager.updateUsers(users);

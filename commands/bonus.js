@@ -9,6 +9,7 @@ const {
 
 module.exports = {
   name: '!bonus',
+  alias: '!weekly',
 
   description: 'Récupère la récompense bonus',
 

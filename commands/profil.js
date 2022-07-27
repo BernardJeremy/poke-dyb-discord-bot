@@ -3,6 +3,7 @@ const profilBuilder = require('../messages/profilBuilder');
 
 module.exports = {
   name: '!profil',
+  alias: '!profile',
 
   description: 'Affiche le profil de vous ou du joueur ciblé',
 

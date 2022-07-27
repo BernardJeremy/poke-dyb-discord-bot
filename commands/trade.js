@@ -3,6 +3,7 @@ const tradesModel = require('../models/trades');
 
 module.exports = {
   name: '!trade',
+  alias: '!echange',
 
   description: 'Echange de cartes avec un autre joueur',
 

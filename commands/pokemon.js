@@ -3,6 +3,7 @@ const pokedex = require('../data/pokedex.json');
 
 module.exports = {
   name: '!pokemon',
+  alias: '!info',
 
   description: 'Affiche les infos du pokemon demandé',
 

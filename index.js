@@ -22,6 +22,9 @@ const main = async () => {
   Object.keys(botCommands).map(
     (key) => client.commands.set(botCommands[key].name, botCommands[key]),
   );
+  Object.keys(botCommands).map(
+    (key) => client.commands.set(botCommands[key].alias, botCommands[key]),
+  );
 
   const TOKEN = process.env.BOT_TOKEN;
 

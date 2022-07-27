@@ -1,5 +1,6 @@
 module.exports = (commands) => ({
   name: '!help',
+  alias: '!aide',
 
   description: 'Affiche cette aide',
 

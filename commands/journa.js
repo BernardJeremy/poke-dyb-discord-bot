@@ -10,6 +10,7 @@ const {
 
 module.exports = {
   name: '!journa',
+  alias: '!daily',
 
   description: 'Récupère la récompense journalière',
 

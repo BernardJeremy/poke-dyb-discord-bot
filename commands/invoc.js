@@ -6,7 +6,7 @@ const {
   COIN_EMOJI_ID,
 } = process.env;
 
-const GOLD_COST_INVOC = 1000;
+const GOLD_COST_INVOC = 500;
 
 module.exports = {
   name: '!invoc',

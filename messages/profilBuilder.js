@@ -7,6 +7,8 @@ const {
   COIN_EMOJI_ID,
 } = process.env;
 
+const countUnique = (iterable) => new Set(iterable).size;
+
 const buildProfil = ({
   username,
   nickname,
@@ -26,10 +28,15 @@ const buildProfil = ({
   exampleEmbed.addFields(
     { name: 'Argent', value: `${gold} ${COIN_EMOJI_ID}`, inline: true },
     { name: 'Poussière', value: `${dust} ${DUST_EMOJI_ID}`, inline: true },
-    { name: 'Pokedex', value: `${pokedex.length}/${pokedexList.length}`, inline: true },
+    { name: 'Pokedex', value: `${countUnique(pokedex)}/${pokedexList.length}`, inline: true },
   );
 
   exampleEmbed.addFields({ name: '\u200B', value: '\u200B' });
+
+  exampleEmbed.addFields({
+    name: 'Pokemon acquis',
+    value: pokedex.sort().reduce((acc, curr) => `${acc.length > 0 ? `${acc}, ` : ''}#${curr}`, ''),
+  });
 
   exampleEmbed.addFields({
     name: 'Pokemon manquants',

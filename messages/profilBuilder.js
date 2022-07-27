@@ -35,7 +35,7 @@ const buildProfil = ({
 
   exampleEmbed.addFields({
     name: 'Pokemon acquis',
-    value: pokedex.sort().reduce((acc, curr) => `${acc.length > 0 ? `${acc}, ` : ''}#${curr}`, ''),
+    value: pokedex.sort((a, b) => a - b).reduce((acc, curr) => `${acc.length > 0 ? `${acc}, ` : ''}#${curr}`, ''),
   });
 
   exampleEmbed.addFields({

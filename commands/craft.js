@@ -31,6 +31,11 @@ module.exports = {
       return;
     }
 
+    if (pokemonObj.craftingPrice < 0) {
+      message.reply('Ce pokemon n\' pas craftable, désolé. Bonne chance dans les `!invoc` !');
+      return;
+    }
+
     let user = usersModel.getOneUser(messageContext.author.id);
 
     if (pokemonObj.craftingPrice > user.dust) {

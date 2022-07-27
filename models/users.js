@@ -22,6 +22,8 @@ const createUser = (userAccountData) => {
     lastDailyDate: null,
     gold: 0,
     dust: 0,
+    nbrDailyDone: 0,
+    nbrBonusDone: 0,
     isAdmin: false,
   };
 
@@ -45,9 +47,14 @@ const updateUser = (userData) => {
   return userData;
 };
 
+const isBonusUsable = (userData) => (
+  userData.nbrDailyDone >= 7 && userData.nbrBonusDone < Math.trunc(userData.nbrDailyDone / 7)
+);
+
 module.exports = {
   getAllUsers,
   getOneUser,
   createUser,
   updateUser,
+  isBonusUsable,
 };

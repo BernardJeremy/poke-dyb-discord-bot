@@ -14,17 +14,24 @@ module.exports = {
   description: 'Récupère la récompense journalière',
 
   async execute(message, messageContext) {
-    const user = usersModel.getOneUser(messageContext.author.id);
+    let user = usersModel.getOneUser(messageContext.author.id);
 
     if (!user.lastDailyDate || dateTimeUtils.wasBeforeDailyReset(user.lastDailyDate)) {
-      usersModel.updateUser({
+      user = usersModel.updateUser({
         ...user,
         gold: user.gold + parseInt(DAILY_GOLD_AMOUNT, 10),
         dust: user.dust + parseInt(DAILY_DUST_AMOUNT, 10),
+        nbrDailyDone: user.nbrDailyDone + 1,
         lastDailyDate: new Date(),
       });
       const strReward = `${DAILY_GOLD_AMOUNT} ${COIN_EMOJI_ID} et ${DAILY_DUST_AMOUNT} ${DUST_EMOJI_ID}`;
-      message.reply(`Tu as récupéré ta récompense journalière de ${strReward}`);
+      let strRewardBase = `Tu as récupéré ta récompense journalière de ${strReward}`;
+
+      if (usersModel.isBonusUsable(user)) {
+        strRewardBase += '\n**Ton `!bonus` est disponible !**';
+      }
+
+      message.reply(strRewardBase);
 
       return;
     }

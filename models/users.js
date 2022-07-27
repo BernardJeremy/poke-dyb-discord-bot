@@ -20,6 +20,8 @@ const createUser = (userAccountData) => {
     ...userAccountData,
     pokedex: [],
     lastDailyDate: null,
+    gold: 0,
+    dust: 0,
     isAdmin: false,
   };
 

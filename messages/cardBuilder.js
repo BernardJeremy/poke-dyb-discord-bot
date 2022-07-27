@@ -1,6 +1,6 @@
 const { EmbedBuilder } = require('discord.js');
 
-const DUST_EMOJI = process.env.DUST_EMOJI_ID;
+const { DUST_EMOJI_ID } = process.env;
 
 const buildCard = ({
   name,
@@ -24,7 +24,7 @@ const buildCard = ({
     .setThumbnail(`https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/thumbnails/${padId(id)}.png`)
     .setFooter({ text: name, iconURL: `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/sprites/${padId(id)}MS.png` });
 
-  const priceStr = craftingPrice < 0 ? '-' : `${craftingPrice} ${DUST_EMOJI}`;
+  const priceStr = craftingPrice < 0 ? '-' : `${craftingPrice} ${DUST_EMOJI_ID}`;
 
   exampleEmbed.addFields(
     { name: 'Type', value: types.join('/'), inline: true },

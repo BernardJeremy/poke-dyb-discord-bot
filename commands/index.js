@@ -4,6 +4,7 @@ const bonus = require('./bonus');
 const profil = require('./profil');
 const craft = require('./craft');
 const invoc = require('./invoc');
+const dez = require('./dez');
 const help = require('./help');
 
 const commands = {
@@ -13,6 +14,7 @@ const commands = {
   profil,
   craft,
   invoc,
+  dez,
 };
 
 module.exports = {

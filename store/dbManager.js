@@ -19,7 +19,21 @@ const updateUsers = (users) => {
   return users;
 };
 
+const getAllTrades = () => {
+  const users = db.get('trades') || [];
+
+  return users;
+};
+
+const updateTrades = (trades) => {
+  db.set('trades', trades);
+
+  return trades;
+};
+
 module.exports = {
   getAllUsers,
   updateUsers,
+  getAllTrades,
+  updateTrades,
 };

@@ -5,6 +5,8 @@ const profil = require('./profil');
 const craft = require('./craft');
 const invoc = require('./invoc');
 const dez = require('./dez');
+const hv = require('./hv');
+const trade = require('./trade');
 const help = require('./help');
 
 const commands = {
@@ -15,6 +17,8 @@ const commands = {
   craft,
   invoc,
   dez,
+  hv,
+  trade,
 };
 
 module.exports = {

@@ -16,6 +16,8 @@ services:
       BONUS_GOLD_AMOUNT: 1000
       BONUS_DUST_AMOUNT: 10
       RANDOM_CARD_COST: 500
+    volumes:
+       - "/home/bernar_w/save/:/opt/"
 
 
 networks:

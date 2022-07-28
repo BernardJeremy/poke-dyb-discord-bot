@@ -19,6 +19,8 @@
     "dayjs": "^1.11.4",
     "discord.js": "^14.0.3",
     "dotenv": "^16.0.1",
+    "google-auth-library": "^8.1.1",
+    "googleapis": "^105.0.0",
     "simple-json-db": "^2.0.0",
     "string-argv": "^0.3.1"
   },

@@ -1,5 +1,6 @@
 const usersModel = require('../models/users');
 const tradesModel = require('../models/trades');
+const { removePokemonFromList } = require('../tools/pokemon');
 
 module.exports = {
   name: '!trade',
@@ -47,28 +48,12 @@ module.exports = {
     }
 
     targetTrade.offer.forEach((offeredId) => {
-      let isPokemonOfferedAlreadyRemoved = false;
-      tradedUser.pokedex = tradedUser.pokedex.filter((pokemonId) => {
-        if (pokemonId === offeredId && !isPokemonOfferedAlreadyRemoved) {
-          isPokemonOfferedAlreadyRemoved = true;
-          return false;
-        }
-        return true;
-      });
-
+      tradedUser.pokedex = removePokemonFromList(tradedUser.pokedex, offeredId, 1);
       user.pokedex.push(offeredId);
     });
 
     targetTrade.demand.forEach((demandedId) => {
-      let isPokemonDemandedAlreadyRemoved = false;
-      user.pokedex = user.pokedex.filter((pokemonId) => {
-        if (pokemonId === demandedId && !isPokemonDemandedAlreadyRemoved) {
-          isPokemonDemandedAlreadyRemoved = true;
-          return false;
-        }
-        return true;
-      });
-
+      user.pokedex = removePokemonFromList(user.pokedex, demandedId, 1);
       tradedUser.pokedex.push(demandedId);
     });
 

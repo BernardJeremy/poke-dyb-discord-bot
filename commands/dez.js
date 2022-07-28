@@ -1,5 +1,6 @@
 const pokedex = require('../data/pokedex.json');
 const usersModel = require('../models/users');
+const { removePokemonFromList } = require('../tools/pokemon');
 
 const {
   DUST_EMOJI_ID,
@@ -43,13 +44,7 @@ module.exports = {
       return;
     }
 
-    // First remove all pokemon with target id
-    user.pokedex = user.pokedex.filter((pokemonId) => pokemonId !== pokemonNbr);
-
-    // Then add back some of them if not all were sold
-    for (let i = 0; i < targetPokemonList.length - nbrToDez; i += 1) {
-      user.pokedex.push(pokemonNbr);
-    }
+    user.pokedex = removePokemonFromList(user.pokedex, pokemonNbr, nbrToDez);
 
     const pokemonObj = pokedex[pokemonNbr - 1];
     const wonDust = Math.round((pokemonObj.craftingPrice * nbrToDez) / 2);

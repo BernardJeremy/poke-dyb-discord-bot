@@ -1,5 +1,5 @@
 const buildCard = require('../messages/cardBuilder');
-const { getRandomPokemon } = require('../tools/pokemonGenerator');
+const { getRandomPokemon } = require('../tools/pokemon');
 const usersModel = require('../models/users');
 
 const {

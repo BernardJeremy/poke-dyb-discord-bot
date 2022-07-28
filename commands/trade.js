@@ -47,12 +47,28 @@ module.exports = {
     }
 
     targetTrade.offer.forEach((offeredId) => {
-      tradedUser.pokedex = tradedUser.pokedex.filter((pokemonId) => pokemonId !== offeredId);
+      let isPokemonOfferedAlreadyRemoved = false;
+      tradedUser.pokedex = tradedUser.pokedex.filter((pokemonId) => {
+        if (pokemonId === offeredId && !isPokemonOfferedAlreadyRemoved) {
+          isPokemonOfferedAlreadyRemoved = true;
+          return false;
+        }
+        return true;
+      });
+
       user.pokedex.push(offeredId);
     });
 
     targetTrade.demand.forEach((demandedId) => {
-      user.pokedex = user.pokedex.filter((pokemonId) => pokemonId !== demandedId);
+      let isPokemonDemandedAlreadyRemoved = false;
+      user.pokedex = user.pokedex.filter((pokemonId) => {
+        if (pokemonId === demandedId && !isPokemonDemandedAlreadyRemoved) {
+          isPokemonDemandedAlreadyRemoved = true;
+          return false;
+        }
+        return true;
+      });
+
       tradedUser.pokedex.push(demandedId);
     });
 
@@ -60,6 +76,6 @@ module.exports = {
     usersModel.updateUser(user);
     tradesModel.deleteTrade(targetTrade);
 
-    message.reply('Echange effectué, félicitation !');
+    message.reply(`Echange \`${targetTrade.tradeStr}\` effectué, félicitation !`);
   },
 };

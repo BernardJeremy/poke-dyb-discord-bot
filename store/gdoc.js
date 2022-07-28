@@ -27,19 +27,28 @@ const updatePokedex = async () => writeToGoogleSheet(
   POKEDEX_SHEET_NAME,
 );
 
-const updatePlayerSheet = async (userData) => writeToGoogleSheet(
-  [
-    ['Nom', 'Argent', 'Poussières', '#Pokemon obtenus'],
-    [userData.nickname || userData.username, userData.gold, userData.dust, `${countUnique(userData.pokedex)}`],
-    [],
-    ['Pokemon acquis'],
-    ...formatTargetPokedex(getCleanUserPokedexArray(userData.pokedex)),
-    ['', '', '', '', '', '', ''],
-    ['', '', '', '', '', '', ''],
-    ['', '', '', '', '', '', ''],
-  ],
-  userData.username,
-);
+const updatePlayerSheet = async (userData) => {
+  const cleanUserPokedex = getCleanUserPokedexArray(userData.pokedex);
+
+  return writeToGoogleSheet(
+    [
+      ['Nom', 'Argent', 'Poussières', '#Pokemon obtenus'],
+      [userData.nickname || userData.username, userData.gold, userData.dust, `${countUnique(userData.pokedex)}`],
+      [],
+      ['Pokemon acquis'],
+      ...formatTargetPokedex(cleanUserPokedex),
+      [],
+      ['Pokemon manquants'],
+      ...formatTargetPokedex(pokedex.filter(
+        (currentPokemon) => !userData.pokedex.includes(currentPokemon.id),
+      )),
+      ['', '', '', '', '', '', ''],
+      ['', '', '', '', '', '', ''],
+      ['', '', '', '', '', '', ''],
+    ],
+    userData.username,
+  );
+};
 
 module.exports = {
   updatePokedex,

@@ -17,3 +17,6 @@ Command to get custom emoji id : `\:EmojiName:`
 - `BONUS_GOLD_AMOUNT` : Amount of gold won for each bonus
 - `BONUS_DUST_AMOUNT` : Amount of dust won for each bonus
 - `RANDOM_CARD_COST` : Cost of a random card
+- `GOOGLE_APPLICATION_CREDENTIALS` : Path to GCP service account json key
+- `SPREADSHEET_ID` :  ID of GDOC spreadsheet
+- `POKEDEX_SHEET_NAME` : Name of the pokedex spreadsheet

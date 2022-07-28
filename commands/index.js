@@ -9,6 +9,7 @@ const hv = require('./hv');
 const trade = require('./trade');
 const help = require('./help');
 const admin = require('./admin');
+const gdoc = require('./gdoc');
 
 const commands = {
   pokemon,
@@ -21,6 +22,7 @@ const commands = {
   hv,
   trade,
   admin,
+  gdoc,
 };
 
 module.exports = {

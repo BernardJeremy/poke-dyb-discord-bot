@@ -16,6 +16,9 @@ services:
       BONUS_GOLD_AMOUNT: 1000
       BONUS_DUST_AMOUNT: 10
       RANDOM_CARD_COST: 500
+      GOOGLE_APPLICATION_CREDENTIALS: ./data-extractors-82176ee71668.json
+      SPREADSHEET_ID: 1HG01VNg-xQXFHiir829JiGIW4N-F2V9PI2RfiilPwR4
+      POKEDEX_SHEET_NAME: Pokedex
     volumes:
        - "/home/bernar_w/save/:/opt/"
 

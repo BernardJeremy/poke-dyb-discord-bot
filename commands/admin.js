@@ -12,6 +12,7 @@ const FORMAT_MSG = 'format : `!admin [@someone] [pokemon|gold|dust] [id|value]`'
 module.exports = {
   name: '!admin',
   alias: '!root',
+  noHelp: true,
 
   description: 'Administration du bot',
 

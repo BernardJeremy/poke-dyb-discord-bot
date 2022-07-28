@@ -40,7 +40,7 @@ const buildProfil = ({
     name: 'Pokemon acquis',
     value: pokedex.length === 0
       ? 'Aucun :('
-      : formattedUserPokedex.reduce((valueStr, currentPokemonObj) => `${valueStr.length > 0 ? `${valueStr}, ` : ''}#${currentPokemonObj.id} (${currentPokemonObj.nbr})`, ''),
+      : formattedUserPokedex.reduce((valueStr, currentPokemonObj) => `${valueStr.length > 0 ? `${valueStr}, ` : ''}#${currentPokemonObj.id} ${currentPokemonObj.nbr > 1 ? `(${currentPokemonObj.nbr})` : ''}`, ''),
   });
 
   exampleEmbed.addFields({

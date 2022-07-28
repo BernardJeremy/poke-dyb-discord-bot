@@ -1,4 +1,5 @@
 const dbManager = require('../store/dbManager');
+const gdocStore = require('../store/gdoc');
 
 const getAllUsers = () => {
   const users = dbManager.getAllUsers();
@@ -41,6 +42,7 @@ const updateUser = (userData) => {
   users.push(userData);
 
   dbManager.updateUsers(users);
+  gdocStore.updatePlayerSheet(userData);
 
   return userData;
 };

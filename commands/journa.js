@@ -1,5 +1,5 @@
 const usersModel = require('../models/users');
-const dateTimeUtils = require('../tools/dateTime');
+const dateTimeUtils = require('../tools/utils');
 
 const {
   COIN_EMOJI_ID,

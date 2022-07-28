@@ -22,8 +22,11 @@ const wasBeforeDailyReset = (lastQuestDate) => {
   return true;
 };
 
+const countUnique = (iterable) => new Set(iterable).size;
+
 module.exports = {
   getDateTimeFormat,
   getTodayDateFormated,
   wasBeforeDailyReset,
+  countUnique,
 };

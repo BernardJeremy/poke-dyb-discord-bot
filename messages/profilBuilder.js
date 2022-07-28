@@ -2,13 +2,12 @@ const { EmbedBuilder } = require('discord.js');
 
 const pokedexList = require('../data/pokedex.json');
 const { getCleanUserPokedexArray } = require('../tools/pokemon');
+const { countUnique } = require('../tools/utils');
 
 const {
   DUST_EMOJI_ID,
   COIN_EMOJI_ID,
 } = process.env;
-
-const countUnique = (iterable) => new Set(iterable).size;
 
 const buildProfil = ({
   username,

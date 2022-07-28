@@ -26,20 +26,27 @@ const removePokemonFromList = (targetPokedex, pokemonNbr, nbrToRemove) => {
   return newPokedex;
 };
 
-const getCleanUserPokedexArray = (targetPokedex) => targetPokedex.reduce((acc, curr) => {
-  const index = acc.findIndex((newPokedexObj) => newPokedexObj.id === curr);
+const getCleanUserPokedexArray = (targetPokedex) => targetPokedex.sort(
+  (a, b) => a - b,
+)
+  .reduce((acc, curr) => {
+    const index = acc.findIndex((newPokedexObj) => newPokedexObj.id === curr);
 
-  if (index === -1) {
-    acc.push({
-      id: curr,
-      nbr: 1,
-    });
-  } else {
-    acc[index].nbr += 1;
-  }
+    if (index === -1) {
+      acc.push({
+        id: curr,
+        name: pokedex[curr - 1].name,
+        types: pokedex[curr - 1].types,
+        rarityLevel: pokedex[curr - 1].rarityLevel,
+        craftingPrice: pokedex[curr - 1].craftingPrice,
+        nbr: 1,
+      });
+    } else {
+      acc[index].nbr += 1;
+    }
 
-  return acc;
-}, []);
+    return acc;
+  }, []);
 
 module.exports = {
   getRandomInt,

@@ -26,8 +26,24 @@ const removePokemonFromList = (targetPokedex, pokemonNbr, nbrToRemove) => {
   return newPokedex;
 };
 
+const getCleanUserPokedexArray = (targetPokedex) => targetPokedex.reduce((acc, curr) => {
+  const index = acc.findIndex((newPokedexObj) => newPokedexObj.id === curr);
+
+  if (index === -1) {
+    acc.push({
+      id: curr,
+      nbr: 1,
+    });
+  } else {
+    acc[index].nbr += 1;
+  }
+
+  return acc;
+}, []);
+
 module.exports = {
   getRandomInt,
   getRandomPokemon,
   removePokemonFromList,
+  getCleanUserPokedexArray,
 };

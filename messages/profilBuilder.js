@@ -1,6 +1,7 @@
 const { EmbedBuilder } = require('discord.js');
 
 const pokedexList = require('../data/pokedex.json');
+const { getCleanUserPokedexArray } = require('../tools/pokemon');
 
 const {
   DUST_EMOJI_ID,
@@ -33,11 +34,13 @@ const buildProfil = ({
 
   exampleEmbed.addFields({ name: '\u200B', value: '\u200B' });
 
+  const formattedUserPokedex = getCleanUserPokedexArray(pokedex);
+
   exampleEmbed.addFields({
     name: 'Pokemon acquis',
     value: pokedex.length === 0
       ? 'Aucun :('
-      : pokedex.sort((a, b) => a - b).reduce((acc, curr) => `${acc.length > 0 ? `${acc}, ` : ''}#${curr}`, ''),
+      : formattedUserPokedex.reduce((valueStr, currentPokemonObj) => `${valueStr.length > 0 ? `${valueStr}, ` : ''}#${currentPokemonObj.id} (${currentPokemonObj.nbr})`, ''),
   });
 
   exampleEmbed.addFields({

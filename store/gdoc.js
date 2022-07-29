@@ -1,7 +1,7 @@
 const pokedex = require('../data/pokedex.json');
 const { countUnique } = require('../tools/utils');
 const { getCleanUserPokedexArray } = require('../tools/pokemon');
-const { writeToGoogleSheet } = require('./google/googlesheet');
+const { writeToGoogleSheet } = require('../libs/googlesheet');
 
 const {
   POKEDEX_SHEET_NAME,
@@ -35,10 +35,10 @@ const updatePlayerSheet = async (userData) => {
       ['Nom', 'Argent', 'Poussières', '#Pokemon obtenus'],
       [userData.nickname || userData.username, userData.gold, userData.dust, `${countUnique(userData.pokedex)}`],
       ['', '', '', '', '', '', ''],
-      ['Pokemon acquis'],
+      ['Pokemon acquis', '', '', '', '', '', ''],
       ...formatTargetPokedex(cleanUserPokedex),
       ['', '', '', '', '', '', ''],
-      ['Pokemon manquants'],
+      ['Pokemon manquants', '', '', '', '', '', ''],
       ...formatTargetPokedex(pokedex.filter(
         (currentPokemon) => !userData.pokedex.includes(currentPokemon.id),
       )),

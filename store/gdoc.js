@@ -23,8 +23,8 @@ const formatTargetPokedex = (targetPokedex) => [
     currentPokemon.id,
     currentPokemon.name,
     currentPokemon.types.join('/'),
-    currentPokemon.rarityLevel,
-    currentPokemon.craftingPrice,
+    `${currentPokemon.rarityLevel > 0 ? currentPokemon.rarityLevel : '-'}`,
+    `${currentPokemon.craftingPrice >= 0 ? currentPokemon.craftingPrice : '-'}`,
     currentPokemon.nbr || '',
   ]),
 ];

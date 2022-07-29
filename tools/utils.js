@@ -3,7 +3,7 @@ const isoWeek = require('dayjs/plugin/isoWeek');
 
 dayjs.extend(isoWeek);
 
-const getDateTimeFormat = () => 'DD/MM/YYYY - HH:mm';
+const getDateTimeFormat = () => 'DD/MM/YYYY';
 
 const getTodayDateFormated = () => dayjs().format(getDateTimeFormat());
 

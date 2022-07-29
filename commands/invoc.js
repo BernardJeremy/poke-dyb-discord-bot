@@ -28,13 +28,14 @@ module.exports = {
       ...user,
       gold: user.gold - GOLD_COST_INVOC,
     });
+
+    message.reply(`Tu as invoqué **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}. Il te reste ${user.gold} ${COIN_EMOJI_ID}`);
+    message.channel.send(buildCard(pokemonObj));
+
     addElementHistory({
       eventType: HISTORY_EVENT_TYPE.INVOC,
       userData: user,
       pokemonData: pokemonObj,
     });
-
-    message.reply(`Tu as invoqué **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}. Il te reste ${user.gold} ${COIN_EMOJI_ID}`);
-    message.channel.send(buildCard(pokemonObj));
   },
 };

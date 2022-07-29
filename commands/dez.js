@@ -54,12 +54,13 @@ module.exports = {
       ...user,
       dust: user.dust + wonDust,
     });
+
+    message.reply(`Tu as decraft **[#${pokemonObj.id}] ${pokemonObj.name}** pour ${wonDust} ${DUST_EMOJI_ID}. Il te reste **${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length} ${pokemonObj.name}**. Tu disposes maintenant de ${user.dust} ${DUST_EMOJI_ID}`);
+
     addElementHistory({
       eventType: HISTORY_EVENT_TYPE.DEZ,
       userData: user,
       pokemonData: pokemonObj,
     });
-
-    message.reply(`Tu as decraft **[#${pokemonObj.id}] ${pokemonObj.name}** pour ${wonDust} ${DUST_EMOJI_ID}. Il te reste **${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length} ${pokemonObj.name}**. Tu disposes maintenant de ${user.dust} ${DUST_EMOJI_ID}`);
   },
 };

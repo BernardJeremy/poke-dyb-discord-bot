@@ -49,13 +49,14 @@ module.exports = {
       ...user,
       dust: user.dust - pokemonObj.craftingPrice,
     });
+
+    message.reply(`Tu as craft **[#${pokemonObj.id}] ${pokemonObj.name}**, il te reste ${user.dust} ${DUST_EMOJI_ID}`);
+    message.channel.send(buildCard(pokemonObj));
+
     addElementHistory({
       eventType: HISTORY_EVENT_TYPE.CRAFT,
       userData: user,
       pokemonData: pokemonObj,
     });
-
-    message.reply(`Tu as craft **[#${pokemonObj.id}] ${pokemonObj.name}**, il te reste ${user.dust} ${DUST_EMOJI_ID}`);
-    message.channel.send(buildCard(pokemonObj));
   },
 };

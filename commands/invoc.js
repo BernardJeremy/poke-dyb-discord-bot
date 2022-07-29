@@ -1,6 +1,7 @@
 const buildCard = require('../messages/cardBuilder');
 const { getRandomPokemon } = require('../tools/pokemon');
 const usersModel = require('../models/users');
+const { addElementHistory, HISTORY_EVENT_TYPE } = require('../store/gdoc');
 
 const {
   COIN_EMOJI_ID,
@@ -26,6 +27,11 @@ module.exports = {
     user = usersModel.updateUser({
       ...user,
       gold: user.gold - GOLD_COST_INVOC,
+    });
+    addElementHistory({
+      eventType: HISTORY_EVENT_TYPE.INVOC,
+      userData: user,
+      pokemonData: pokemonObj,
     });
 
     message.reply(`Tu as invoqué **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}. Il te reste ${user.gold} ${COIN_EMOJI_ID}`);

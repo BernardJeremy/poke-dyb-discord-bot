@@ -1,11 +1,18 @@
 const pokedex = require('../data/pokedex.json');
-const { countUnique } = require('../tools/utils');
+const { countUnique, getTodayDateFormated } = require('../tools/utils');
 const { getCleanUserPokedexArray } = require('../tools/pokemon');
-const { writeToGoogleSheet } = require('../libs/googlesheet');
+const { writeToGoogleSheet, appendToGoogleSheet } = require('../libs/googlesheet');
 
 const {
   POKEDEX_SHEET_NAME,
+  HISTORY_SHEET_NAME,
 } = process.env;
+
+const HISTORY_EVENT_TYPE = {
+  CRAFT: 'Craft',
+  INVOC: 'Invocation',
+  DEZ: 'Decraft',
+};
 
 const padId = (nbr) => String(nbr).padStart(3, '0');
 
@@ -57,7 +64,25 @@ const updatePlayerSheet = async (userData) => {
   );
 };
 
+const addElementHistory = async ({ eventType, userData, pokemonData }) => appendToGoogleSheet(
+  [
+    [
+      getTodayDateFormated(),
+      eventType,
+      userData.nickname || userData.username,
+      `=IMAGE("https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/thumbnails/${padId(pokemonData.id)}.png")`,
+      pokemonData.id,
+      pokemonData.name,
+      pokemonData.rarityLevel,
+      pokemonData.craftingPrice,
+    ],
+  ],
+  `${HISTORY_SHEET_NAME}`,
+);
+
 module.exports = {
   updatePokedex,
   updatePlayerSheet,
+  addElementHistory,
+  HISTORY_EVENT_TYPE,
 };

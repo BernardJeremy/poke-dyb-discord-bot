@@ -1,6 +1,7 @@
 const buildCard = require('../messages/cardBuilder');
 const pokedex = require('../data/pokedex.json');
 const usersModel = require('../models/users');
+const { addElementHistory, HISTORY_EVENT_TYPE } = require('../store/gdoc');
 
 const {
   DUST_EMOJI_ID,
@@ -47,6 +48,11 @@ module.exports = {
     user = usersModel.updateUser({
       ...user,
       dust: user.dust - pokemonObj.craftingPrice,
+    });
+    addElementHistory({
+      eventType: HISTORY_EVENT_TYPE.CRAFT,
+      userData: user,
+      pokemonData: pokemonObj,
     });
 
     message.reply(`Tu as craft **[#${pokemonObj.id}] ${pokemonObj.name}**, il te reste ${user.dust} ${DUST_EMOJI_ID}`);

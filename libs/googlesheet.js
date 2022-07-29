@@ -12,11 +12,17 @@ async function getAuthToken() {
   return authToken;
 }
 
-async function getSpreadSheetValues({ spreadsheetId, auth, sheetName }) {
+async function getSpreadSheetValues({
+  spreadsheetId,
+  auth,
+  sheetName,
+  getRawData,
+}) {
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId,
     auth,
     range: sheetName,
+    valueRenderOption: getRawData ? 'FORMULA' : 'FORMATTED_VALUE',
   });
   return res;
 }
@@ -39,10 +45,54 @@ async function updateSpreadSheetValues({
   return res;
 }
 
+async function appendSpreadSheetValues({
+  spreadsheetId, auth, sheetName, data,
+}) {
+  const currentSpreadSheetValuesRes = await getSpreadSheetValues(
+    {
+      spreadsheetId,
+      auth,
+      sheetName,
+      getRawData: true,
+    },
+  );
+
+  if (currentSpreadSheetValuesRes.status === 200) {
+    const res = await updateSpreadSheetValues(
+      {
+        spreadsheetId,
+        auth,
+        sheetName,
+        data: [
+          ...currentSpreadSheetValuesRes.data.values,
+          ...data,
+        ],
+      },
+    );
+
+    return res;
+  }
+
+  return currentSpreadSheetValuesRes;
+}
+
 const writeToGoogleSheet = async (data, sheetName) => {
   const auth = await getAuthToken();
 
   const res = await updateSpreadSheetValues({
+    spreadsheetId: process.env.SPREADSHEET_ID,
+    auth,
+    sheetName,
+    data,
+  });
+
+  return res;
+};
+
+const appendToGoogleSheet = async (data, sheetName) => {
+  const auth = await getAuthToken();
+
+  const res = await appendSpreadSheetValues({
     spreadsheetId: process.env.SPREADSHEET_ID,
     auth,
     sheetName,
@@ -65,5 +115,6 @@ const readFromGoogleSheet = async (sheetName) => {
 
 module.exports = {
   writeToGoogleSheet,
+  appendToGoogleSheet,
   readFromGoogleSheet,
 };

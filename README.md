@@ -20,3 +20,4 @@ Command to get custom emoji id : `\:EmojiName:`
 - `GOOGLE_APPLICATION_CREDENTIALS` : Path to GCP service account json key
 - `SPREADSHEET_ID` :  ID of GDOC spreadsheet
 - `POKEDEX_SHEET_NAME` : Name of the pokedex spreadsheet
+- `HISTORY_SHEET_NAME` : Name of the history spreadsheet

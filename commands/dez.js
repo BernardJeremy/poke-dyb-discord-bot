@@ -1,7 +1,6 @@
 const pokedex = require('../data/pokedex.json');
 const usersModel = require('../models/users');
 const { removePokemonFromList } = require('../tools/pokemon');
-const { addElementHistory, HISTORY_EVENT_TYPE } = require('../store/gdoc');
 
 const {
   DUST_EMOJI_ID,
@@ -56,11 +55,5 @@ module.exports = {
     });
 
     message.reply(`Tu as decraft **[#${pokemonObj.id}] ${pokemonObj.name}** pour ${wonDust} ${DUST_EMOJI_ID}. Il te reste **${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length} ${pokemonObj.name}**. Tu disposes maintenant de ${user.dust} ${DUST_EMOJI_ID}`);
-
-    addElementHistory({
-      eventType: HISTORY_EVENT_TYPE.DEZ,
-      userData: user,
-      pokemonData: pokemonObj,
-    });
   },
 };

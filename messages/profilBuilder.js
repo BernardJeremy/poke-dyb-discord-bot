@@ -26,7 +26,7 @@ const buildProfil = ({
     );
 
   exampleEmbed.addFields(
-    { name: 'Argent', value: `${gold} ${COIN_EMOJI_ID}`, inline: true },
+    { name: 'Pokédollars', value: `${gold} ${COIN_EMOJI_ID}`, inline: true },
     { name: 'Poussière', value: `${dust} ${DUST_EMOJI_ID}`, inline: true },
     { name: 'Pokedex', value: `${countUnique(pokedex)}/${pokedexList.length}`, inline: true },
   );

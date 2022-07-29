@@ -17,7 +17,7 @@ const HISTORY_EVENT_TYPE = {
 const padId = (nbr) => String(nbr).padStart(3, '0');
 
 const formatTargetPokedex = (targetPokedex) => [
-  ['', 'ID', 'Nom', 'Type', 'Rareté', 'Craft', '# Exemplaire'],
+  ['', 'ID', 'Nom', 'Type', 'Rareté (%)', 'Craft', '# Exemplaire'],
   ...targetPokedex.map((currentPokemon) => [
     `=IMAGE("https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/thumbnails/${padId(currentPokemon.id)}.png")`,
     currentPokemon.id,
@@ -39,7 +39,7 @@ const updatePlayerSheet = async (userData) => {
 
   return writeToGoogleSheet(
     [
-      ['Nom', 'Argent', 'Poussières', '#Pokemon obtenus'],
+      ['Nom', 'Pokédollars', 'Poussières', '#Pokemon obtenus'],
       [userData.nickname || userData.username, userData.gold, userData.dust, `${countUnique(userData.pokedex)}`],
       ['', '', '', '', '', '', ''],
       ['Pokemon acquis', '', '', '', '', '', ''],

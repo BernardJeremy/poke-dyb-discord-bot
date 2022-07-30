@@ -32,6 +32,6 @@ module.exports = {
       return;
     }
 
-    message.reply('Tu n\'es pas éligible à la récompense bonus.');
+    message.reply(`Tu n'es pas éligible à la récompense bonus (encore **${usersModel.nbrDailyBeforeBonus(user)}** \`!journa\`).`);
   },
 };

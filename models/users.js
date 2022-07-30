@@ -1,6 +1,8 @@
 const dbManager = require('../store/dbManager');
 const gdocStore = require('../store/gdoc');
 
+const NBR_DAILY_TO_ENABLE_BONUS = 7;
+
 const getAllUsers = () => {
   const users = dbManager.getAllUsers();
 
@@ -48,7 +50,14 @@ const updateUser = (userData) => {
 };
 
 const isBonusUsable = (userData) => (
-  userData.nbrDailyDone >= 7 && userData.nbrBonusDone < Math.trunc(userData.nbrDailyDone / 7)
+  userData.nbrDailyDone >= NBR_DAILY_TO_ENABLE_BONUS
+  && userData.nbrBonusDone < Math.trunc(userData.nbrDailyDone / NBR_DAILY_TO_ENABLE_BONUS)
+);
+
+const nbrDailyBeforeBonus = (userData) => (
+  userData.nbrDailyDone === 0
+    ? NBR_DAILY_TO_ENABLE_BONUS
+    : NBR_DAILY_TO_ENABLE_BONUS - (userData.nbrDailyDone % NBR_DAILY_TO_ENABLE_BONUS)
 );
 
 module.exports = {
@@ -57,4 +66,5 @@ module.exports = {
   createUser,
   updateUser,
   isBonusUsable,
+  nbrDailyBeforeBonus,
 };

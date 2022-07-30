@@ -22,7 +22,12 @@ module.exports = {
       return;
     }
 
-    const pokemonObj = getRandomPokemon();
+    let pokemonObj = getRandomPokemon();
+    // If user already has this pokemon, try a second time;
+    if (user.pokedex.includes(pokemonObj.id)) {
+      pokemonObj = getRandomPokemon();
+    }
+
     user.pokedex.push(pokemonObj.id);
     user = usersModel.updateUser({
       ...user,

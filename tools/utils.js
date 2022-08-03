@@ -9,17 +9,9 @@ const getTodayDateFormated = () => dayjs().format(getDateTimeFormat());
 
 const wasBeforeDailyReset = (lastQuestDate) => {
   const lastQuestDateTime = dayjs(lastQuestDate);
-  const todayAtResetDateTime = dayjs().hour(0);
+  const todayAtResetDateTime = dayjs();
 
-  if (lastQuestDateTime.isSame(dayjs(), 'day')) {
-    if (lastQuestDateTime.isBefore(todayAtResetDateTime)) {
-      return true;
-    }
-
-    return false;
-  }
-
-  return true;
+  return !lastQuestDateTime.isSame(dayjs(), 'day');
 };
 
 const countUnique = (iterable) => new Set(iterable).size;

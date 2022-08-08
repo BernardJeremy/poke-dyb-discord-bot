@@ -27,6 +27,10 @@ const createUser = (userAccountData) => {
     dust: 0,
     nbrDailyDone: 0,
     nbrBonusDone: 0,
+    claims: {
+      gold: 0,
+      dust: 0,
+    },
     isAdmin: false,
   };
 
@@ -60,6 +64,17 @@ const nbrDailyBeforeBonus = (userData) => (
     : NBR_DAILY_TO_ENABLE_BONUS - (userData.nbrDailyDone % NBR_DAILY_TO_ENABLE_BONUS)
 );
 
+const hasClaims = (userData) => {
+  if (!userData.claims) {
+    return false;
+  }
+
+  return (
+    userData.claims.gold > 0
+    || userData.claims.dust > 0
+  );
+};
+
 module.exports = {
   getAllUsers,
   getOneUser,
@@ -67,4 +82,5 @@ module.exports = {
   updateUser,
   isBonusUsable,
   nbrDailyBeforeBonus,
+  hasClaims,
 };

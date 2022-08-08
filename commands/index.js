@@ -10,6 +10,8 @@ const trade = require('./trade');
 const help = require('./help');
 const admin = require('./admin');
 const gdoc = require('./gdoc');
+const claim = require('./claim');
+const sendgift = require('./sendgift');
 
 const commands = {
   pokemon,
@@ -21,7 +23,9 @@ const commands = {
   dez,
   hv,
   trade,
+  claim,
   admin,
+  sendgift,
   gdoc,
 };
 

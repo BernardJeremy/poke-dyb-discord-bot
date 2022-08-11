@@ -10,7 +10,7 @@ const {
 module.exports = {
   name: '!craft',
 
-  description: 'Craft la carte pokemon demandée',
+  description: 'Craft le pokemon demandée',
 
   async execute(message, messageContext) {
     if (!messageContext.args || messageContext.args.length < 1) {

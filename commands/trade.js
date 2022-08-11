@@ -6,7 +6,7 @@ module.exports = {
   name: '!trade',
   alias: '!echange',
 
-  description: 'Echange de cartes avec un autre joueur',
+  description: 'Echange de pokemon avec un autre joueur',
 
   async execute(message, messageContext) {
     const user = usersModel.getOneUser(messageContext.author.id);
@@ -33,7 +33,7 @@ module.exports = {
       const currentDemand = targetTrade.demand[i];
 
       if (!user.pokedex.includes(currentDemand)) {
-        message.reply(`Tu ne disposes pas de la carte #${currentDemand} !`);
+        message.reply(`Tu ne disposes pas du pokemon #${currentDemand} !`);
         return;
       }
     }
@@ -42,7 +42,7 @@ module.exports = {
       const currentOffer = targetTrade.offer[i];
 
       if (!tradedUser.pokedex.includes(currentOffer)) {
-        message.reply(`Le joueur ne dispose plus de la carte #${currentOffer} !`);
+        message.reply(`Le joueur ne dispose plus du pokemon #${currentOffer} !`);
         return;
       }
     }

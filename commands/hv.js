@@ -4,7 +4,7 @@ const tradesModel = require('../models/trades');
 module.exports = {
   name: '!hv',
 
-  description: 'Propose une ou plusieurs carte à l\'échange',
+  description: 'Propose un ou plusieurs pokemon à l\'échange',
 
   async execute(message, messageContext) {
     const user = usersModel.getOneUser(messageContext.author.id);
@@ -65,7 +65,7 @@ module.exports = {
       const currentOffer = offer[i];
 
       if (!user.pokedex.includes(currentOffer)) {
-        message.reply(`Tu ne disposes pas de la carte #${currentOffer}`);
+        message.reply(`Tu ne disposes pas du pokemon #${currentOffer}`);
         return;
       }
     }
@@ -76,6 +76,6 @@ module.exports = {
       offer,
       demand,
     });
-    message.reply('Carte proposée(s) à l\'échange, merci !');
+    message.reply('Pokemon proposée(s) à l\'échange, merci !');
   },
 };

@@ -9,7 +9,7 @@ const {
 module.exports = {
   name: '!dez',
 
-  description: 'Decraft la carte pokemon demandée pour la moitié de sa valeur',
+  description: 'Decraft le pokemon demandée pour la moitié de sa valeur',
 
   async execute(message, messageContext) {
     if (!messageContext.args || messageContext.args.length < 1) {
@@ -28,7 +28,7 @@ module.exports = {
 
     const targetPokemonList = user.pokedex.filter((pokemon) => pokemonNbr === pokemon);
     if (targetPokemonList.length === 0) {
-      message.reply('Tu ne disposes pas de cette carte pokemon');
+      message.reply('Tu ne disposes pas de ce pokemon');
       return;
     }
 
@@ -40,7 +40,7 @@ module.exports = {
     }
 
     if (nbrToDez > targetPokemonList.length) {
-      message.reply(`Tu n'as que ${targetPokemonList.length} exemplaire(s) de cette carte`);
+      message.reply(`Tu n'as que ${targetPokemonList.length} exemplaire(s) de ce pokemon`);
       return;
     }
 

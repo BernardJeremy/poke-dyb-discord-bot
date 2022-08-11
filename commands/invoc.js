@@ -12,7 +12,7 @@ const GOLD_COST_INVOC = 500;
 module.exports = {
   name: '!invoc',
 
-  description: 'Invoque une carte pokemon aléatoire',
+  description: 'Invoque un pokemon aléatoire',
 
   async execute(message, messageContext) {
     let user = usersModel.getOneUser(messageContext.author.id);

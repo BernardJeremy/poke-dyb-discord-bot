@@ -51,7 +51,7 @@ module.exports = {
     });
 
     message.reply(`Tu as craft **[#${pokemonObj.id}] ${pokemonObj.name}**, il te reste ${user.dust} ${DUST_EMOJI_ID}`);
-    message.channel.send(buildCard(pokemonObj));
+    message.channel.send(buildCard(pokemonObj, { catched: true }));
 
     addElementHistory({
       eventType: HISTORY_EVENT_TYPE.CRAFT,

@@ -27,6 +27,6 @@ module.exports = {
       return;
     }
 
-    message.channel.send(buildCard(pokemonObj));
+    message.channel.send(buildCard(pokemonObj, { catched: false }));
   },
 };

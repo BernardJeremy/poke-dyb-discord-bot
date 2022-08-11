@@ -35,7 +35,7 @@ module.exports = {
     });
 
     message.reply(`Tu as invoqué **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}. Il te reste ${user.gold} ${COIN_EMOJI_ID}`);
-    message.channel.send(buildCard(pokemonObj));
+    message.channel.send(buildCard(pokemonObj, { catched: true }));
 
     addElementHistory({
       eventType: HISTORY_EVENT_TYPE.INVOC,

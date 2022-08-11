@@ -78,7 +78,7 @@ module.exports = {
 
       message.reply(strReward);
       if (hasClearedFloor) {
-        message.channel.send(buildCard(pokemonObj));
+        message.channel.send(buildCard(pokemonObj, { catched: true }));
       }
 
       return;

@@ -50,7 +50,7 @@ module.exports = {
             return { ...rarity, randMaxValue: tempRandMaxValue };
           });
 
-        const randomValue = getRandomInt(1, 100);
+        const randomValue = getRandomInt(0, 100);
 
         const targetRarity = rarityList.find((rarity) => randomValue <= rarity.randMaxValue);
 

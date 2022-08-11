@@ -1,6 +1,8 @@
 require('dotenv').config();
 
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
+const expressApp = require('./libs/express');
+const setupHttpRoutes = require('./controllers/routes');
 
 const usersModel = require('./models/users');
 
@@ -8,6 +10,8 @@ const botCommands = require('./commands');
 const messageParser = require('./messages/messageParser');
 
 const main = async () => {
+  setupHttpRoutes(expressApp);
+
   const client = new Client(
     {
       intents: [

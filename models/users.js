@@ -23,8 +23,8 @@ const getOneUser = (id) => {
 
 const getInitTowerValue = () => (
   {
-    ticketsTotal: TOWER_TICKETS_EACH_DAY,
-    ticketsToday: TOWER_TICKETS_EACH_DAY,
+    ticketsTotal: parseInt(TOWER_TICKETS_EACH_DAY, 10),
+    ticketsToday: parseInt(TOWER_TICKETS_EACH_DAY, 10),
     currentFloor: 1,
     reputation: 0,
   });
@@ -54,14 +54,16 @@ const createUser = (userAccountData) => {
   return userData;
 };
 
-const updateUser = (userData) => {
+const updateUser = (userData, withGdocUpdate = true) => {
   const users = getAllUsers();
 
   users.splice(users.findIndex((user) => userData.id === user.id), 1);
   users.push(userData);
 
   dbManager.updateUsers(users);
-  gdocStore.updatePlayerSheet(userData);
+  if (withGdocUpdate) {
+    gdocStore.updatePlayerSheet(userData);
+  }
 
   return userData;
 };

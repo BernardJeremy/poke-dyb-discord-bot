@@ -3,6 +3,10 @@ const gdocStore = require('../store/gdoc');
 
 const NBR_DAILY_TO_ENABLE_BONUS = 7;
 
+const {
+  TOWER_TICKETS_EACH_DAY,
+} = process.env;
+
 const getAllUsers = () => {
   const users = dbManager.getAllUsers();
 
@@ -16,6 +20,14 @@ const getOneUser = (id) => {
 
   return user || null;
 };
+
+const getInitTowerValue = () => (
+  {
+    ticketsTotal: TOWER_TICKETS_EACH_DAY,
+    ticketsToday: TOWER_TICKETS_EACH_DAY,
+    currentFloor: 1,
+    reputation: 0,
+  });
 
 const createUser = (userAccountData) => {
   const users = getAllUsers();
@@ -31,6 +43,7 @@ const createUser = (userAccountData) => {
       gold: 0,
       dust: 0,
     },
+    tower: getInitTowerValue(),
     isAdmin: false,
   };
 
@@ -83,4 +96,5 @@ module.exports = {
   isBonusUsable,
   nbrDailyBeforeBonus,
   hasClaims,
+  getInitTowerValue,
 };

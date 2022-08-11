@@ -12,6 +12,7 @@ const admin = require('./admin');
 const gdoc = require('./gdoc');
 const claim = require('./claim');
 const sendgift = require('./sendgift');
+const tower = require('./tower');
 
 const commands = {
   pokemon,
@@ -24,6 +25,7 @@ const commands = {
   hv,
   trade,
   claim,
+  tower,
   admin,
   sendgift,
   gdoc,

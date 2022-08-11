@@ -1,0 +1,163 @@
+{
+  "floors":[
+    {
+      "id": 1,
+      "name": "Étage 1",
+      "successRate": 50,
+      "rarityList": [
+        {
+          "max": 100,
+          "min": 80,
+          "rate": 70
+        },
+        {
+          "max": 79,
+          "min": 50,
+          "rate": 30
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Étage 2",
+      "successRate": 50,
+      "rarityList": [
+        {
+          "max": 100,
+          "min": 80,
+          "rate": 30
+        },
+        {
+          "max": 79,
+          "min": 50,
+          "rate": 70
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Étage 3",
+      "successRate": 35,
+      "rarityList": [
+        {
+          "max": 100,
+          "min": 80,
+          "rate": 15
+        },
+        {
+          "max": 79,
+          "min": 50,
+          "rate": 70
+        },
+        {
+          "max": 49,
+          "min": 30,
+          "rate": 15
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Étage 4",
+      "successRate": 35,
+      "rarityList": [
+        {
+          "max": 79,
+          "min": 50,
+          "rate": 60
+        },
+        {
+          "max": 49,
+          "min": 30,
+          "rate": 40
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Étage 5",
+      "successRate": 15,
+      "rarityList": [
+        {
+          "max": 79,
+          "min": 50,
+          "rate": 20
+        },
+        {
+          "max": 49,
+          "min": 30,
+          "rate": 70
+        },
+        {
+          "max": 29,
+          "min": 10,
+          "rate": 9
+        },
+        {
+          "max": 9,
+          "min": 0,
+          "rate": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Étage 6",
+      "successRate": 5,
+      "rarityList": [
+        {
+          "max": 49,
+          "min": 30,
+          "rate": 20
+        },
+        {
+          "max": 29,
+          "min": 10,
+          "rate": 70
+        },
+        {
+          "max": 9,
+          "min": 0,
+          "rate": 10
+        }
+      ]
+    }
+  ],
+  "reputations": [
+   {
+    "id": 1,
+    "name": "Neutre",
+    "pointForNextLevel": 3000,
+    "pointAccumulation": 2999,
+    "bonusRateValue": 0
+   },
+   {
+    "id": 2,
+    "name": "Amical",
+    "pointForNextLevel": 6000,
+    "pointAccumulation": 8999,
+    "bonusRateValue": 2
+   },
+   {
+    "id": 3,
+    "name": "Honoré",
+    "pointForNextLevel": 12000,
+    "pointAccumulation": 20999,
+    "bonusRateValue": 4
+   },
+   {
+    "id": 4,
+    "name": "Révéré",
+    "pointForNextLevel": 21000,
+    "pointAccumulation": 41999,
+    "bonusRateValue": 6
+   },
+   {
+    "id": 5,
+    "name": "Exalté",
+    "pointForNextLevel": 9999999999,
+    "pointAccumulation": 9999999999,
+    "bonusRateValue": 10
+   }
+  ]
+}

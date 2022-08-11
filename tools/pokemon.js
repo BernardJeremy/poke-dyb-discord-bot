@@ -1,13 +1,18 @@
 const pokedex = require('../data/pokedex.json');
-
-const getRandomInt = (min, max) => Math.floor(
-  Math.random() * (Math.floor(max) - Math.ceil(min)) + Math.ceil(min),
-);
+const { getRandomInt } = require('./utils');
 
 const getRandomPokemon = () => {
   const seed = getRandomInt(1, 100);
 
   const eligiblePokemonList = pokedex.filter((pokemon) => pokemon.rarityLevel > seed);
+
+  return eligiblePokemonList[Math.floor(Math.random() * eligiblePokemonList.length)];
+};
+
+const getRandomPokemonWithRarity = (minRarity, maxRarity) => {
+  const eligiblePokemonList = pokedex.filter((pokemon) => (
+    pokemon.rarityLevel >= minRarity && pokemon.rarityLevel <= maxRarity
+  ));
 
   return eligiblePokemonList[Math.floor(Math.random() * eligiblePokemonList.length)];
 };
@@ -49,8 +54,8 @@ const getCleanUserPokedexArray = (targetPokedex) => targetPokedex.sort(
   }, []);
 
 module.exports = {
-  getRandomInt,
   getRandomPokemon,
+  getRandomPokemonWithRarity,
   removePokemonFromList,
   getCleanUserPokedexArray,
 };

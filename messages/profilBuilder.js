@@ -35,7 +35,7 @@ const buildProfil = ({
     { name: 'Pokédollars', value: `${gold} ${COIN_EMOJI_ID}`, inline: true },
     { name: 'Poussière', value: `${dust} ${DUST_EMOJI_ID}`, inline: true },
     { name: 'Pokedex', value: `${countUnique(pokedex)}/${pokedexList.length}`, inline: true },
-    { name: 'Tour Pokemon', value: `[Étage ${tower.currentFloor}] : ${tower.ticketsTotal} tentative(s)`, inline: true },
+    { name: 'Tour Pokemon', value: `[Étage ${tower.currentFloor}] : ${tower.ticketsTotal} tentative(s) restante(s)`, inline: true },
     { name: 'Réputation Mr. Fuji', value: `${currentReputation.name} (${tower.reputation - (currentReputation.pointAccumulation + 1 - currentReputation.pointForNextLevel)} / ${currentReputation.pointForNextLevel})`, inline: true },
   );
 

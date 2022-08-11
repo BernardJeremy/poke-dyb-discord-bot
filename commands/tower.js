@@ -72,7 +72,7 @@ module.exports = {
       });
 
       const strReward = `
-      **${floorData.name} (${floorData.successRate + clearRateBonus}% de chance d'ascension) - ${updatedUser.tower.ticketsTotal} essais restants**
+      **${floorData.name} (${floorData.successRate + clearRateBonus}% de chance d'ascension) - ${updatedUser.tower.ticketsTotal} essai(s) restant(s)**
       Réputation "Mr Fuji" augmentée de ${reputationGain}
       \`${hasClearedFloor ? 'Félicication, tu as réussi à passer cette étage !' : 'Dommage, tu reste bloqué à cette étage pour l\'instant.'}\``;
 

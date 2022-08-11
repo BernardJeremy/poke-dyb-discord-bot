@@ -39,8 +39,8 @@ const updatePlayerSheet = async (userData) => {
 
   return writeToGoogleSheet(
     [
-      ['Nom', 'Pokédollars', 'Poussières', '#Pokemon obtenus'],
-      [userData.nickname || userData.username, userData.gold, userData.dust, `${countUnique(userData.pokedex)}`],
+      ['Nom', 'Pokédollars', 'Poussières', '#Pokemon obtenus', 'Etage Tour Pokemon'],
+      [userData.nickname || userData.username, userData.gold, userData.dust, `${countUnique(userData.pokedex)}`, userData.tower?.currentFloor],
       ['', '', '', '', '', '', ''],
       ['Pokemon acquis', '', '', '', '', '', ''],
       ...formatTargetPokedex(cleanUserPokedex),

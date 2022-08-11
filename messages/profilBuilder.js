@@ -1,6 +1,7 @@
 const { EmbedBuilder } = require('discord.js');
 
 const pokedexList = require('../data/pokedex.json');
+const towerData = require('../data/tower.json');
 const { getCleanUserPokedexArray } = require('../tools/pokemon');
 const { countUnique } = require('../tools/utils');
 
@@ -15,6 +16,7 @@ const buildProfil = ({
   pokedex,
   gold,
   dust,
+  tower,
 }) => {
   const exampleEmbed = new EmbedBuilder()
     .setTitle(nickname || username)
@@ -25,10 +27,16 @@ const buildProfil = ({
       },
     );
 
+  const currentReputation = towerData.reputations.find((reputation) => (
+    tower.reputation <= reputation.pointAccumulation
+  ));
+
   exampleEmbed.addFields(
     { name: 'Pokédollars', value: `${gold} ${COIN_EMOJI_ID}`, inline: true },
     { name: 'Poussière', value: `${dust} ${DUST_EMOJI_ID}`, inline: true },
     { name: 'Pokedex', value: `${countUnique(pokedex)}/${pokedexList.length}`, inline: true },
+    { name: 'Accès Tour Pokemon', value: `${tower.ticketsTotal} (${tower.ticketsToday})`, inline: true },
+    { name: 'Réputation Mr. Fuji', value: `${currentReputation.name} (${tower.reputation - (currentReputation.pointAccumulation + 1 - currentReputation.pointForNextLevel)} / ${currentReputation.pointForNextLevel})`, inline: true },
   );
 
   exampleEmbed.addFields({ name: '\u200B', value: '\u200B' });

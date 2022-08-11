@@ -25,11 +25,6 @@ module.exports = {
       user.tower = usersModel.getInitTowerValue();
     }
 
-    if (user.tower.currentFloor === towerData.floors.length) {
-      message.reply('Tu as déjà atteint la sommet de la tour Pokemon cette semaine. Reset le Lundi.');
-      return;
-    }
-
     if (user.tower.ticketsToday > 0) {
       const floorData = towerData.floors[user.tower.currentFloor - 1];
       const clearRateBonus = towerData.reputations.find((reputation) => (
@@ -39,12 +34,6 @@ module.exports = {
       const clearChance = floorData.successRate + clearRateBonus;
       const hasClearedFloor = randomClearValue <= clearChance;
       let reputationGain = parseInt(TOWER_REP_GAIN_TRY, 10);
-
-      console.log('floorData', floorData);
-      console.log('clearRateBonus', clearRateBonus);
-      console.log('randomClearValue', randomClearValue);
-      console.log('clearChance', clearChance);
-      console.log('hasClearedFloor', hasClearedFloor);
 
       if (hasClearedFloor) {
         if (user.tower.currentFloor === towerData.floors.length) {
@@ -95,6 +84,6 @@ module.exports = {
       return;
     }
 
-    message.reply('Tu as atteint la limite d`\'ascension pour aujourd\'hui. Reset à midi chaque jour.');
+    message.reply('Tu as atteint la limite d\'ascension pour aujourd\'hui. Reset à midi chaque jour.');
   },
 };

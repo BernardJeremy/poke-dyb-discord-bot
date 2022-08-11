@@ -20,6 +20,10 @@ module.exports = {
       return;
     }
 
+    if (!user.tower) {
+      user.tower = usersModel.getInitTowerValue();
+    }
+
     message.channel.send(profilBuilder(user));
   },
 };

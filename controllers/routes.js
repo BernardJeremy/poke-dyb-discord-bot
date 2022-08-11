@@ -15,6 +15,10 @@ const setupHttpRoutes = (app) => {
     towerWeeklyResetController.execute();
     res.send('OK');
   });
+
+  app.get(`/ping/${HTTP_ROUTE_SUFFIX}`, (req, res) => {
+    res.send('PONG');
+  });
 };
 
 module.exports = setupHttpRoutes;

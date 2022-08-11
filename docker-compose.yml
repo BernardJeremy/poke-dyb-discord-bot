@@ -6,6 +6,8 @@ services:
     restart: unless-stopped
     networks:
       - net
+    ports:
+      - 3030:3030
     environment:
       BOT_TOKEN: MTAwMTA5NTM2MzAxNDQzMDgzMA.GDdogd._yyDg33J8RdMEK-o34rdDypCZ5IVY5As9e0Z5k
       DUST_EMOJI_ID: <:dust:1001431763861643334>

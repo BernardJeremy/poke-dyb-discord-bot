@@ -27,7 +27,6 @@ services:
       GOOGLE_APPLICATION_CREDENTIALS: ./data-extractors-82176ee71668.json
       SPREADSHEET_ID: 1HG01VNg-xQXFHiir829JiGIW4N-F2V9PI2RfiilPwR4
       POKEDEX_SHEET_NAME: Pokedex
-      HISTORY_SHEET_NAME: Historique
     volumes:
        - "/home/bernar_w/save/:/opt/"
 

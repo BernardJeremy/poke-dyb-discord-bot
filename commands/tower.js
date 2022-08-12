@@ -31,7 +31,7 @@ module.exports = {
       return;
     }
 
-    if (user.tower.ticketsToday > 0) {
+    if (user.tower.ticketsTotal > 0) {
       const floorData = towerData.floors[user.tower.currentFloor - 1];
       const clearRateBonus = towerData.reputations.find((reputation) => (
         user.tower.reputation <= reputation.pointAccumulation
@@ -69,7 +69,6 @@ module.exports = {
         tower: {
           ...user.tower,
           ticketsTotal: user.tower.ticketsTotal - 1,
-          ticketsToday: user.tower.ticketsToday - 1,
           reputation: user.tower.reputation + reputationGain,
           currentFloor: hasClearedFloor
             ? Math.min(user.tower.currentFloor + 1, towerData.floors.length)

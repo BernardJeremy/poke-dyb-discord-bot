@@ -26,7 +26,6 @@ module.exports = {
           tower: {
             ...user.tower,
             ticketsTotal: user.tower.ticketsTotal + parseInt(TOWER_TICKETS_EACH_DAY, 10),
-            ticketsToday: user.tower.ticketsToday + parseInt(TOWER_TICKETS_EACH_DAY, 10),
           },
         }, false);
       }

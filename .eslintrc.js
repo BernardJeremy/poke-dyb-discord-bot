@@ -18,5 +18,6 @@ module.exports = {
     project: './tsconfig.eslint.json',
   },
   rules: {
+    '@typescript-eslint/no-namespace': 'off',
   },
 };

@@ -1,6 +1,6 @@
 const fs = require('fs');
-const basePokedex = require('../pokedex.json');
-const baseTypes = require('../types.json');
+const basePokedex = require('../src/data/pokedex.json');
+const baseTypes = require('../src/data/types.json');
 
 const colours = {
   Normal: '#A8A77A',

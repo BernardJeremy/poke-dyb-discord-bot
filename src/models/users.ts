@@ -1,5 +1,4 @@
 import dbManager from '../store/dbManager';
-
 import gdocStore from '../store/gdoc';
 
 const NBR_DAILY_TO_ENABLE_BONUS = 7;

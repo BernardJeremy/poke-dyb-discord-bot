@@ -4,7 +4,7 @@
   "description": "DayBar's discord pokemon bot.",
   "main": "index.js",
   "scripts": {
-    "start":"node ./dist/index.js",
+    "start": "node ./dist/index.js",
     "tsc": "tsc",
     "build": "npm run tsc",
     "dev": "ts-node-dev — respawn — pretty — transpile-only index.ts",
@@ -32,9 +32,11 @@
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/node": "^18.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "eslint": "^8.20.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",

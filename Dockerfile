@@ -5,9 +5,12 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm install --omit=dev
 
 # Bundle app source
 COPY . /usr/src/app
 
-CMD [ "node", "index.js" ]
+# Build app from TypeScript
+RUN npm run build
+
+CMD [ "npm", "start" ]

@@ -28,6 +28,7 @@ module.exports = {
             ticketsTotal: parseInt(TOWER_TICKETS_EACH_DAY, 10),
             ticketsToday: parseInt(TOWER_TICKETS_EACH_DAY, 10),
             currentFloor: 1,
+            maxClearFloor: 0,
           },
         }, false);
       }

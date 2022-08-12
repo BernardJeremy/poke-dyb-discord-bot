@@ -19,10 +19,16 @@ module.exports = {
 
   async execute(message, messageContext) {
     const user = usersModel.getOneUser(messageContext.author.id);
+    const isAtLastFloor = user.tower.currentFloor === towerData.floors.length;
     let pokemonObj = null;
 
     if (!user.tower) {
       user.tower = usersModel.getInitTowerValue();
+    }
+
+    if (user.tower.maxClearFloor === towerData.floors.length) {
+      message.reply('Tu as déjà gravi le dernier étage de la tour cette semaine. Reset à midi le lundi.');
+      return;
     }
 
     if (user.tower.ticketsToday > 0) {
@@ -36,7 +42,7 @@ module.exports = {
       let reputationGain = parseInt(TOWER_REP_GAIN_TRY, 10);
 
       if (hasClearedFloor) {
-        if (user.tower.currentFloor === towerData.floors.length) {
+        if (isAtLastFloor) {
           reputationGain = parseInt(TOWER_REP_GAIN_CLEAR_LAST_FLOOR, 10);
         } else {
           reputationGain = parseInt(TOWER_REP_GAIN_CLEAR, 10);
@@ -68,6 +74,9 @@ module.exports = {
           currentFloor: hasClearedFloor
             ? Math.min(user.tower.currentFloor + 1, towerData.floors.length)
             : user.tower.currentFloor,
+          maxClearFloor: hasClearedFloor
+            ? user.tower.maxClearFloor + 1
+            : user.tower.maxClearFloor,
         },
       });
 

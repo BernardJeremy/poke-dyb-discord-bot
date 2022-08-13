@@ -36,13 +36,31 @@ const buildCard = ({
   );
 
   if (!catched) {
-    const playerList = userModel.getAllUsers().filter((user) => user.pokedex.includes(id));
+    const allUsers = userModel.getAllUsers();
+    const playerListWithIt = allUsers.filter((user) => user.pokedex.includes(id));
+    const playerListWithoutIt = allUsers.filter(
+      (user) => !user.pokedex.includes(id) && user.pokedex.length > 0,
+    );
 
-    if (playerList.length > 0) {
+    if (playerListWithIt.length > 0) {
       exampleEmbed.addFields(
         {
           name: 'Possédé par',
-          value: playerList.map((user) => user.nickname || user.username).join(' / '),
+          value: playerListWithIt.map((user) => {
+            const playerName = user.nickname || user.username;
+            const nbr = user.pokedex.filter((currentId) => currentId === id).length;
+
+            return `${playerName}${nbr > 1 ? ` (${nbr})` : ''}`;
+          }).join(' / '),
+        },
+      );
+    }
+
+    if (playerListWithIt.length > 6) {
+      exampleEmbed.addFields(
+        {
+          name: 'Recherché par',
+          value: playerListWithoutIt.map((user) => user.nickname || user.username).join(' / '),
         },
       );
     }

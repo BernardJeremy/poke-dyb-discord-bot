@@ -56,7 +56,7 @@ const buildCard = ({
       );
     }
 
-    if (playerListWithIt.length > 6) {
+    if (playerListWithIt.length > 6 && playerListWithoutIt.length > 0) {
       exampleEmbed.addFields(
         {
           name: 'Recherché par',

@@ -24,8 +24,8 @@ const buildCard = ({
           : 'https://www.supersoluce.com/sites/default/files/styles/picto_soluce/interrogation.png',
       },
     )
-    .setThumbnail(`https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/thumbnails/${padId(id)}.png`)
-    .setFooter({ text: name, iconURL: `https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/sprites/${padId(id)}MS.png` });
+    .setThumbnail(`https://raw.githubusercontent.com/BernardJeremy/pokemon.json/master/thumbnails/${padId(id)}.png`)
+    .setFooter({ text: name, iconURL: `https://raw.githubusercontent.com/BernardJeremy/pokemon.json/master/sprites/${padId(id)}MS.png` });
 
   const priceStr = craftingPrice < 0 ? '-' : `${craftingPrice} ${DUST_EMOJI_ID}`;
 

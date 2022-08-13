@@ -12,7 +12,7 @@ const padId = (nbr: number) => String(nbr).padStart(3, '0');
 const formatTargetPokedex = (targetPokedex: Pokemon[]) => [
   ['', 'ID', 'Nom', 'Type', 'Rareté (%)', 'Craft', '# Exemplaire'],
   ...targetPokedex.map((currentPokemon) => [
-    `=IMAGE("https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/thumbnails/${padId(currentPokemon.id)}.png")`,
+    `=IMAGE("https://raw.githubusercontent.com/BernardJeremy/pokemon.json/master/thumbnails/${padId(currentPokemon.id)}.png")`,
     currentPokemon.id,
     currentPokemon.name,
     currentPokemon.types.join('/'),

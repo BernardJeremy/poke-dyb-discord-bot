@@ -1,4 +1,5 @@
 import { EmbedBuilder, HexColorString } from 'discord.js';
+import * as userModel from '../models/users';
 
 const { DUST_EMOJI_ID } = process.env;
 
@@ -33,6 +34,19 @@ const buildCard = ({
     { name: 'Rareté', value: `${rarityLevel}%`, inline: true },
     { name: 'Craft', value: priceStr, inline: true },
   );
+
+  if (!catched) {
+    const playerList = userModel.getAllUsers().filter((user) => user.pokedex.includes(id));
+
+    if (playerList.length > 0) {
+      exampleEmbed.addFields(
+        {
+          name: 'Possédé par',
+          value: playerList.map((user) => user.nickname || user.username).join(' / '),
+        },
+      );
+    }
+  }
 
   return { embeds: [exampleEmbed] };
 };

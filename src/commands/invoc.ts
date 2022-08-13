@@ -11,6 +11,7 @@ const GOLD_COST_INVOC = 500;
 
 export default {
   name: '!invoc',
+  allowedChannels: ['invoc-craft-dez'],
 
   description: 'Invoque un pokemon aléatoire',
 

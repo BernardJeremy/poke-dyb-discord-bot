@@ -15,6 +15,7 @@ const {
 export default {
   name: '!tour',
   alias: '!tower',
+  allowedChannels: ['tour-pokemon'],
 
   description: 'Tente de gravir la tour Pokemon',
 

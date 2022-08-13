@@ -4,6 +4,7 @@ import * as tradesModel from '../models/trades';
 
 export default {
   name: '!hv',
+  allowedChannels: ['trade-hv'],
 
   description: 'Propose un ou plusieurs pokemon à l\'échange',
 

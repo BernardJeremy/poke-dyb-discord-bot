@@ -9,6 +9,7 @@ const {
 
 export default {
   name: '!dez',
+  allowedChannels: ['invoc-craft-dez'],
 
   description: 'Decraft le pokemon demandée pour la moitié de sa valeur',
 

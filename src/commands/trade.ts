@@ -6,6 +6,7 @@ import { removePokemonFromList } from '../tools/pokemon';
 export default {
   name: '!trade',
   alias: '!echange',
+  allowedChannels: ['trade-hv'],
 
   description: 'Echange de pokemon avec un autre joueur',
 

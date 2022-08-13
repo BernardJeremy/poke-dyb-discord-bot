@@ -9,6 +9,7 @@ const {
 
 export default {
   name: '!craft',
+  allowedChannels: ['invoc-craft-dez'],
 
   description: 'Craft le pokemon demandée',
 

@@ -5,6 +5,7 @@ import pokedex from '../data/pokedex.json';
 export default {
   name: '!pokemon',
   alias: '!info',
+  allowedChannels: ['pokemon-info'],
 
   description: 'Affiche les infos du pokemon demandé',
 

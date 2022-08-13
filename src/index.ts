@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
-import { Client, GatewayIntentBits } from 'discord.js';
+import { ChannelType, Client, GatewayIntentBits } from 'discord.js';
 
 import expressApp from './libs/express';
 import setupHttpRoutes from './controllers/routes';
@@ -56,8 +56,19 @@ const main = async () => {
       usersModel.createUser(messageContext.author);
     }
 
-    if (!commands[messageContext.command]) {
+    const currentCommandObj: Command = commands[messageContext.command]
+    if (!currentCommandObj) {
       return;
+    }
+
+    if (message.channel.type === ChannelType.GuildText && !user?.isAdmin) {
+      if (
+        currentCommandObj.allowedChannels
+        && !currentCommandObj.allowedChannels.includes(message.channel.name)
+      ) {
+        message.reply('Cette commande ne peut pas être exécutée dans ce channel');
+        return;
+      }
     }
 
     try {

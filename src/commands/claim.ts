@@ -9,6 +9,7 @@ const {
 export default {
   name: '!claim',
   alias: '!cadeau',
+  allowedChannels: ['journa-bonus-claim'],
 
   description: 'Récupère les récompenses exceptionnelles',
 

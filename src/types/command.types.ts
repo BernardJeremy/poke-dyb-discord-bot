@@ -10,5 +10,6 @@ export default interface Command {
   alias?: string,
   format?: string
   noHelp?: boolean
+  allowedChannels?: string[]
   execute: ExecuteFunc
 }

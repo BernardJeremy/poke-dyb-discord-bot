@@ -11,6 +11,7 @@ const {
 export default {
   name: '!bonus',
   alias: '!weekly',
+  allowedChannels: ['journa-bonus-claim'],
 
   description: 'Récupère la récompense bonus',
 

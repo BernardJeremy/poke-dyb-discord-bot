@@ -5,6 +5,7 @@ import buildCard from '../messages/cardBuilder';
 
 import towerData from '../data/tower.json';
 import { getRandomPokemonWithRarity } from '../tools/pokemon';
+import towerStatusBuilder from '../messages/towerStatusBuilder';
 
 const {
   TOWER_REP_GAIN_TRY,
@@ -25,6 +26,18 @@ export default {
 
     if (!user) {
       message.reply('User not found');
+      return;
+    }
+
+    if (messageContext.args && messageContext.args.length > 0) {
+      const arg = messageContext.args[0];
+
+      if (arg !== 'statut' && arg !== 'status') {
+        message.reply('format : !tour statut');
+        return;
+      }
+
+      message.channel.send(towerStatusBuilder());
       return;
     }
 

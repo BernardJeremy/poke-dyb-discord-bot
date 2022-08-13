@@ -13,6 +13,7 @@ import gdoc from './gdoc';
 import claim from './claim';
 import sendgift from './sendgift';
 import tower from './tower';
+import stats from './stats';
 
 const commands = [
   pokemon,
@@ -29,6 +30,7 @@ const commands = [
   admin,
   sendgift,
   gdoc,
+  stats,
 ];
 
 commands.push(help(commands));

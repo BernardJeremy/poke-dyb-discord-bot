@@ -22,7 +22,7 @@ export default {
       message.reply('User not found');
       return;
     }
-    
+
     if (!user.isAdmin) {
       message.reply('Your princess is in another castle');
       return;

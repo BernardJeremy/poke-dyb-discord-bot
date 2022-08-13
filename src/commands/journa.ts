@@ -22,7 +22,7 @@ export default {
       message.reply('User not found');
       return;
     }
-    
+
     if (!user.lastDailyDate || wasBeforeDailyReset(user.lastDailyDate)) {
       user = usersModel.updateUser({
         ...user,

@@ -21,21 +21,21 @@ export default {
   async execute(message: Message, messageContext: MessageContext) {
     const user = usersModel.getOneUser(messageContext.author.id);
     let pokemonObj = null;
-    
+
     if (!user) {
       message.reply('User not found');
       return;
     }
-    
+
     if (!user.tower) {
       user.tower = usersModel.getInitTowerValue();
     }
-    
+
     if (user.tower.maxClearFloor === towerData.floors.length) {
       message.reply('Tu as déjà gravi le dernier étage de la tour cette semaine. Reset à midi le lundi.');
       return;
     }
-    
+
     if (user.tower.ticketsTotal > 0) {
       const floorData = towerData.floors[user.tower.currentFloor - 1];
       const currentReputationData = towerData.reputations.find((reputation) => (
@@ -65,7 +65,9 @@ export default {
 
         const randomValue = getRandomInt(0, 100);
 
-        const targetRarity = rarityList.find((rarity) => randomValue <= rarity.randMaxValue) || { min: 0, max: 100};
+        const targetRarity = rarityList.find(
+          (rarity) => randomValue <= rarity.randMaxValue,
+        ) || { min: 0, max: 100 };
 
         pokemonObj = getRandomPokemonWithRarity(targetRarity.min, targetRarity.max);
         user.pokedex.push(pokemonObj.id);

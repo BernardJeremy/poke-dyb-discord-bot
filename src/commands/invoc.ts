@@ -21,7 +21,7 @@ export default {
       message.reply('User not found');
       return;
     }
-    
+
     if (user.gold < GOLD_COST_INVOC) {
       message.reply(`Tu n'as pas assez de ${COIN_EMOJI_ID} pour invoquer, il te faut ${GOLD_COST_INVOC} ${COIN_EMOJI_ID}`);
       return;

@@ -11,7 +11,7 @@ export default {
 
   async execute(message: Message, messageContext: MessageContext) {
     const user = usersModel.getOneUser(messageContext.author.id);
-    
+
     if (!user) {
       message.reply('User not found');
       return;
@@ -23,12 +23,12 @@ export default {
     }
 
     const tradedUser = usersModel.getOneUser(messageContext.mentions[0].id);
-    
+
     if (!tradedUser) {
       message.reply('Traded user not found');
       return;
     }
-    
+
     const targetTrade = tradesModel.getOneTradeByOwnerId(tradedUser.id);
 
     if (!tradedUser) {

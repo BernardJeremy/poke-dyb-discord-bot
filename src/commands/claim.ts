@@ -1,4 +1,3 @@
-
 import { Message } from 'discord.js';
 import * as usersModel from '../models/users';
 

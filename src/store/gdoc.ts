@@ -1,7 +1,7 @@
 import pokedex from '../data/pokedex.json';
 import { countUnique } from '../tools/utils';
 import { getCleanUserPokedexArray } from '../tools/pokemon';
-import { writeToGoogleSheet } from '../libs/googlesheet'
+import { writeToGoogleSheet } from '../libs/googlesheet';
 
 const {
   POKEDEX_SHEET_NAME,

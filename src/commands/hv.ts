@@ -1,4 +1,4 @@
-;import { Message } from 'discord.js';
+import { Message } from 'discord.js';
 import * as usersModel from '../models/users';
 import * as tradesModel from '../models/trades';
 

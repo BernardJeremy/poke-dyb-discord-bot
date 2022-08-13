@@ -1,6 +1,6 @@
+import { Message } from 'discord.js';
 import * as usersModel from '../models/users';
 import pokedex from '../data/pokedex.json';
-import { Message } from 'discord.js';
 import { removePokemonFromList } from '../tools/pokemon';
 
 const {

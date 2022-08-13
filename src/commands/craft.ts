@@ -38,7 +38,7 @@ export default {
     }
 
     let user = usersModel.getOneUser(messageContext.author.id);
-    
+
     if (!user) {
       message.reply('User not found');
       return;

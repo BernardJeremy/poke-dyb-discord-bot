@@ -1,6 +1,7 @@
 interface UserClaimData {
   gold: number,
   dust: number,
+  tickets: number,
 }
 
 interface UserTowerData {

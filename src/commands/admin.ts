@@ -8,7 +8,7 @@ const {
   DUST_EMOJI_ID,
 } = process.env;
 
-const FORMAT_MSG = 'format : `!admin [@someone] [pokemon|gold|dust] [id|value]`';
+const FORMAT_MSG = 'format : `!admin [@someone] [pokemon|gold|dust|tickets] [id|value]`';
 
 export default {
   name: '!admin',
@@ -45,8 +45,8 @@ export default {
     const subcommand = messageContext.args[1];
     let param = messageContext.args[2];
 
-    if (!['pokemon', 'gold', 'dust'].includes(subcommand)) {
-      message.reply('Unknwown subcommand : `pokemon|gold|dust`');
+    if (!['pokemon', 'gold', 'dust', 'tickets'].includes(subcommand)) {
+      message.reply('Unknwown subcommand : `pokemon|gold|dust|tickets`');
       return;
     }
 
@@ -110,6 +110,21 @@ export default {
         dust: targetUser.dust + wantedNbr,
       });
       message.reply(`Ce joueur dispose maintenant de ${updatedTargetUser.dust} ${DUST_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${DUST_EMOJI_ID})`);
+    }
+
+    if (subcommand === 'tickets') {
+      const wantedNbr = parseInt(param, 10);
+
+      if (Number.isNaN(wantedNbr)) {
+        message.reply('Param number not recognized');
+        return;
+      }
+
+      const updatedTargetUser = usersModel.updateUser({
+        ...targetUser,
+        tickets: targetUser.tickets + wantedNbr,
+      });
+      message.reply(`Ce joueur dispose maintenant de ${updatedTargetUser.tickets} 🎫 (${wantedNbr > 0 ? '+' : ''}${wantedNbr} 🎫)`);
     }
   },
 };

@@ -6,7 +6,7 @@ const {
   DUST_EMOJI_ID,
 } = process.env;
 
-const FORMAT_MSG = 'format : `!sendgift [@someone] [gold|dust] [value]`';
+const FORMAT_MSG = 'format : `!sendgift [@someone] [gold|dust|tickets] [value]`';
 
 export default {
   name: '!sendgift',
@@ -45,18 +45,11 @@ export default {
       return;
     }
 
-    if (!targetUser.claims) {
-      targetUser.claims = {
-        gold: 0,
-        dust: 0,
-      };
-    }
-
     const subcommand = messageContext.args[1];
     const param = messageContext.args[2];
 
-    if (!['gold', 'dust'].includes(subcommand)) {
-      message.reply('Unknwown subcommand : `gold|dust`');
+    if (!['gold', 'dust', 'tickets'].includes(subcommand)) {
+      message.reply('Unknwown subcommand : `gold|dust|tickets`');
       return;
     }
 
@@ -66,13 +59,6 @@ export default {
       if (Number.isNaN(wantedNbr)) {
         message.reply('Param number not recognized');
         return;
-      }
-
-      if (!targetUser.claims) {
-        targetUser.claims = {
-          gold: 0,
-          dust: 0,
-        };
       }
 
       const updatedUser = usersModel.updateUser({
@@ -103,6 +89,25 @@ export default {
       });
 
       message.reply(`Ce joueur dispose maintenant d'une récompense de ${updatedUser.claims.dust} ${DUST_EMOJI_ID} (\`!claim\` pour les récupérer)`);
+    }
+
+    if (subcommand === 'tickets') {
+      const wantedNbr = parseInt(param, 10);
+
+      if (Number.isNaN(wantedNbr)) {
+        message.reply('Param number not recognized');
+        return;
+      }
+
+      const updatedUser = usersModel.updateUser({
+        ...targetUser,
+        claims: {
+          ...targetUser.claims,
+          tickets: targetUser.claims.tickets + wantedNbr,
+        },
+      });
+
+      message.reply(`Ce joueur dispose maintenant d'une récompense de ${updatedUser.claims.tickets} 🎫 (\`!claim\` pour les récupérer)`);
     }
   },
 };

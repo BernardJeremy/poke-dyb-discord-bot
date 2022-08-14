@@ -4,7 +4,7 @@ import gdocStore from '../store/gdoc';
 const NBR_DAILY_TO_ENABLE_BONUS = 7;
 
 const {
-  TOWER_TICKETS_EACH_DAY,
+  TOWER_ENTRIES_EACH_DAY,
 } = process.env;
 
 const getAllUsers = () => {
@@ -23,7 +23,7 @@ const getOneUser = (id: string) => {
 
 const getInitTowerValue = () => (
   {
-    ticketsTotal: parseInt(TOWER_TICKETS_EACH_DAY, 10),
+    ticketsTotal: parseInt(TOWER_ENTRIES_EACH_DAY, 10),
     currentFloor: 1,
     maxClearFloor: 0,
     reputation: 0,
@@ -43,6 +43,7 @@ const createUser = (userAccountData: DiscordUserData) => {
     claims: {
       gold: 0,
       dust: 0,
+      tickets: 0,
     },
     tower: getInitTowerValue(),
     isAdmin: false,
@@ -88,6 +89,7 @@ const hasClaims = (userData: User) => {
   return (
     userData.claims.gold > 0
     || userData.claims.dust > 0
+    || userData.claims.tickets > 0
   );
 };
 

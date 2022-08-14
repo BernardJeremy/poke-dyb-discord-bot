@@ -17,6 +17,7 @@ const buildProfil = ({
   pokedex,
   gold,
   dust,
+  tickets,
   tower,
 }: User) => {
   const exampleEmbed = new EmbedBuilder()
@@ -34,8 +35,9 @@ const buildProfil = ({
 
   exampleEmbed.addFields(
     { name: 'Pokédollars', value: `${gold} ${COIN_EMOJI_ID}`, inline: true },
-    { name: 'Poussière', value: `${dust} ${DUST_EMOJI_ID}`, inline: true },
-    { name: 'Pokedex', value: `${countUnique(pokedex)}/${pokedexList.length}`, inline: true },
+    { name: 'Poussières', value: `${dust} ${DUST_EMOJI_ID}`, inline: true },
+    { name: 'Tickets', value: `${tickets} 🎫`, inline: true },
+    { name: 'Pokedex', value: `${countUnique(pokedex)}/${pokedexList.length}` },
     { name: 'Tour Pokemon', value: `[Étage ${tower.currentFloor}] : ${tower.ticketsTotal} tentative(s) restante(s)`, inline: true },
   );
 

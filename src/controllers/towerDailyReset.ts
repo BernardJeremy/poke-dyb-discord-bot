@@ -1,7 +1,7 @@
 import * as usersModel from '../models/users';
 
 const {
-  TOWER_TICKETS_EACH_DAY,
+  TOWER_ENTRIES_EACH_DAY,
 } = process.env;
 
 export default {
@@ -25,7 +25,7 @@ export default {
           ...user,
           tower: {
             ...user.tower,
-            ticketsTotal: user.tower.ticketsTotal + parseInt(TOWER_TICKETS_EACH_DAY, 10),
+            ticketsTotal: user.tower.ticketsTotal + parseInt(TOWER_ENTRIES_EACH_DAY, 10),
           },
         }, false);
       }

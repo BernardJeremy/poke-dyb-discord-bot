@@ -12,6 +12,7 @@ const {
   TOWER_REP_GAIN_TRY,
   TOWER_REP_GAIN_CLEAR,
   TOWER_REP_GAIN_CLEAR_LAST_FLOOR,
+  TICKETS_WON_ON_FAILED_TOWER,
 } = process.env;
 
 export default {
@@ -86,6 +87,9 @@ export default {
 
       const updatedUser = usersModel.updateUser({
         ...user,
+        tickets: hasClearedFloor
+          ? user.tickets
+          : user.tickets + parseInt(TICKETS_WON_ON_FAILED_TOWER, 10),
         tower: {
           ...user.tower,
           ticketsTotal: user.tower.ticketsTotal - 1,
@@ -105,7 +109,7 @@ export default {
 
       const strReward = `
       **${floorData.name} (${floorData.successRate + clearRateBonus}% de chance d'ascension) - ${updatedUser.tower.ticketsTotal} essai(s) restant(s)**
-      Réputation "Mr Fuji" augmentée de ${reputationGain}
+      Réputation "Mr Fuji" augmentée de ${reputationGain}${!hasClearedFloor ? ` _et ${TICKETS_WON_ON_FAILED_TOWER} 🎫 obtenus_` : ''}
       \`${messageContent}\``;
 
       message.reply(strReward);

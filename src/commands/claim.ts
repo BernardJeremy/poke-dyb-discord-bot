@@ -26,13 +26,15 @@ export default {
         ...user,
         gold: user.gold + user.claims.gold,
         dust: user.dust + user.claims.dust,
+        tickets: user.tickets + user.claims.tickets,
         claims: {
           gold: 0,
           dust: 0,
+          tickets: 0,
         },
       });
 
-      const strReward = `${user.claims.gold} ${COIN_EMOJI_ID} et ${user.claims.dust} ${DUST_EMOJI_ID}`;
+      const strReward = `${user.claims.gold} ${COIN_EMOJI_ID}, ${user.claims.dust} ${DUST_EMOJI_ID} et ${user.claims.tickets} 🎫`;
       const strRewardBase = `Tu as récupéré ta récompense exceptionnelle de ${strReward} !`;
 
       message.reply(strRewardBase);

@@ -1,9 +1,5 @@
 import * as usersModel from '../models/users';
 
-const {
-  TOWER_TICKETS_EACH_DAY,
-} = process.env;
-
 export default {
   name: 'Tower weekly reset',
 
@@ -25,7 +21,7 @@ export default {
           ...user,
           tower: {
             ...user.tower,
-            ticketsTotal: parseInt(TOWER_TICKETS_EACH_DAY, 10),
+            ticketsTotal: 0,
             currentFloor: 1,
             maxClearFloor: 0,
           },

@@ -56,7 +56,7 @@ const main = async () => {
       usersModel.createUser(messageContext.author);
     }
 
-    const currentCommandObj: Command = commands[messageContext.command]
+    const currentCommandObj: Command = commands[messageContext.command];
     if (!currentCommandObj) {
       return;
     }

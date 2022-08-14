@@ -18,6 +18,7 @@ interface User {
   lastDailyDate: Date | null,
   gold: number,
   dust: number,
+  tickets: number,
   nbrDailyDone: number,
   nbrBonusDone: number,
   claims: UserClaimData,

@@ -37,6 +37,7 @@ const createUser = (userAccountData: DiscordUserData) => {
     lastDailyDate: null,
     gold: 2000,
     dust: 0,
+    tickets: 0,
     nbrDailyDone: 0,
     nbrBonusDone: 0,
     claims: {

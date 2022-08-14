@@ -11,6 +11,8 @@ import setupHttpRoutes from './controllers/routes';
 import * as usersModel from './models/users';
 import botCommands from './commands';
 import messageParser from './messages/messageParser';
+import updateDataForUser from './store/dbUpdater';
+
 import Command from './types/command.types';
 
 const main = async () => {
@@ -51,9 +53,11 @@ const main = async () => {
 
     const messageContext = messageParser(message);
 
-    const user = usersModel.getOneUser(messageContext.author.id);
+    let user = usersModel.getOneUser(messageContext.author.id);
     if (!user) {
       usersModel.createUser(messageContext.author);
+    } else {
+      user = updateDataForUser(user);
     }
 
     const currentCommandObj: Command = commands[messageContext.command];

@@ -42,10 +42,6 @@ export default {
       return;
     }
 
-    if (!user.tower) {
-      user.tower = usersModel.getInitTowerValue();
-    }
-
     if (user.tower.maxClearFloor === towerData.floors.length) {
       message.reply('Tu as déjà gravi le dernier étage de la tour cette semaine. Reset à midi le lundi.');
       return;

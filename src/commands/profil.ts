@@ -6,7 +6,7 @@ export default {
   name: '!profil',
   alias: '!profile',
 
-  description: 'Affiche le profil de vous ou du joueur ciblé',
+  description: 'Affiche votre profil ou celui du joueur ciblé',
 
   async execute(message: Message, messageContext: MessageContext) {
     const user = usersModel.getOneUser(

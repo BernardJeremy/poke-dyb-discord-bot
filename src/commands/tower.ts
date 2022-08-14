@@ -4,6 +4,7 @@ import { getRandomInt } from '../tools/utils';
 import buildCard from '../messages/cardBuilder';
 
 import towerData from '../data/tower.json';
+import messagesList from '../data/successFailureMessages.json';
 import { getRandomPokemonWithRarity } from '../tools/pokemon';
 import towerStatusBuilder from '../messages/towerStatusBuilder';
 
@@ -102,10 +103,14 @@ export default {
         },
       });
 
+      const messageContent = hasClearedFloor
+        ? messagesList.success[Math.floor(Math.random() * messagesList.success.length)]
+        : messagesList.failure[Math.floor(Math.random() * messagesList.failure.length)];
+
       const strReward = `
       **${floorData.name} (${floorData.successRate + clearRateBonus}% de chance d'ascension) - ${updatedUser.tower.ticketsTotal} essai(s) restant(s)**
       Réputation "Mr Fuji" augmentée de ${reputationGain}
-      \`${hasClearedFloor ? 'Félicitation, tu as réussi à passer cet étage !' : 'Dommage, tu reste bloqué à cet étage pour l\'instant.'}\``;
+      \`${messageContent}\``;
 
       message.reply(strReward);
       if (hasClearedFloor && pokemonObj) {

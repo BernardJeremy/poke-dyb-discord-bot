@@ -15,10 +15,21 @@ const buildTowerStatus = () => {
 
   const allUsers = userModel.getAllUsers();
 
+  exampleEmbed.addFields(
+    {
+      name: 'Terminé',
+      value: allUsers.filter(
+        (user) => user.pokedex.length > 0 && user.tower.maxClearFloor === towerData.floors.length,
+      ).map((user) => user.nickname || user.username).join(' / ') || ' / ',
+    },
+  );
+
   for (let i = towerData.floors.length - 1; i >= 0; i -= 1) {
     const currentFloor = towerData.floors[i];
     const playerOnCurrentFloorStr = allUsers.filter(
-      (user) => user.pokedex.length > 0 && user.tower.currentFloor === currentFloor.id,
+      (user) => user.pokedex.length > 0
+        && user.tower.currentFloor === currentFloor.id
+        && user.tower.maxClearFloor < towerData.floors.length,
     ).map((user) => user.nickname || user.username).join(' / ') || ' / ';
 
     exampleEmbed.addFields(

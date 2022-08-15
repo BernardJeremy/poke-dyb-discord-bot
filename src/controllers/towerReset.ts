@@ -1,13 +1,19 @@
 import * as usersModel from '../models/users';
 
+const {
+  TOWER_ENTRIES_EACH_DAY,
+} = process.env;
+
 export default {
-  name: 'Tower weekly reset',
+  name: 'Tower daily reset',
 
   description: 'Perform user towers data reset daily',
 
   async execute() {
     const allUsers = usersModel.getAllUsers();
     const users: User[] = JSON.parse(JSON.stringify(allUsers));
+    const now = new Date();
+    const isWeeklyReset = now.getDay() === 1;
 
     for (let i = 0; i < users.length; i += 1) {
       const user = users[i];
@@ -21,9 +27,11 @@ export default {
           ...user,
           tower: {
             ...user.tower,
-            ticketsTotal: 0,
-            currentFloor: 1,
-            maxClearFloor: 0,
+            ticketsTotal: isWeeklyReset
+              ? 0
+              : user.tower.ticketsTotal + parseInt(TOWER_ENTRIES_EACH_DAY, 10),
+            currentFloor: isWeeklyReset ? 1 : user.tower.currentFloor,
+            maxClearFloor: isWeeklyReset ? 0 : user.tower.maxClearFloor,
           },
         }, false);
       }

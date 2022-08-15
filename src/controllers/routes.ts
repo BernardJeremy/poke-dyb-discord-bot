@@ -1,19 +1,13 @@
 import { Application } from 'express';
-import towerDailyResetController from './towerDailyReset';
-import towerWeeklyResetController from './towerWeeklyReset';
+import towerResetController from './towerReset';
 
 const {
   HTTP_ROUTE_SUFFIX,
 } = process.env;
 
 const setupHttpRoutes = (app: Application) => {
-  app.get(`/tower/daily/${HTTP_ROUTE_SUFFIX}`, (req, res) => {
-    towerDailyResetController.execute();
-    res.send('OK');
-  });
-
-  app.get(`/tower/weekly/${HTTP_ROUTE_SUFFIX}`, (req, res) => {
-    towerWeeklyResetController.execute();
+  app.get(`/tower/reset/${HTTP_ROUTE_SUFFIX}`, (req, res) => {
+    towerResetController.execute();
     res.send('OK');
   });
 

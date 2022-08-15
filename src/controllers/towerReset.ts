@@ -26,9 +26,7 @@ export default {
         ...user,
         tower: {
           ...user.tower,
-          ticketsTotal: isWeeklyReset
-            ? parseInt(TOWER_ENTRIES_EACH_DAY, 10)
-            : user.tower.ticketsTotal + parseInt(TOWER_ENTRIES_EACH_DAY, 10),
+          ticketsTotal: user.tower.ticketsTotal + parseInt(TOWER_ENTRIES_EACH_DAY, 10),
           currentFloor: isWeeklyReset ? 1 : user.tower.currentFloor,
           maxClearFloor: isWeeklyReset ? 0 : user.tower.maxClearFloor,
         },

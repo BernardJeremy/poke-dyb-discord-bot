@@ -21,110 +21,123 @@ export default {
     const user = usersModel.getOneUser(messageContext.author.id);
 
     if (!user?.isAdmin) {
-      message.reply('Bien tenté mais non');
-      return;
-    }
-
-    if (messageContext.mentions.length < 1) {
-      message.reply(FORMAT_MSG);
+      message.channel.send('Bien tenté mais non');
       return;
     }
 
     if (messageContext.args.length < 3) {
-      message.reply(FORMAT_MSG);
+      message.channel.send(FORMAT_MSG);
       return;
     }
 
-    const targetUser = usersModel.getOneUser(messageContext.mentions[0].id);
-
-    if (!targetUser) {
-      message.reply('Joueur ciblé non trouvé');
+    if (messageContext.mentions.length < 1 && messageContext.args[0] !== 'all') {
+      message.channel.send(FORMAT_MSG);
       return;
     }
 
     const subcommand = messageContext.args[1];
-    let param = messageContext.args[2];
+    const param = messageContext.args[2];
 
     if (!['pokemon', 'gold', 'dust', 'tickets'].includes(subcommand)) {
-      message.reply('Unknwown subcommand : `pokemon|gold|dust|tickets`');
+      message.channel.send('Unknwown subcommand : `pokemon|gold|dust|tickets`');
       return;
     }
 
-    if (subcommand === 'pokemon') {
-      let toRemove = false;
-      if (param[0] === '-') {
-        toRemove = true;
-        param = param.substring(1);
-      }
+    let targetUserList: User[] = [];
+    if (messageContext.mentions.length < 1 && messageContext.args[0] === 'all') {
+      targetUserList = usersModel.getAllUsers();
+    } else {
+      const targetUser = usersModel.getOneUser(messageContext.mentions[0].id);
 
-      const pokemonNbr = parseInt(param, 10);
-
-      if (Number.isNaN(pokemonNbr)) {
-        message.reply('Pokemon ID not recognized');
+      if (!targetUser) {
+        message.channel.send('Joueur ciblé non trouvé');
         return;
       }
 
-      const pokemonObj = pokedex.at(pokemonNbr - 1);
-
-      if (!pokemonObj) {
-        message.reply('Pokemon not found');
-        return;
-      }
-
-      if (toRemove) {
-        targetUser.pokedex = removePokemonFromList(targetUser.pokedex, pokemonNbr, 1);
-      } else {
-        targetUser.pokedex.push(pokemonObj.id);
-      }
-
-      usersModel.updateUser(targetUser);
-
-      message.reply(`Un exemplaire de **[#${pokemonObj.id}] ${pokemonObj.name}** a été ${toRemove ? 'supprimé de' : 'ajouté à'} sa collection`);
+      targetUserList = [targetUser];
     }
 
-    if (subcommand === 'gold') {
-      const wantedNbr = parseInt(param, 10);
+    targetUserList.forEach((currentUser) => {
+      if (subcommand === 'pokemon') {
+        let toRemove = false;
+        let pokemonNbrParam = param;
 
-      if (Number.isNaN(wantedNbr)) {
-        message.reply('Param number not recognized');
-        return;
+        if (param[0] === '-') {
+          toRemove = true;
+          pokemonNbrParam = param.substring(1);
+        }
+
+        const pokemonNbr = parseInt(pokemonNbrParam, 10);
+
+        if (Number.isNaN(pokemonNbr)) {
+          message.channel.send('Pokemon ID not recognized');
+          return;
+        }
+
+        const pokemonObj = pokedex.at(pokemonNbr - 1);
+
+        if (!pokemonObj) {
+          message.channel.send('Pokemon not found');
+          return;
+        }
+
+        usersModel.updateUser({
+          ...currentUser,
+          pokedex: toRemove
+            ? removePokemonFromList(currentUser.pokedex, pokemonNbr, 1)
+            : [
+              ...currentUser.pokedex,
+              pokemonObj.id,
+            ],
+        });
+
+        message.channel.send(`Un exemplaire de **[#${pokemonObj.id}] ${pokemonObj.name}** a été ${toRemove ? 'supprimé de' : 'ajouté à'} la collection de ${currentUser.username}`);
       }
 
-      const updatedTargetUser = usersModel.updateUser({
-        ...targetUser,
-        gold: targetUser.gold + wantedNbr,
-      });
-      message.reply(`Ce joueur dispose maintenant de ${updatedTargetUser.gold} ${COIN_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${COIN_EMOJI_ID})`);
-    }
+      if (subcommand === 'gold') {
+        const wantedNbr = parseInt(param, 10);
 
-    if (subcommand === 'dust') {
-      const wantedNbr = parseInt(param, 10);
+        if (Number.isNaN(wantedNbr)) {
+          message.channel.send('Param number not recognized');
+          return;
+        }
 
-      if (Number.isNaN(wantedNbr)) {
-        message.reply('Param number not recognized');
-        return;
+        const updatedTargetUser = usersModel.updateUser({
+          ...currentUser,
+          gold: currentUser.gold + wantedNbr,
+        });
+        message.channel.send(`${currentUser.username} dispose maintenant de ${updatedTargetUser.gold} ${COIN_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${COIN_EMOJI_ID})`);
       }
 
-      const updatedTargetUser = usersModel.updateUser({
-        ...targetUser,
-        dust: targetUser.dust + wantedNbr,
-      });
-      message.reply(`Ce joueur dispose maintenant de ${updatedTargetUser.dust} ${DUST_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${DUST_EMOJI_ID})`);
-    }
+      if (subcommand === 'dust') {
+        const wantedNbr = parseInt(param, 10);
 
-    if (subcommand === 'tickets') {
-      const wantedNbr = parseInt(param, 10);
+        if (Number.isNaN(wantedNbr)) {
+          message.channel.send('Param number not recognized');
+          return;
+        }
 
-      if (Number.isNaN(wantedNbr)) {
-        message.reply('Param number not recognized');
-        return;
+        const updatedTargetUser = usersModel.updateUser({
+          ...currentUser,
+          dust: currentUser.dust + wantedNbr,
+        });
+        message.channel.send(`${currentUser.username} dispose maintenant de ${updatedTargetUser.dust} ${DUST_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${DUST_EMOJI_ID})`);
       }
 
-      const updatedTargetUser = usersModel.updateUser({
-        ...targetUser,
-        tickets: targetUser.tickets + wantedNbr,
-      });
-      message.reply(`Ce joueur dispose maintenant de ${updatedTargetUser.tickets} 🎫 (${wantedNbr > 0 ? '+' : ''}${wantedNbr} 🎫)`);
-    }
+      if (subcommand === 'tickets') {
+        const wantedNbr = parseInt(param, 10);
+
+        if (Number.isNaN(wantedNbr)) {
+          message.channel.send('Param number not recognized');
+          return;
+        }
+
+        const updatedTargetUser = usersModel.updateUser({
+          ...currentUser,
+          tickets: currentUser.tickets + wantedNbr,
+        });
+        message.channel.send(`${currentUser.username} dispose maintenant de ${updatedTargetUser.tickets} 🎫 (${wantedNbr > 0 ? '+' : ''}${wantedNbr} 🎫)`);
+      }
+    });
   },
 };

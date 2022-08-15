@@ -7,6 +7,7 @@ import towerData from '../data/tower.json';
 import messagesList from '../data/successFailureMessages.json';
 import { getRandomPokemonWithRarity } from '../tools/pokemon';
 import towerStatusBuilder from '../messages/towerStatusBuilder';
+import DisplayTypes from '../types/display.enum';
 
 const {
   TOWER_REP_GAIN_TRY,
@@ -114,7 +115,7 @@ export default {
 
       message.reply(strReward);
       if (hasClearedFloor && pokemonObj) {
-        message.channel.send(buildCard(pokemonObj, { catched: true }));
+        message.channel.send(buildCard(pokemonObj, { displayType: DisplayTypes.CaughtPokemon }));
       }
 
       return;

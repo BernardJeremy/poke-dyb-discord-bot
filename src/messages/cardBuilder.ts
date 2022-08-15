@@ -1,7 +1,35 @@
 import { EmbedBuilder, HexColorString } from 'discord.js';
 import * as userModel from '../models/users';
+import DisplayTypes from '../types/display.enum';
 
 const { DUST_EMOJI_ID } = process.env;
+
+const iconByRarity = (rarityLevel: number): string => {
+  if (rarityLevel <= 10) {
+    return 'https://www.pokepedia.fr/images/a/ab/Master_Ball-PGL.png';
+  }
+
+  if (rarityLevel <= 30) {
+    return 'https://www.pokepedia.fr/images/3/36/Hyper_Ball-PGL.png';
+  }
+
+  if (rarityLevel <= 60) {
+    return 'https://www.pokepedia.fr/images/b/bf/Super_Ball-PGL.png';
+  }
+
+  return 'https://www.pokepedia.fr/images/f/fa/Pok%C3%A9_Ball-PGL.png';
+};
+
+const getIconUrl = (displayType: DisplayTypes, rarityLevel: number): string => {
+  switch (displayType) {
+    case DisplayTypes.PokemonInfo:
+      return 'https://www.supersoluce.com/sites/default/files/styles/picto_soluce/interrogation.png';
+    case DisplayTypes.SafariEncounter:
+      return 'https://www.pokepedia.fr/images/6/61/Safari_Ball-PGL.png';
+    default:
+      return iconByRarity(rarityLevel);
+  }
+};
 
 const buildCard = ({
   name,
@@ -10,7 +38,7 @@ const buildCard = ({
   color,
   rarityLevel,
   craftingPrice,
-}: Pokemon, { catched }: { catched: boolean }) => {
+}: Pokemon, { displayType }: { displayType: DisplayTypes }) => {
   const padId = (nbr: number) => String(nbr).padStart(3, '0');
 
   const exampleEmbed = new EmbedBuilder()
@@ -19,9 +47,7 @@ const buildCard = ({
     .setAuthor(
       {
         name: `#${id}`,
-        iconURL: catched
-          ? 'https://icon-library.com/images/pokemon-pokeball-icon/pokemon-pokeball-icon-2.jpg'
-          : 'https://www.supersoluce.com/sites/default/files/styles/picto_soluce/interrogation.png',
+        iconURL: getIconUrl(displayType, rarityLevel),
       },
     )
     .setThumbnail(`https://raw.githubusercontent.com/BernardJeremy/pokemon.json/master/thumbnails/${padId(id)}.png`)
@@ -35,7 +61,7 @@ const buildCard = ({
     { name: 'Craft', value: priceStr, inline: true },
   );
 
-  if (!catched) {
+  if (displayType === DisplayTypes.PokemonInfo) {
     const allUsers = userModel.getAllUsers();
     const playerListWithIt = allUsers.filter((user) => user.pokedex.includes(id));
     const playerListWithoutIt = allUsers.filter(

@@ -1,6 +1,7 @@
 import { Message } from 'discord.js';
 import buildCard from '../messages/cardBuilder';
 import pokedex from '../data/pokedex.json';
+import DisplayTypes from '../types/display.enum';
 
 export default {
   name: '!pokemon',
@@ -29,6 +30,6 @@ export default {
       return;
     }
 
-    message.channel.send(buildCard(pokemonObj, { catched: false }));
+    message.channel.send(buildCard(pokemonObj, { displayType: DisplayTypes.PokemonInfo }));
   },
 };

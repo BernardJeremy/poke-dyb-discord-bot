@@ -2,6 +2,7 @@ import { Message } from 'discord.js';
 import buildCard from '../messages/cardBuilder';
 import pokedex from '../data/pokedex.json';
 import * as usersModel from '../models/users';
+import DisplayTypes from '../types/display.enum';
 
 const {
   DUST_EMOJI_ID,
@@ -57,6 +58,6 @@ export default {
     });
 
     message.reply(`Tu as craft **[#${pokemonObj.id}] ${pokemonObj.name}**, il te reste ${user.dust} ${DUST_EMOJI_ID}`);
-    message.channel.send(buildCard(pokemonObj, { catched: true }));
+    message.channel.send(buildCard(pokemonObj, { displayType: DisplayTypes.CaughtPokemon }));
   },
 };

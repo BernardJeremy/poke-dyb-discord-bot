@@ -39,7 +39,7 @@ const buildCard = ({
     const allUsers = userModel.getAllUsers();
     const playerListWithIt = allUsers.filter((user) => user.pokedex.includes(id));
     const playerListWithoutIt = allUsers.filter(
-      (user) => !user.pokedex.includes(id) && user.pokedex.length > 0,
+      (user) => !user.pokedex.includes(id),
     );
 
     if (playerListWithIt.length > 0) {

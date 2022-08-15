@@ -43,12 +43,14 @@ export default {
     if (subcommand === 'updateAll') {
       const users = usersModel.getAllUsers();
 
+      message.channel.send('Lancement de la mise à jour des sheets de tous les joueurs ...');
+
       const updateAllUsersPromise = users.map(
-        (user) => (user.pokedex.length > 0 ? gdocStore.updatePlayerSheet(user) : Promise.resolve()),
+        (user) => gdocStore.updatePlayerSheet(user),
       );
       await Promise.all(updateAllUsersPromise);
 
-      message.reply('Sheets de tous les joueurs misent à jours');
+      message.reply('Les sheets de tous les joueurs ont été mises à jours');
     }
   },
 };

@@ -18,23 +18,21 @@ export default {
     for (let i = 0; i < users.length; i += 1) {
       const user = users[i];
 
-      if (user.pokedex.length > 0) {
-        if (!user.tower) {
-          user.tower = usersModel.getInitTowerValue();
-        }
-
-        usersModel.updateUser({
-          ...user,
-          tower: {
-            ...user.tower,
-            ticketsTotal: isWeeklyReset
-              ? 0
-              : user.tower.ticketsTotal + parseInt(TOWER_ENTRIES_EACH_DAY, 10),
-            currentFloor: isWeeklyReset ? 1 : user.tower.currentFloor,
-            maxClearFloor: isWeeklyReset ? 0 : user.tower.maxClearFloor,
-          },
-        }, false);
+      if (!user.tower) {
+        user.tower = usersModel.getInitTowerValue();
       }
+
+      usersModel.updateUser({
+        ...user,
+        tower: {
+          ...user.tower,
+          ticketsTotal: isWeeklyReset
+            ? 0
+            : user.tower.ticketsTotal + parseInt(TOWER_ENTRIES_EACH_DAY, 10),
+          currentFloor: isWeeklyReset ? 1 : user.tower.currentFloor,
+          maxClearFloor: isWeeklyReset ? 0 : user.tower.maxClearFloor,
+        },
+      }, false);
     }
   },
 };

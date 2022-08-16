@@ -8,9 +8,7 @@ export default {
 
   description: 'Affiche les stats globales',
 
-  async execute(message: Message, messageContext: MessageContext) {
-    const user = usersModel.getOneUser(messageContext.author.id);
-
+  async execute(message: Message) {
     message.channel.send(statsBuilder());
   },
 };

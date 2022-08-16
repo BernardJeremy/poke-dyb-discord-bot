@@ -22,6 +22,9 @@ const getPokedexStatByUsers = (usersList: User[]): UserStats[] => {
           currentPokemon,
         ): number => totalCost + currentPokemon.craftingPrice, 0),
         totalCostPokedex,
+        gold: currentUser.gold,
+        dust: currentUser.dust,
+        tickets: currentUser.tickets || 0,
       },
     ];
   }, []);

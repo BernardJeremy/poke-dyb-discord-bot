@@ -3,4 +3,7 @@ interface UserStats {
   nbrPokemon: number
   totalCostUserPokemon: number
   totalCostPokedex: number
+  gold: number
+  dust: number
+  tickets: number
 }

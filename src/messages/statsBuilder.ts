@@ -4,12 +4,13 @@ import { getPokedexStatByUsers } from '../tools/stats';
 import completePokedex from '../data/pokedex.json';
 
 const {
+  COIN_EMOJI_ID,
   DUST_EMOJI_ID,
 } = process.env;
 
 const buildStats = () => {
   const exampleEmbed = new EmbedBuilder()
-    .setTitle('Statistiques Pokedex')
+    .setTitle('Pokedex & Inventaire')
     .setAuthor(
       {
         name: 'PokeDyB Bot',
@@ -21,7 +22,7 @@ const buildStats = () => {
 
   allUsersStats.sort((a, b) => (a.nbrPokemon > b.nbrPokemon ? -1 : 1)).forEach((userStat) => {
     exampleEmbed.addFields(
-      { name: userStat.name, value: (`[${userStat.nbrPokemon}/${completePokedex.length}] : ${userStat.totalCostUserPokemon} ${DUST_EMOJI_ID}`) },
+      { name: userStat.name, value: (`[${userStat.nbrPokemon}/${completePokedex.length} : ${userStat.totalCostUserPokemon} ${DUST_EMOJI_ID}] / ${userStat.gold} ${COIN_EMOJI_ID} / ${userStat.dust} ${DUST_EMOJI_ID} / ${userStat.tickets} 🎫`) },
     );
   });
 

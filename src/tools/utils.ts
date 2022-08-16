@@ -7,9 +7,13 @@ extend(isoWeek);
 extend(utc);
 extend(timezone);
 
-const getDateTimeFormat = () => 'DD/MM/YYYY';
+const getDateTimeFormat = () => 'DD/MM/YYYY HH:mm';
 
-const getTodayDateFormated = () => dayjs().format(getDateTimeFormat());
+const getDateFormat = () => 'DD/MM/YYYY';
+
+const getTodayDateFormated = () => dayjs().tz('Europe/Paris').format(getDateFormat());
+
+const getNowDateTimeFormated = () => dayjs().tz('Europe/Paris').format(getDateTimeFormat());
 
 const wasBeforeDailyReset = (lastQuestDate: Date) => {
   const lastQuestDateTime = dayjs(lastQuestDate).tz('Europe/Paris');
@@ -25,7 +29,9 @@ const getRandomInt = (min: number, max: number) => Math.floor(
 
 export {
   getDateTimeFormat,
+  getDateFormat,
   getTodayDateFormated,
+  getNowDateTimeFormated,
   wasBeforeDailyReset,
   countUnique,
   getRandomInt,

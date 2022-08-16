@@ -1,4 +1,5 @@
 import completePokedex from '../data/pokedex.json';
+import { UserStats } from '../types/stats.types';
 import { getCleanUserPokedexArray } from './pokemon';
 
 const countDustCostOfAllPokedex = () => completePokedex.reduce((
@@ -25,6 +26,7 @@ const getPokedexStatByUsers = (usersList: User[]): UserStats[] => {
         gold: currentUser.gold,
         dust: currentUser.dust,
         tickets: currentUser.tickets || 0,
+        towerTryRemaining: currentUser.tower.ticketsTotal,
       },
     ];
   }, []);

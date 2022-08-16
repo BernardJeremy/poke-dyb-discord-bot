@@ -42,7 +42,12 @@ const buildCard = ({
 }: Pokemon, {
   displayType,
   safariEncounterData,
-}: { displayType: DisplayTypes, safariEncounterData?: SafariEncounterData }) => {
+  content,
+}: {
+  displayType: DisplayTypes,
+  safariEncounterData?: SafariEncounterData,
+  content?: string,
+}) => {
   const padId = (nbr: number) => String(nbr).padStart(3, '0');
 
   const exampleEmbed = new EmbedBuilder()
@@ -112,7 +117,7 @@ const buildCard = ({
     );
   }
 
-  return { embeds: [exampleEmbed] };
+  return { content: content || '', embeds: [exampleEmbed] };
 };
 
 export default buildCard;

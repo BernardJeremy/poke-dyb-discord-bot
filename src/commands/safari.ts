@@ -44,16 +44,21 @@ export default {
       parseInt(SAFARI_POKEMON_MIN_RARITY, 10),
       parseInt(SAFARI_POKEMON_MAX_RARITY, 10),
     );
+
     const safariEncounterData: SafariEncounterData = {
       ownerId: messageContext.author.id,
       pokemon: pokemonObj,
       ballRemaining: parseInt(SAFARI_STARTING_BALL_NBR, 10),
       captureRate: parseInt(SAFARI_STARTING_CATCH_RATE, 10),
       escapeRate: parseInt(SAFARI_STARTING_ESCAPE_RATE, 10),
-      statusText: `[#${pokemonObj.id}] ${pokemonObj.name} vous regarde attentivement`,
+      statusText: `[#${pokemonObj.id}] ${pokemonObj.name} vous regarde attentivement.`,
       ongoing: true,
       hasBeenCaught: false,
     };
+
+    const safariEncounterMessage = await message.reply(buildSafari(safariEncounterData));
+
+    safariEncounterData.safariEncounterMessageId = safariEncounterMessage.id;
 
     usersModel.updateUser({
       ...user,
@@ -61,7 +66,5 @@ export default {
     });
 
     safariesModel.createSafari(safariEncounterData);
-
-    message.reply(buildSafari(safariEncounterData));
   },
 };

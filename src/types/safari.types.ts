@@ -7,6 +7,7 @@ export enum SafariActionTypes {
 
 export interface SafariEncounterData {
   ownerId: string,
+  safariEncounterMessageId?: string,
   pokemon: Pokemon,
   ballRemaining: number,
   captureRate: number,

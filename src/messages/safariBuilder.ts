@@ -44,7 +44,6 @@ const buildSafari = (safariEncounterData: SafariEncounterData) => {
   }
 
   return {
-    content: `**${safariEncounterData.statusText}**`,
     components: [buttons],
     ...buildCard(
       safariEncounterData.pokemon,
@@ -53,6 +52,7 @@ const buildSafari = (safariEncounterData: SafariEncounterData) => {
         safariEncounterData,
       },
     ),
+    content: `**${safariEncounterData.statusText}**`,
   };
 };
 

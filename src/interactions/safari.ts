@@ -107,7 +107,10 @@ const handleSafariButtons = (
 
   const currentUserSafari = safariesModel.getOneSafariByOwnerId(user.id);
 
-  if (!currentUserSafari || !user) {
+  if (
+    !currentUserSafari
+    || !user
+    || currentUserSafari.safariEncounterMessageId !== interaction.message.id) {
     return;
   }
 
@@ -141,7 +144,10 @@ const handleSafariButtons = (
     interaction.message.channel.send(
       buildCard(
         newSafariEncounterData.pokemon,
-        { displayType: DisplayTypes.CaughtPokemon },
+        {
+          displayType: DisplayTypes.CaughtPokemon,
+          content: `${user.nickname || user.username} à réussi à attraper **[#${newSafariEncounterData.pokemon.id}] ${newSafariEncounterData.pokemon.name}** au Parc Safari !`,
+        },
       ),
     );
   }

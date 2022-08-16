@@ -14,6 +14,7 @@ import messageParser from './messages/messageParser';
 import updateDataForUser from './store/dbUpdater';
 
 import Command from './types/command.types';
+import handleButtonInteractions from './interactions';
 
 const main = async () => {
   setupHttpRoutes(expressApp);
@@ -44,6 +45,10 @@ const main = async () => {
 
   client.once('ready', () => {
     console.info(`Logged in as ${client?.user?.tag}`);
+  });
+
+  client.on('interactionCreate', (interaction) => {
+    handleButtonInteractions(interaction);
   });
 
   client.on('messageCreate', (message) => {

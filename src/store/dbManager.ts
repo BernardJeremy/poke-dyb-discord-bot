@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 
 import JSONdb from 'simple-json-db';
+import { SafariEncounterData } from '../types/safari.types';
 
 const JSON_DATA_FILE_PATH = process.env.JSON_DB_FILE || './data.json';
 
@@ -21,9 +22,9 @@ const updateUsersFromDb = (users: User[]): User[] => {
 };
 
 const getAllTradesFromDb = (): Trade[] => {
-  const users: Trade[] = db.get('trades') || [];
+  const trades: Trade[] = db.get('trades') || [];
 
-  return users;
+  return trades;
 };
 
 const updateTradesFromDb = (trades: Trade[]): Trade[] => {
@@ -32,9 +33,23 @@ const updateTradesFromDb = (trades: Trade[]): Trade[] => {
   return trades;
 };
 
+const getAllSafariesFromDb = (): SafariEncounterData[] => {
+  const safaries: SafariEncounterData[] = db.get('safaries') || [];
+
+  return safaries;
+};
+
+const updateSafariesFromDb = (safaries: SafariEncounterData[]): SafariEncounterData[] => {
+  db.set('safaries', safaries);
+
+  return safaries;
+};
+
 export default {
   getAllUsersFromDb,
   updateUsersFromDb,
   getAllTradesFromDb,
   updateTradesFromDb,
+  getAllSafariesFromDb,
+  updateSafariesFromDb,
 };

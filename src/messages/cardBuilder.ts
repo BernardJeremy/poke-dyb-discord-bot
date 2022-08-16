@@ -1,6 +1,7 @@
 import { EmbedBuilder, HexColorString } from 'discord.js';
 import * as userModel from '../models/users';
 import DisplayTypes from '../types/display.enum';
+import { SafariEncounterData } from '../types/safari.types';
 
 const { DUST_EMOJI_ID } = process.env;
 
@@ -38,7 +39,10 @@ const buildCard = ({
   color,
   rarityLevel,
   craftingPrice,
-}: Pokemon, { displayType }: { displayType: DisplayTypes }) => {
+}: Pokemon, {
+  displayType,
+  safariEncounterData,
+}: { displayType: DisplayTypes, safariEncounterData?: SafariEncounterData }) => {
   const padId = (nbr: number) => String(nbr).padStart(3, '0');
 
   const exampleEmbed = new EmbedBuilder()
@@ -93,6 +97,19 @@ const buildCard = ({
         },
       );
     }
+  }
+
+  if (displayType === DisplayTypes.SafariEncounter && safariEncounterData) {
+    exampleEmbed.addFields(
+      {
+        name: 'Taux de capture',
+        value: `${safariEncounterData.captureRate} %`,
+      },
+      {
+        name: 'Chance de fuite',
+        value: `${safariEncounterData.escapeRate} %`,
+      },
+    );
   }
 
   return { embeds: [exampleEmbed] };

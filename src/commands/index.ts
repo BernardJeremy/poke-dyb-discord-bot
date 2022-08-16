@@ -14,6 +14,7 @@ import claim from './claim';
 import sendgift from './sendgift';
 import tower from './tower';
 import stats from './stats';
+import safari from './safari';
 
 const commands = [
   pokemon,
@@ -31,6 +32,7 @@ const commands = [
   sendgift,
   gdoc,
   stats,
+  safari,
 ];
 
 commands.push(help(commands));

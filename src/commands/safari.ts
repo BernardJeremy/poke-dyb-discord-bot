@@ -51,7 +51,10 @@ export default {
       ballRemaining: parseInt(SAFARI_STARTING_BALL_NBR, 10),
       captureRate: parseInt(SAFARI_STARTING_CATCH_RATE, 10),
       escapeRate: parseInt(SAFARI_STARTING_ESCAPE_RATE, 10),
-      statusText: `[#${pokemonObj.id}] ${pokemonObj.name} vous regarde attentivement.`,
+      statusText: `
+      ${safariCost} 🎫 t'on été prélevés.
+      [#${pokemonObj.id}] ${pokemonObj.name} vous regarde attentivement.
+      Tu ${user.pokedex.includes(pokemonObj.id) ? `disposes de ${user.pokedex.filter((pokemonId) => pokemonId === pokemonObj.id).length} exemplaire(s) de ce Pokemon` : 'ne dispose pas de ce Pokemon'}`,
       ongoing: true,
       hasBeenCaught: false,
     };

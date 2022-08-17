@@ -60,10 +60,9 @@ const main = async () => {
 
     let user = usersModel.getOneUser(messageContext.author.id);
     if (!user) {
-      usersModel.createUser(messageContext.author);
-    } else {
-      user = updateDataForUser(user);
+      return;
     }
+    user = updateDataForUser(user);
 
     const currentCommandObj: Command = commands[messageContext.command];
     if (!currentCommandObj) {

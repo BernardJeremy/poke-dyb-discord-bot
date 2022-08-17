@@ -9,10 +9,16 @@ fs.closeSync(fs.openSync(JSON_DATA_FILE_PATH, 'a'));
 
 const db = new JSONdb(JSON_DATA_FILE_PATH);
 
-const getAllUsersFromDb = (): User[] => {
+const getOneUserByIdFromDB = (id: string): User | null => {
   const users: User[] = db.get('users') || [];
 
-  return users.filter((user) => user.pokedex.length > 0);
+  return users.find((user) => user.id === id) || null;
+};
+
+const getAllUsersFromDb = ({ noFilter }: { noFilter?: boolean } = {}): User[] => {
+  const users: User[] = db.get('users') || [];
+
+  return noFilter ? users : users.filter((user) => user.pokedex.length > 0);
 };
 
 const updateUsersFromDb = (users: User[]): User[] => {
@@ -46,6 +52,7 @@ const updateSafariesFromDb = (safaries: SafariEncounterData[]): SafariEncounterD
 };
 
 export default {
+  getOneUserByIdFromDB,
   getAllUsersFromDb,
   updateUsersFromDb,
   getAllTradesFromDb,

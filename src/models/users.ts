@@ -7,19 +7,13 @@ const {
   TOWER_ENTRIES_EACH_DAY,
 } = process.env;
 
-const getAllUsers = () => {
-  const users = dbManager.getAllUsersFromDb();
+const getAllUsers = ({ noFilter }: { noFilter?: boolean } = {}) => {
+  const users = dbManager.getAllUsersFromDb({ noFilter });
 
   return users;
 };
 
-const getOneUser = (id: string) => {
-  const users = getAllUsers();
-
-  const user = users.find((oneUser) => oneUser.id === id);
-
-  return user || null;
-};
+const getOneUser = (id: string) => dbManager.getOneUserByIdFromDB(id);
 
 const getInitTowerValue = () => (
   {
@@ -30,7 +24,7 @@ const getInitTowerValue = () => (
   });
 
 const createUser = (userAccountData: DiscordUserData) => {
-  const users = getAllUsers();
+  const users = getAllUsers({ noFilter: true });
   const userData = {
     ...userAccountData,
     pokedex: [],
@@ -57,7 +51,7 @@ const createUser = (userAccountData: DiscordUserData) => {
 };
 
 const updateUser = (userData: User, withGdocUpdate = true) => {
-  const users = getAllUsers();
+  const users = getAllUsers({ noFilter: true });
 
   users.splice(users.findIndex((user) => userData.id === user.id), 1);
   users.push(userData);

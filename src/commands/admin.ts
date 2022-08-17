@@ -8,7 +8,7 @@ const {
   DUST_EMOJI_ID,
 } = process.env;
 
-const FORMAT_MSG = 'format : `!admin [@someone] [pokemon|gold|dust|tickets] [id|value]`';
+const FORMAT_MSG = 'format : `!admin [@someone] [pokemon|gold|dust|tickets|create] [id|value]`';
 
 export default {
   name: '!admin',
@@ -25,7 +25,7 @@ export default {
       return;
     }
 
-    if (messageContext.args.length < 3) {
+    if (messageContext.args.length < 2) {
       message.channel.send(FORMAT_MSG);
       return;
     }
@@ -36,10 +36,31 @@ export default {
     }
 
     const subcommand = messageContext.args[1];
+
+    if (!['pokemon', 'gold', 'dust', 'tickets', 'create'].includes(subcommand)) {
+      message.channel.send('Unknwown subcommand : `pokemon|gold|dust|tickets`');
+      return;
+    }
+
+    if (subcommand === 'create' && messageContext.mentions.length >= 1) {
+      if (usersModel.getAllUsers().filter(
+        (oneUser) => oneUser.id === messageContext.mentions[0].id,
+      ).length > 0) {
+        message.channel.send(`${messageContext.mentions[0].username} existe déjà !`);
+
+        return;
+      }
+
+      usersModel.createUser(messageContext.mentions[0]);
+      message.channel.send(`${messageContext.mentions[0].username} a été crée ! Il faut aussi créer l'onglet dans le GDOC`);
+
+      return;
+    }
+
     const param = messageContext.args[2];
 
-    if (!['pokemon', 'gold', 'dust', 'tickets'].includes(subcommand)) {
-      message.channel.send('Unknwown subcommand : `pokemon|gold|dust|tickets`');
+    if (!param) {
+      message.channel.send(FORMAT_MSG);
       return;
     }
 

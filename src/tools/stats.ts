@@ -27,12 +27,61 @@ const getPokedexStatByUsers = (usersList: User[]): UserStats[] => {
         dust: currentUser.dust,
         tickets: currentUser.tickets || 0,
         towerTryRemaining: currentUser.tower.ticketsTotal,
+        invocSuccessPercent: Math.round(
+          (currentUser.ratio.invocSuccess / currentUser.ratio.invoc) * 100,
+        ),
+        towerSuccessPercent: Math.round(
+          (currentUser.ratio.towerSuccess / currentUser.ratio.tower) * 100,
+        ),
+        safariSuccessPercent: Math.round(
+          (currentUser.ratio.safariSuccess / currentUser.ratio.safari) * 100,
+        ),
       },
     ];
   }, []);
 };
 
+const getAverageRatio = (usersList: User[]): UserRatio => {
+  const totalInvoc = usersList.reduce((total, user) => (
+    user.ratio.invoc + total
+  ), 0);
+  const totalInvocSuccess = usersList.reduce((total, user) => (
+    user.ratio.invocSuccess + total
+  ), 0);
+  const totalTower = usersList.reduce((total, user) => (
+    user.ratio.tower + total
+  ), 0);
+  const totalTowerSuccess = usersList.reduce((total, user) => (
+    user.ratio.towerSuccess + total
+  ), 0);
+  const totalSafari = usersList.reduce((total, user) => (
+    user.ratio.safari + total
+  ), 0);
+  const totalSafariSuccess = usersList.reduce((total, user) => (
+    user.ratio.safariSuccess + total
+  ), 0);
+
+  return {
+    invoc: totalInvoc,
+    invocSuccess: totalInvocSuccess,
+    invocSuccessPercentage: Math.round(
+      (totalInvocSuccess / totalInvoc) * 100,
+    ),
+    tower: totalTower,
+    towerSuccess: totalTowerSuccess,
+    towerSuccessPercentage: Math.round(
+      (totalTowerSuccess / totalTower) * 100,
+    ),
+    safari: totalSafari,
+    safariSuccess: totalSafariSuccess,
+    safariSuccessPercentage: Math.round(
+      (totalSafariSuccess / totalSafari) * 100,
+    ),
+  };
+};
+
 export {
   getPokedexStatByUsers,
   countDustCostOfAllPokedex,
+  getAverageRatio,
 };

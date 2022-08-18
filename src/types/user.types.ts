@@ -14,10 +14,13 @@ interface UserTowerData {
 interface UserRatio {
   invoc: number,
   invocSuccess: number,
+  invocSuccessPercentage?: number,
   tower: number,
   towerSuccess: number,
+  towerSuccessPercentage?: number,
   safari: number,
   safariSuccess: number,
+  safariSuccessPercentage?: number,
 }
 
 interface User {

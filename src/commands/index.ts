@@ -15,6 +15,7 @@ import sendgift from './sendgift';
 import tower from './tower';
 import stats from './stats';
 import safari from './safari';
+import ratio from './ratio';
 
 const commands = [
   pokemon,
@@ -33,6 +34,7 @@ const commands = [
   gdoc,
   stats,
   safari,
+  ratio,
 ];
 
 commands.push(help(commands));

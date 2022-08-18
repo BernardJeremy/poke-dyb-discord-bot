@@ -1,6 +1,7 @@
 import { Interaction } from 'discord.js';
 import { SafariActionTypes } from '../types/safari.types';
-import { StatsActionTypes } from '../types/stats.types';
+import { RatioActionTypes, StatsActionTypes } from '../types/stats.types';
+import handleRatioButtons from './ratio';
 import handleSafariButtons from './safari';
 import handleStatsButtons from './stats';
 
@@ -17,6 +18,13 @@ const handleButtonInteractions = (interaction: Interaction) => {
   if (interaction.customId.includes('stats')) {
     handleStatsButtons(
       interaction.customId as StatsActionTypes,
+      interaction,
+    );
+  }
+
+  if (interaction.customId.includes('ratio')) {
+    handleRatioButtons(
+      interaction.customId as RatioActionTypes,
       interaction,
     );
   }

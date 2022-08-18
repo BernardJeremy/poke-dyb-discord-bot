@@ -30,8 +30,9 @@ export default {
     }
 
     let pokemonObj = getRandomPokemon();
+    const alreadyHasIt = user.pokedex.includes(pokemonObj.id);
     // If user already has this pokemon, try a second time;
-    if (user.pokedex.includes(pokemonObj.id)) {
+    if (alreadyHasIt) {
       pokemonObj = getRandomPokemon();
     }
 
@@ -39,6 +40,14 @@ export default {
     user = usersModel.updateUser({
       ...user,
       gold: user.gold - GOLD_COST_INVOC,
+      ratio: {
+        ...user.ratio,
+        invoc: user.ratio.invoc + 1,
+        invocSuccess:
+          !alreadyHasIt
+            ? user.ratio.invocSuccess + 1
+            : user.ratio.invocSuccess,
+      },
     });
 
     message.reply(`Tu as invoqué **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}. Il te reste ${user.gold} ${COIN_EMOJI_ID}`);

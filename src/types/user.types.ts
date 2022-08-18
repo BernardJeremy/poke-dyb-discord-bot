@@ -11,6 +11,15 @@ interface UserTowerData {
   reputation: number,
 }
 
+interface UserRatio {
+  invoc: number,
+  invocSuccess: number,
+  tower: number,
+  towerSuccess: number,
+  safari: number,
+  safariSuccess: number,
+}
+
 interface User {
   id: string,
   username: string,
@@ -24,5 +33,6 @@ interface User {
   nbrBonusDone: number,
   claims: UserClaimData,
   tower: UserTowerData,
+  ratio: UserRatio,
   isAdmin: boolean,
 }

@@ -23,6 +23,16 @@ const getInitTowerValue = () => (
     reputation: 0,
   });
 
+const getInitRatioValue = () => (
+  {
+    invoc: 0,
+    invocSuccess: 0,
+    tower: 0,
+    towerSuccess: 0,
+    safari: 0,
+    safariSuccess: 0,
+  });
+
 const createUser = (userAccountData: DiscordUserData) => {
   const users = getAllUsers({ noFilter: true });
   const userData = {
@@ -40,6 +50,7 @@ const createUser = (userAccountData: DiscordUserData) => {
       tickets: 0,
     },
     tower: getInitTowerValue(),
+    ratio: getInitRatioValue(),
     isAdmin: false,
   };
 
@@ -96,4 +107,5 @@ export {
   nbrDailyBeforeBonus,
   hasClaims,
   getInitTowerValue,
+  getInitRatioValue,
 };

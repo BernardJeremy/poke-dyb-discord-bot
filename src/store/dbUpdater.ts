@@ -19,6 +19,10 @@ const updateDataForUser = (user: User): User => {
     toUpdateUser.tickets = 0;
   }
 
+  if (!user.ratio) {
+    toUpdateUser.ratio = usersModel.getInitRatioValue();
+  }
+
   return usersModel.updateUser(toUpdateUser);
 };
 

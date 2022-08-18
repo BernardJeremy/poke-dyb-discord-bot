@@ -30,6 +30,10 @@ const handleSafariBall = (
         ...user.pokedex,
         safariEncounterData.pokemon.id,
       ],
+      ratio: {
+        ...user.ratio,
+        safariSuccess: user.ratio.safariSuccess + 1,
+      },
     });
   } else if (safariEncounterData.ballRemaining === 1) {
     runStr = `Plus de Safari Ball, il n'est plus possible de capturer [#${safariEncounterData.pokemon.id}] ${safariEncounterData.pokemon.name} !`;

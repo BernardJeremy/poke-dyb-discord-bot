@@ -66,6 +66,10 @@ export default {
     usersModel.updateUser({
       ...user,
       tickets: user.tickets - safariCost,
+      ratio: {
+        ...user.ratio,
+        safari: user.ratio.safari + 1,
+      },
     });
 
     safariesModel.createSafari(safariEncounterData);

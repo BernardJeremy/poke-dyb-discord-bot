@@ -102,6 +102,11 @@ export default {
             ? user.tower.maxClearFloor + 1
             : user.tower.maxClearFloor,
         },
+        ratio: {
+          ...user.ratio,
+          tower: user.ratio.tower + 1,
+          towerSuccess: hasClearedFloor ? user.ratio.towerSuccess + 1 : user.ratio.towerSuccess,
+        },
       });
 
       const messageContent = hasClearedFloor

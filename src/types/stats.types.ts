@@ -14,6 +14,12 @@ export interface UserStats {
   dust: number
   tickets: number
   towerTryRemaining: number
+  invoc: number,
+  invocSuccess: number,
+  tower: number,
+  towerSuccess: number,
+  safari: number,
+  safariSuccess: number,
   invocSuccessPercent: number,
   towerSuccessPercent: number,
   safariSuccessPercent: number,

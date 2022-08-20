@@ -27,6 +27,12 @@ const getPokedexStatByUsers = (usersList: User[]): UserStats[] => {
         dust: currentUser.dust,
         tickets: currentUser.tickets || 0,
         towerTryRemaining: currentUser.tower.ticketsTotal,
+        invoc: currentUser.ratio.invoc,
+        invocSuccess: currentUser.ratio.invocSuccess,
+        tower: currentUser.ratio.tower,
+        towerSuccess: currentUser.ratio.towerSuccess,
+        safari: currentUser.ratio.safari,
+        safariSuccess: currentUser.ratio.safariSuccess,
         invocSuccessPercent: Math.round(
           (currentUser.ratio.invocSuccess / currentUser.ratio.invoc) * 100,
         ),

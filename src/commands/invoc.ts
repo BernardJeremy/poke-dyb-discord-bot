@@ -18,6 +18,7 @@ export default {
 
   async execute(message: Message, messageContext: MessageContext) {
     let user = usersModel.getOneUser(messageContext.author.id);
+    const usersList = usersModel.getAllUsers();
 
     if (!user) {
       message.reply('User not found');
@@ -52,5 +53,20 @@ export default {
 
     message.reply(`Tu as invoqué **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}. Il te reste ${user.gold} ${COIN_EMOJI_ID}`);
     message.channel.send(buildCard(pokemonObj, { displayType: DisplayTypes.CaughtPokemon }));
+
+    const totalInvoc = usersList.reduce((total, oneUser) => (
+      oneUser.ratio.invoc + total
+    ), 0);
+
+    if (totalInvoc % 1000 === 0) {
+      usersModel.updateUser({
+        ...user,
+        claims: {
+          ...user.claims,
+          gold: user.claims.gold + 1000,
+        },
+      });
+      message.channel.send(`${message.author} vient de réaliser la ${totalInvoc}eme invocations ! Il obtient une récompense de 1000 ${COIN_EMOJI_ID} !`);
+    }
   },
 };

@@ -10,7 +10,7 @@ const FORMAT_MSG = 'format : `!sendgift [@someone] [gold|dust|tickets] [value]`'
 
 export default {
   name: '!sendgift',
-  alias: '!envoyercadeau',
+  alias: '!send',
   noHelp: true,
 
   description: 'Envoi une récompense execptionnelle à un joueur',

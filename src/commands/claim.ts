@@ -34,7 +34,7 @@ export default {
         },
       });
 
-      const strReward = `${user.claims.gold} ${COIN_EMOJI_ID}, ${user.claims.dust} ${DUST_EMOJI_ID} et ${user.claims.tickets} 🎫`;
+      const strReward = `${user.claims.gold || 0} ${COIN_EMOJI_ID}, ${user.claims.dust || 0} ${DUST_EMOJI_ID} et ${user.claims.tickets || 0} 🎫`;
       const strRewardBase = `Tu as récupéré ta récompense exceptionnelle de ${strReward} !`;
 
       message.reply(strRewardBase);

@@ -63,10 +63,10 @@ export default {
         ...user,
         claims: {
           ...user.claims,
-          gold: user.claims.gold + 1000,
+          gold: user.claims.gold + totalInvoc,
         },
       });
-      message.channel.send(`${message.author} vient de réaliser la ${totalInvoc}eme invocations ! Il obtient une récompense de 1000 ${COIN_EMOJI_ID} !`);
+      message.channel.send(`${message.author} vient de réaliser la ${totalInvoc}eme invocations ! Il obtient une récompense de ${totalInvoc} ${COIN_EMOJI_ID} (\`!claim\` pour les récupérer) !`);
     }
   },
 };

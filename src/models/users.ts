@@ -52,6 +52,7 @@ const createUser = (userAccountData: DiscordUserData) => {
     tower: getInitTowerValue(),
     ratio: getInitRatioValue(),
     isAdmin: false,
+    isBan: false,
   };
 
   users.push(userData);

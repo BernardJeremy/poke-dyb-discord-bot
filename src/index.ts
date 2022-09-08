@@ -59,7 +59,7 @@ const main = async () => {
     const messageContext = messageParser(message);
 
     let user = usersModel.getOneUser(messageContext.author.id);
-    if (!user) {
+    if (!user || user.isBan) {
       return;
     }
     user = updateDataForUser(user);

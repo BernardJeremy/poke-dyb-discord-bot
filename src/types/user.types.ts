@@ -38,4 +38,5 @@ interface User {
   tower: UserTowerData,
   ratio: UserRatio,
   isAdmin: boolean,
+  isBan: boolean,
 }

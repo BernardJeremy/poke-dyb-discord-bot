@@ -16,6 +16,8 @@ import tower from './tower';
 import stats from './stats';
 import safari from './safari';
 import ratio from './ratio';
+import ban from './ban';
+import unban from './unban';
 
 const commands = [
   pokemon,
@@ -35,6 +37,8 @@ const commands = [
   stats,
   safari,
   ratio,
+  ban,
+  unban,
 ];
 
 commands.push(help(commands));

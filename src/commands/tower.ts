@@ -126,6 +126,6 @@ export default {
       return;
     }
 
-    message.reply('Tu as atteint la limite d\'ascension pour aujourd\'hui. Reset à midi chaque jour.');
+    message.reply('Tu as atteint la limite de tentatives d\'ascension pour aujourd\'hui. Reset à midi chaque jour.');
   },
 };

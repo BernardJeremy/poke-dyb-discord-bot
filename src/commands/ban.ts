@@ -11,8 +11,8 @@ export default {
   async execute(message: Message, messageContext: MessageContext) {
     const user = usersModel.getOneUser(messageContext.author.id);
 
-    if (!user?.isAdmin) {
-      message.channel.send('Si tu veux tester demande à l\'admin');
+    if (!user) {
+      message.reply('User not found');
       return;
     }
 
@@ -21,7 +21,10 @@ export default {
       return;
     }
 
-    const bannedUser = usersModel.getOneUser(messageContext.mentions[0].id);
+    // If non-admin try to ban ==> self ban
+    const bannedUser = user.isAdmin
+      ? usersModel.getOneUser(messageContext.mentions[0].id)
+      : user;
 
     if (!bannedUser) {
       message.reply('Target user not found');

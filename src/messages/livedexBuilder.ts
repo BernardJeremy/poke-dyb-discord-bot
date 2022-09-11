@@ -25,7 +25,6 @@ const buildLivedex = () => {
   }));
 
   const content = completePokedex.reduce((accContent, currentPokemon) => {
-    // if (currentPokemon.id > 40) return accContent;
     const playerList = allUsers.reduce((accPlayerList, user) => {
       const currentUserPokemon: UserPokemon | undefined = user.pokedex.find(
         (userPokemon) => userPokemon.id === currentPokemon.id,

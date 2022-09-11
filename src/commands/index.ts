@@ -18,6 +18,7 @@ import safari from './safari';
 import ratio from './ratio';
 import ban from './ban';
 import unban from './unban';
+import livedex from './livedex';
 
 const commands = [
   pokemon,
@@ -39,6 +40,7 @@ const commands = [
   ratio,
   ban,
   unban,
+  livedex,
 ];
 
 commands.push(help(commands));

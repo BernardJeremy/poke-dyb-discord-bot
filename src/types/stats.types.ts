@@ -5,6 +5,10 @@ export enum StatsActionTypes {
 export enum RatioActionTypes {
   REFRESH = 'ratio.refresh',
 }
+
+export enum LivedexActionTypes {
+  REFRESH = 'livedex.refresh',
+}
 export interface UserStats {
   name: string
   nbrPokemon: number

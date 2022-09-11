@@ -35,7 +35,8 @@ const buildLivedex = () => {
         return accPlayerList;
       }
 
-      return `${accPlayerList}${user.nickname || user.username}${currentUserPokemon.nbr > 1 ? ` (${currentUserPokemon.nbr})` : ''}, `;
+      return `${accPlayerList}- ${user.nickname || user.username}${currentUserPokemon.nbr > 1 ? ` (${currentUserPokemon.nbr})` : ''}
+`;
     }, '');
 
     if (!playerList) return accContent;

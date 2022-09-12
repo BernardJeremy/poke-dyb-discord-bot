@@ -39,7 +39,7 @@ const buildOptiHv = () => {
 `;
     }
 
-    const formatPokemonDisplay = (pokemonObj: Pokemon) => `- [#${pokemonObj.id}] ${pokemonObj.name} (${pokemonObj.craftingPrice} Dust / ${pokemonObj.rarityLevel}%) `;
+    const formatPokemonDisplay = (pokemonObj: Pokemon | UserPokemon) => `- [#${pokemonObj.id}] ${pokemonObj.name} (${pokemonObj.nbr && pokemonObj.nbr > 1 ? `En a ${pokemonObj.nbr} / ` : ''}${pokemonObj.craftingPrice} Dust / ${pokemonObj.rarityLevel}%) `;
 
     const optiTradeListStr: string = allUsers.reduce((accOptiTrades, tradedUser) => {
       if (tradedUser.id === currentUser.id) {

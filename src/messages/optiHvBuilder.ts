@@ -92,7 +92,7 @@ ${optiTradeListStr}`;
     content: `**HV Opti @ ${getNowDateTimeFormated()}**`,
     files: [{
       attachment: Buffer.from(content),
-      name: 'Livedex.accesslog',
+      name: 'OptiHV.accesslog',
     }],
     components: [buttons],
   };

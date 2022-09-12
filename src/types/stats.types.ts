@@ -9,6 +9,11 @@ export enum RatioActionTypes {
 export enum LivedexActionTypes {
   REFRESH = 'livedex.refresh',
 }
+
+export enum OptiHvActionTypes {
+  REFRESH = 'optihv.refresh',
+}
+
 export interface UserStats {
   name: string
   nbrPokemon: number

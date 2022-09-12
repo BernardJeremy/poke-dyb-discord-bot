@@ -1,7 +1,13 @@
 import { Interaction } from 'discord.js';
 import { SafariActionTypes } from '../types/safari.types';
-import { LivedexActionTypes, RatioActionTypes, StatsActionTypes } from '../types/stats.types';
+import {
+  LivedexActionTypes,
+  OptiHvActionTypes,
+  RatioActionTypes,
+  StatsActionTypes,
+} from '../types/stats.types';
 import handleLivedexButtons from './livedex';
+import handleOptiHvButtons from './optihv';
 import handleRatioButtons from './ratio';
 import handleSafariButtons from './safari';
 import handleStatsButtons from './stats';
@@ -33,6 +39,13 @@ const handleButtonInteractions = (interaction: Interaction) => {
   if (interaction.customId.includes('livedex')) {
     handleLivedexButtons(
       interaction.customId as LivedexActionTypes,
+      interaction,
+    );
+  }
+
+  if (interaction.customId.includes('optihv')) {
+    handleOptiHvButtons(
+      interaction.customId as OptiHvActionTypes,
       interaction,
     );
   }

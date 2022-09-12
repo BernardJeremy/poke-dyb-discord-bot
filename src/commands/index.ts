@@ -19,6 +19,7 @@ import ratio from './ratio';
 import ban from './ban';
 import unban from './unban';
 import livedex from './livedex';
+import optihv from './optihv';
 
 const commands = [
   pokemon,
@@ -41,6 +42,7 @@ const commands = [
   ban,
   unban,
   livedex,
+  optihv,
 ];
 
 commands.push(help(commands));

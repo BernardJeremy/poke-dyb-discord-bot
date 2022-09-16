@@ -32,7 +32,7 @@ export default {
     }
 
     if (bannedUser.isBan) {
-      message.reply(`${bannedUser.username} est déjà ban`);
+      message.reply(`<@${bannedUser.id}> est déjà ban`);
       return;
     }
 
@@ -46,6 +46,6 @@ export default {
       isBan: true,
     });
 
-    message.channel.send(`${bannedUser.username} à été ban`);
+    message.channel.send(`<@${bannedUser.id}> à été ban`);
   },
 };

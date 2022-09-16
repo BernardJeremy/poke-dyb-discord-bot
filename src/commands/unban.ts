@@ -29,7 +29,7 @@ export default {
     }
 
     if (!unbannedUser.isBan) {
-      message.reply(`${unbannedUser.username} n'est pas ban`);
+      message.reply(`<@${unbannedUser.id}> n'est pas ban`);
       return;
     }
 
@@ -38,6 +38,6 @@ export default {
       isBan: false,
     });
 
-    message.channel.send(`${unbannedUser.username} à été unban`);
+    message.channel.send(`<@${unbannedUser.id}> à été unban`);
   },
 };

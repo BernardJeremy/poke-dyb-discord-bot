@@ -46,13 +46,13 @@ export default {
       if (usersModel.getAllUsers().filter(
         (oneUser) => oneUser.id === messageContext.mentions[0].id,
       ).length > 0) {
-        message.channel.send(`${messageContext.mentions[0].username} existe déjà !`);
+        message.channel.send(`<@${messageContext.mentions[0].id}> existe déjà !`);
 
         return;
       }
 
       usersModel.createUser(messageContext.mentions[0]);
-      message.channel.send(`${messageContext.mentions[0].username} a été crée ! Il faut aussi créer l'onglet dans le GDOC`);
+      message.channel.send(`<@${messageContext.mentions[0].id}> a été crée ! Il faut aussi créer l'onglet dans le GDOC`);
 
       return;
     }
@@ -112,7 +112,7 @@ export default {
             ],
         });
 
-        message.channel.send(`Un exemplaire de **[#${pokemonObj.id}] ${pokemonObj.name}** a été ${toRemove ? 'supprimé de' : 'ajouté à'} la collection de ${currentUser.username}`);
+        message.channel.send(`Un exemplaire de **[#${pokemonObj.id}] ${pokemonObj.name}** a été ${toRemove ? 'supprimé de' : 'ajouté à'} la collection de <@${currentUser.id}>`);
       }
 
       if (subcommand === 'gold') {
@@ -127,7 +127,7 @@ export default {
           ...currentUser,
           gold: currentUser.gold + wantedNbr,
         });
-        message.channel.send(`${currentUser.username} dispose maintenant de ${updatedTargetUser.gold} ${COIN_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${COIN_EMOJI_ID})`);
+        message.channel.send(`<@${currentUser.id}> dispose maintenant de ${updatedTargetUser.gold} ${COIN_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${COIN_EMOJI_ID})`);
       }
 
       if (subcommand === 'dust') {
@@ -142,7 +142,7 @@ export default {
           ...currentUser,
           dust: currentUser.dust + wantedNbr,
         });
-        message.channel.send(`${currentUser.username} dispose maintenant de ${updatedTargetUser.dust} ${DUST_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${DUST_EMOJI_ID})`);
+        message.channel.send(`<@${currentUser.id}> dispose maintenant de ${updatedTargetUser.dust} ${DUST_EMOJI_ID} (${wantedNbr > 0 ? '+' : ''}${wantedNbr} ${DUST_EMOJI_ID})`);
       }
 
       if (subcommand === 'tickets') {
@@ -157,7 +157,7 @@ export default {
           ...currentUser,
           tickets: currentUser.tickets + wantedNbr,
         });
-        message.channel.send(`${currentUser.username} dispose maintenant de ${updatedTargetUser.tickets} 🎫 (${wantedNbr > 0 ? '+' : ''}${wantedNbr} 🎫)`);
+        message.channel.send(`<@${currentUser.id}> dispose maintenant de ${updatedTargetUser.tickets} 🎫 (${wantedNbr > 0 ? '+' : ''}${wantedNbr} 🎫)`);
       }
     });
   },

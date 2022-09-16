@@ -150,7 +150,7 @@ const handleSafariButtons = (
         newSafariEncounterData.pokemon,
         {
           displayType: DisplayTypes.CaughtPokemon,
-          content: `${user.nickname || user.username} a réussi à attraper **[#${newSafariEncounterData.pokemon.id}] ${newSafariEncounterData.pokemon.name}** au Parc Safari !`,
+          content: `<@${user.id}> a réussi à attraper **[#${newSafariEncounterData.pokemon.id}] ${newSafariEncounterData.pokemon.name}** au Parc Safari !`,
         },
       ),
     );

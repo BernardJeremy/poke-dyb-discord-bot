@@ -6,11 +6,8 @@ import {
   RatioActionTypes,
   StatsActionTypes,
 } from '../types/stats.types';
-import handleLivedexButtons from './livedex';
-import handleOptiHvButtons from './optihv';
-import handleRatioButtons from './ratio';
 import handleSafariButtons from './safari';
-import handleStatsButtons from './stats';
+import handleRefreshButtons from './refresh';
 
 const handleButtonInteractions = (interaction: Interaction) => {
   if (!interaction.isButton()) return;
@@ -23,28 +20,28 @@ const handleButtonInteractions = (interaction: Interaction) => {
   }
 
   if (interaction.customId.includes('stats')) {
-    handleStatsButtons(
+    handleRefreshButtons(
       interaction.customId as StatsActionTypes,
       interaction,
     );
   }
 
   if (interaction.customId.includes('ratio')) {
-    handleRatioButtons(
+    handleRefreshButtons(
       interaction.customId as RatioActionTypes,
       interaction,
     );
   }
 
   if (interaction.customId.includes('livedex')) {
-    handleLivedexButtons(
+    handleRefreshButtons(
       interaction.customId as LivedexActionTypes,
       interaction,
     );
   }
 
   if (interaction.customId.includes('optihv')) {
-    handleOptiHvButtons(
+    handleRefreshButtons(
       interaction.customId as OptiHvActionTypes,
       interaction,
     );

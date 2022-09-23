@@ -11,6 +11,7 @@ declare global {
       BONUS_GOLD_AMOUNT: string, // Amount of gold won for each bonus
       BONUS_DUST_AMOUNT: string, // Amount of dust won for each bonus
       RANDOM_CARD_COST: string, // Cost of a random card (!invoc)
+      MAX_NBR_RANDOM_REROLL: string, // Max nbr of times of auto invoc rerolls
       TOWER_ENTRIES_EACH_DAY: string, // Cost of a tower run
       TICKETS_WON_ON_FAILED_TOWER: string, // Number of tickets won when failing a tower run
       TOWER_REP_GAIN_TRY: string, // Reputation gained on a failed tower run

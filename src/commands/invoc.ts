@@ -6,9 +6,12 @@ import DisplayTypes from '../types/display.enum';
 
 const {
   COIN_EMOJI_ID,
+  RANDOM_CARD_COST,
+  MAX_NBR_RANDOM_REROLL,
 } = process.env;
 
-const GOLD_COST_INVOC = 500;
+const GOLD_COST_INVOC = parseInt(RANDOM_CARD_COST, 10);
+const MAX_NBR_REROLL = parseInt(MAX_NBR_RANDOM_REROLL, 10);
 
 export default {
   name: '!invoc',
@@ -30,12 +33,15 @@ export default {
       return;
     }
 
-    let pokemonObj = getRandomPokemon();
-    const alreadyHasIt = user.pokedex.includes(pokemonObj.id);
-    // If user already has this pokemon, try a second time;
-    if (alreadyHasIt) {
+    // If user already has this pokemon, try some more;
+    let pokemonObj: Pokemon;
+    let alreadyHasIt: boolean;
+    let i = 0;
+    do {
       pokemonObj = getRandomPokemon();
-    }
+      alreadyHasIt = user.pokedex.includes(pokemonObj.id);
+      i += 1;
+    } while (alreadyHasIt && i < MAX_NBR_REROLL);
 
     user.pokedex.push(pokemonObj.id);
     user = usersModel.updateUser({

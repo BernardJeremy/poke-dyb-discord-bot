@@ -141,7 +141,11 @@ const buildCard = ({
     return { content: content || '', embeds: [exampleEmbed], components: [buttons] };
   }
 
-  return { content: content || '', embeds: [exampleEmbed], components: [] };
+  if (displayType === DisplayTypes.CaughtPokemon) {
+    return { content: content || '', embeds: [exampleEmbed], components: [] };
+  }
+
+  return { content: content || '', embeds: [exampleEmbed] };
 };
 
 export default buildCard;

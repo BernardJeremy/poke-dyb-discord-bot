@@ -2,7 +2,9 @@ import { Message } from 'discord.js';
 import buildCard from '../messages/cardBuilder';
 import { getRandomPokemon } from '../tools/pokemon';
 import * as usersModel from '../models/users';
+import * as invocationsModel from '../models/invocations';
 import DisplayTypes from '../types/display.enum';
+import { InvocationData } from '../types/invocation.types';
 
 const {
   COIN_EMOJI_ID,
@@ -33,17 +35,9 @@ export default {
       return;
     }
 
-    // If user already has this pokemon, try some more;
-    let pokemonObj: Pokemon;
-    let alreadyHasIt: boolean;
-    let i = 0;
-    do {
-      pokemonObj = getRandomPokemon();
-      alreadyHasIt = user.pokedex.includes(pokemonObj.id);
-      i += 1;
-    } while (alreadyHasIt && i < MAX_NBR_REROLL);
+    const pokemonObj: Pokemon = getRandomPokemon();
+    const alreadyHasIt: boolean = user.pokedex.includes(pokemonObj.id);
 
-    user.pokedex.push(pokemonObj.id);
     user = usersModel.updateUser({
       ...user,
       gold: user.gold - GOLD_COST_INVOC,
@@ -57,8 +51,22 @@ export default {
       },
     });
 
-    message.reply(`Tu as invoqué **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}. Il te reste ${user.gold} ${COIN_EMOJI_ID}`);
-    message.channel.send(buildCard(pokemonObj, { displayType: DisplayTypes.CaughtPokemon }));
+    const invocationMessage = await message.reply(
+      buildCard(pokemonObj, {
+        displayType: DisplayTypes.Invocation,
+        content: `Tu as invoqué **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as actuellement ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}. Il te reste ${user.gold} ${COIN_EMOJI_ID}`,
+      }),
+    );
+
+    const invocationData: InvocationData = {
+      ownerId: messageContext.author.id,
+      pokemon: pokemonObj,
+      invocationMessageId: invocationMessage.id,
+      ongoing: true,
+      nbrTimeRefreshed: 0,
+    };
+
+    invocationsModel.createInvocation(invocationData);
 
     const totalInvoc = usersList.reduce((total, oneUser) => (
       oneUser.ratio.invoc + total

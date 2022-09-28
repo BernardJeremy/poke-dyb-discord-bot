@@ -8,6 +8,8 @@ import {
 } from '../types/stats.types';
 import handleSafariButtons from './safari';
 import handleRefreshButtons from './refresh';
+import handleInvocationButtons from './invocation';
+import { InvocationActionTypes } from '../types/invocation.types';
 
 const handleButtonInteractions = (interaction: Interaction) => {
   if (!interaction.isButton()) return;
@@ -43,6 +45,13 @@ const handleButtonInteractions = (interaction: Interaction) => {
   if (interaction.customId.includes('optihv')) {
     handleRefreshButtons(
       interaction.customId as OptiHvActionTypes,
+      interaction,
+    );
+  }
+
+  if (interaction.customId.includes('invocation')) {
+    handleInvocationButtons(
+      interaction.customId as InvocationActionTypes,
       interaction,
     );
   }

@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 
 import JSONdb from 'simple-json-db';
+import { InvocationData } from '../types/invocation.types';
 import { SafariEncounterData } from '../types/safari.types';
 
 const JSON_DATA_FILE_PATH = process.env.JSON_DB_FILE || './data.json';
@@ -51,6 +52,18 @@ const updateSafariesFromDb = (safaries: SafariEncounterData[]): SafariEncounterD
   return safaries;
 };
 
+const getAllInvocationsFromDb = (): InvocationData[] => {
+  const invocations: InvocationData[] = db.get('invocations') || [];
+
+  return invocations;
+};
+
+const updateInvocationsFromDb = (invocations: InvocationData[]): InvocationData[] => {
+  db.set('invocations', invocations);
+
+  return invocations;
+};
+
 export default {
   getOneUserByIdFromDB,
   getAllUsersFromDb,
@@ -59,4 +72,6 @@ export default {
   updateTradesFromDb,
   getAllSafariesFromDb,
   updateSafariesFromDb,
+  getAllInvocationsFromDb,
+  updateInvocationsFromDb,
 };

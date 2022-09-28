@@ -1,6 +1,14 @@
-import { EmbedBuilder, HexColorString } from 'discord.js';
+import {
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
+  EmbedBuilder,
+  HexColorString,
+  MessageActionRowComponentBuilder,
+} from 'discord.js';
 import * as userModel from '../models/users';
 import DisplayTypes from '../types/display.enum';
+import { InvocationActionTypes } from '../types/invocation.types';
 import { SafariEncounterData } from '../types/safari.types';
 
 const { DUST_EMOJI_ID } = process.env;
@@ -117,7 +125,23 @@ const buildCard = ({
     );
   }
 
-  return { content: content || '', embeds: [exampleEmbed] };
+  if (displayType === DisplayTypes.Invocation) {
+    const buttons = new ActionRowBuilder<MessageActionRowComponentBuilder>().addComponents(
+      new ButtonBuilder()
+        .setCustomId(InvocationActionTypes.KEEP)
+        .setLabel('Garder')
+        .setStyle(ButtonStyle.Success),
+    ).addComponents(
+      new ButtonBuilder()
+        .setCustomId(InvocationActionTypes.REROLL)
+        .setLabel('Re-Roll')
+        .setStyle(ButtonStyle.Danger),
+    );
+
+    return { content: content || '', embeds: [exampleEmbed], components: [buttons] };
+  }
+
+  return { content: content || '', embeds: [exampleEmbed], components: [] };
 };
 
 export default buildCard;

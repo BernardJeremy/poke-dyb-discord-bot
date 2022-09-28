@@ -1,7 +1,7 @@
 import pokedex from '../data/pokedex.json';
 import { getRandomInt } from './utils';
 
-const getRandomPokemon = () => {
+const getRandomPokemon = (): Pokemon => {
   const seed = getRandomInt(1, 100);
 
   const eligiblePokemonList = pokedex.filter((pokemon) => pokemon.rarityLevel > seed);

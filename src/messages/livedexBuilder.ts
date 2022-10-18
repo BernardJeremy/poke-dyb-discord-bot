@@ -25,24 +25,11 @@ const buildLivedex = () => {
   }));
 
   const content = completePokedex.reduce((accContent, currentPokemon) => {
-    const playerList = allUsers.reduce((accPlayerList, user) => {
-      const currentUserPokemon: UserPokemon | undefined = user.pokedex.find(
-        (userPokemon) => userPokemon.id === currentPokemon.id,
-      );
-
-      if (!currentUserPokemon) {
-        return accPlayerList;
-      }
-
-      return `${accPlayerList}- ${user.nickname || user.username}${currentUserPokemon.nbr > 1 ? ` (${currentUserPokemon.nbr})` : ''}
-`;
-    }, '');
-
-    if (!playerList) return accContent;
+    if (!allUsers.every((user) => user.pokedex.findIndex(
+      (userPokemon) => userPokemon.id === currentPokemon.id,
+    ) !== -1)) return accContent;
 
     return `${accContent}* [#${currentPokemon.id}] ${currentPokemon.name}
-${playerList}
-
 `;
   }, '');
 

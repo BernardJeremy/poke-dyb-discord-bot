@@ -9,11 +9,9 @@ import { InvocationData } from '../types/invocation.types';
 const {
   COIN_EMOJI_ID,
   RANDOM_CARD_COST,
-  MAX_NBR_RANDOM_REROLL,
 } = process.env;
 
 const GOLD_COST_INVOC = parseInt(RANDOM_CARD_COST, 10);
-const MAX_NBR_REROLL = parseInt(MAX_NBR_RANDOM_REROLL, 10);
 
 export default {
   name: '!invoc',

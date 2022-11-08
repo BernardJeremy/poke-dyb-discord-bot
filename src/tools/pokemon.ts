@@ -1,10 +1,17 @@
 import pokedex from '../data/pokedex.json';
 import { getRandomInt } from './utils';
 
+const EXCLUSION_RARITY_THRESHHOLD = 60;
+const EXCLUSION_POKEMON_ID_THRESHHOLD = 151;
+
 const getRandomPokemon = (): Pokemon => {
   const seed = getRandomInt(1, 100);
 
-  const eligiblePokemonList = pokedex.filter((pokemon) => pokemon.rarityLevel > seed);
+  const eligiblePokemonList = pokedex.filter((pokemon) => (
+    pokemon.id < EXCLUSION_POKEMON_ID_THRESHHOLD && seed >= EXCLUSION_RARITY_THRESHHOLD
+      ? pokemon.rarityLevel < EXCLUSION_RARITY_THRESHHOLD && pokemon.rarityLevel > seed
+      : pokemon.rarityLevel > seed
+  ));
 
   return eligiblePokemonList[Math.floor(Math.random() * eligiblePokemonList.length)];
 };

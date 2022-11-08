@@ -39,7 +39,7 @@ const buildStats = () => {
 
   allUsersStats.sort((a, b) => (a.nbrPokemon > b.nbrPokemon ? -1 : 1)).forEach((userStat) => {
     exampleEmbed.addFields(
-      { name: userStat.name, value: (`[${userStat.nbrPokemon}/${completePokedex.length} : ${userStat.totalCostUserPokemon} ${DUST_EMOJI_ID}] / ${userStat.gold} ${COIN_EMOJI_ID} / ${userStat.dust} ${DUST_EMOJI_ID} / ${userStat.tickets} 🎫 / ${userStat.towerTryRemaining} 🏰`) },
+      { name: userStat.name, value: (`[${userStat.nbrPokemon}/${completePokedex.length} (${userStat.totalCostUserPokemon} ${DUST_EMOJI_ID})] / ${userStat.gold} ${COIN_EMOJI_ID} / ${userStat.dust} ${DUST_EMOJI_ID} / ${userStat.tickets} 🎫 / ${userStat.towerTryRemaining} 🏰`) },
     );
   });
 

@@ -21,7 +21,12 @@ const getPokedexStatByUsers = (usersList: User[]): UserStats[] => {
         totalCostUserPokemon: formattedUserPokedex.reduce((
           totalCost,
           currentPokemon,
-        ): number => totalCost + currentPokemon.craftingPrice, 0),
+        ): number => {
+          const currentCraftingPrice = currentPokemon.craftingPrice;
+          const multiplePokemonResellPrice = currentPokemon.nbr > 1
+            ? ((currentPokemon.nbr - 1) * (currentCraftingPrice / 2)) : 0;
+          return totalCost + currentCraftingPrice + multiplePokemonResellPrice;
+        }, currentUser.dust),
         totalCostPokedex,
         gold: currentUser.gold,
         dust: currentUser.dust,

@@ -40,11 +40,6 @@
       "successRate": 35,
       "rarityList": [
         {
-          "max": 100,
-          "min": 80,
-          "rate": 15
-        },
-        {
           "max": 79,
           "min": 50,
           "rate": 70
@@ -52,7 +47,7 @@
         {
           "max": 49,
           "min": 30,
-          "rate": 15
+          "rate": 30
         }
       ]
     },
@@ -64,12 +59,17 @@
         {
           "max": 79,
           "min": 50,
-          "rate": 40
+          "rate": 10
         },
         {
           "max": 49,
           "min": 30,
           "rate": 60
+        },
+        {
+          "max": 29,
+          "min": 10,
+          "rate": 30
         }
       ]
     },
@@ -79,24 +79,19 @@
       "successRate": 15,
       "rarityList": [
         {
-          "max": 79,
-          "min": 50,
-          "rate": 20
-        },
-        {
           "max": 49,
           "min": 30,
-          "rate": 70
+          "rate": 40
         },
         {
           "max": 29,
           "min": 10,
-          "rate": 9
+          "rate": 50
         },
         {
           "max": 9,
           "min": 0,
-          "rate": 1
+          "rate": 10
         }
       ]
     },
@@ -106,11 +101,6 @@
       "successRate": 5,
       "rarityList": [
         {
-          "max": 49,
-          "min": 30,
-          "rate": 20
-        },
-        {
           "max": 29,
           "min": 10,
           "rate": 70
@@ -118,7 +108,7 @@
         {
           "max": 9,
           "min": 0,
-          "rate": 10
+          "rate": 30
         }
       ]
     }

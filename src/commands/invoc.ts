@@ -23,7 +23,6 @@ export default {
 
   async execute(message: Message, messageContext: MessageContext) {
     let user = usersModel.getOneUser(messageContext.author.id);
-    const usersList = usersModel.getAllUsers();
 
     if (!user) {
       message.reply('User not found');
@@ -65,22 +64,24 @@ export default {
       ongoing: true,
       nbrTimeRefreshed: 0,
     };
-
     invocationsModel.createInvocation(invocationData);
 
+    const usersList = usersModel.getAllUsers();
     const totalInvoc = usersList.reduce((total, oneUser) => (
       oneUser.ratio.invoc + total
     ), 0);
 
     if (totalInvoc % 1000 === 0) {
-      usersModel.updateUser({
-        ...user,
-        claims: {
-          ...user.claims,
-          gold: user.claims.gold + totalInvoc,
-        },
+      usersList.forEach((currentUser) => {
+        usersModel.updateUser({
+          ...currentUser,
+          claims: {
+            ...currentUser.claims,
+            gold: currentUser.claims.gold + 1000,
+          },
+        });
       });
-      message.channel.send(`${message.author} vient de réaliser la ${totalInvoc}eme invocations ! Il obtient une récompense de ${totalInvoc} ${COIN_EMOJI_ID} (\`!claim\` pour les récupérer) !`);
+      message.channel.send(`${message.author} vient de réaliser la ${totalInvoc}eme invocations ! Il permet à tous le monde d'obtenir 1000 ${COIN_EMOJI_ID} (\`!claim\` pour les récupérer) ! Merci à lui.`);
     }
   },
 };

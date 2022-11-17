@@ -23,6 +23,7 @@ declare global {
       SAFARI_STARTING_ESCAPE_RATE: string, // Escape rate at encounter start
       SAFARI_POKEMON_MIN_RARITY: string, // Minimum rarity for a safary encounter
       SAFARI_POKEMON_MAX_RARITY: string, // Maximum rarity for a safary encounter
+      ADVENT_POKEMON_REWARD_ID: string, // Id of the pokemon reward of advent calendar
       EXPRESS_PORT: string, // HTTP port
       HTTP_ROUTE_SUFFIX: string, // HTTP route suffix
       GOOGLE_APPLICATION_CREDENTIALS: string, // Path to GCP service account json key

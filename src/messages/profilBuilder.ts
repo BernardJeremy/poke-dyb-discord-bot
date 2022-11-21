@@ -56,15 +56,15 @@ const buildProfil = ({
       : formattedUserPokedex.reduce((valueStr, currentPokemonObj) => `${valueStr.length > 0 ? `${valueStr}, ` : ''}#${currentPokemonObj.id} ${currentPokemonObj.nbr > 1 ? `(${currentPokemonObj.nbr})` : ''}`, ''),
   });
 
-  exampleEmbed.addFields({
+  /* exampleEmbed.addFields({
     name: 'Pokemon manquants',
     value: pokedexList.reduce((acc, curr) => {
       if (!pokedex.includes(curr.id)) {
-        return `${acc.length > 0 ? `${acc}, ` : ''}#${curr.id}`;
+        return `${acc.length > 0 ? `${acc},` : ''}#${curr.id}`;
       }
       return acc;
     }, ''),
-  });
+  }); */
 
   return { embeds: [exampleEmbed] };
 };

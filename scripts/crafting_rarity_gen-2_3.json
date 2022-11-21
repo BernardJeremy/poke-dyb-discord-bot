@@ -1,0 +1,1177 @@
+[
+  {
+    "id": 152,
+    "rarityLevel": 10,
+    "craftingPrice": 180
+  },
+  {
+    "id": 153,
+    "rarityLevel": 7,
+    "craftingPrice": 260
+  },
+  {
+    "id": 154,
+    "rarityLevel": 4,
+    "craftingPrice": 360
+  },
+  {
+    "id": 155,
+    "rarityLevel": 10,
+    "craftingPrice": 180
+  },
+  {
+    "id": 156,
+    "rarityLevel": 7,
+    "craftingPrice": 260
+  },
+  {
+    "id": 157,
+    "rarityLevel": 4,
+    "craftingPrice": 360
+  },
+  {
+    "id": 158,
+    "rarityLevel": 10,
+    "craftingPrice": 180
+  },
+  {
+    "id": 159,
+    "rarityLevel": 7,
+    "craftingPrice": 260
+  },
+  {
+    "id": 160,
+    "rarityLevel": 4,
+    "craftingPrice": 360
+  },
+  {
+    "id": 161,
+    "rarityLevel": 100,
+    "craftingPrice": 20
+  },
+  {
+    "id": 162,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 163,
+    "rarityLevel": 100,
+    "craftingPrice": 20
+  },
+  {
+    "id": 164,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 165,
+    "rarityLevel": 100,
+    "craftingPrice": 20
+  },
+  {
+    "id": 166,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 167,
+    "rarityLevel": 100,
+    "craftingPrice": 20
+  },
+  {
+    "id": 168,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 169,
+    "rarityLevel": 20,
+    "craftingPrice": 220
+  },
+  {
+    "id": 170,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 171,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 172,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 173,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 174,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 175,
+    "rarityLevel": 5,
+    "craftingPrice": 300
+  },
+  {
+    "id": 176,
+    "rarityLevel": "",
+    "craftingPrice": 360
+  },
+  {
+    "id": 177,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 178,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 179,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 180,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 181,
+    "rarityLevel": 30,
+    "craftingPrice": 180
+  },
+  {
+    "id": 182,
+    "rarityLevel": 30,
+    "craftingPrice": 160
+  },
+  {
+    "id": 183,
+    "rarityLevel": 80,
+    "craftingPrice": 60
+  },
+  {
+    "id": 184,
+    "rarityLevel": 30,
+    "craftingPrice": 140
+  },
+  {
+    "id": 185,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 186,
+    "rarityLevel": 20,
+    "craftingPrice": 220
+  },
+  {
+    "id": 187,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 188,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 189,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 190,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 191,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 192,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 193,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 194,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 195,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 196,
+    "rarityLevel": "",
+    "craftingPrice": 300
+  },
+  {
+    "id": 197,
+    "rarityLevel": "",
+    "craftingPrice": 300
+  },
+  {
+    "id": 198,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 199,
+    "rarityLevel": 10,
+    "craftingPrice": 240
+  },
+  {
+    "id": 200,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 201,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 202,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 203,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 204,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 205,
+    "rarityLevel": 40,
+    "craftingPrice": 100
+  },
+  {
+    "id": 206,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 207,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 208,
+    "rarityLevel": 10,
+    "craftingPrice": 240
+  },
+  {
+    "id": 209,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 210,
+    "rarityLevel": 40,
+    "craftingPrice": 100
+  },
+  {
+    "id": 211,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 212,
+    "rarityLevel": 10,
+    "craftingPrice": 300
+  },
+  {
+    "id": 213,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 214,
+    "rarityLevel": 20,
+    "craftingPrice": 180
+  },
+  {
+    "id": 215,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 216,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 217,
+    "rarityLevel": 40,
+    "craftingPrice": 100
+  },
+  {
+    "id": 218,
+    "rarityLevel": 80,
+    "craftingPrice": 60
+  },
+  {
+    "id": 219,
+    "rarityLevel": 40,
+    "craftingPrice": 100
+  },
+  {
+    "id": 220,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 221,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 222,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 223,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 224,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 225,
+    "rarityLevel": 20,
+    "craftingPrice": 150
+  },
+  {
+    "id": 226,
+    "rarityLevel": 20,
+    "craftingPrice": 150
+  },
+  {
+    "id": 227,
+    "rarityLevel": 20,
+    "craftingPrice": 180
+  },
+  {
+    "id": 228,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 229,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 230,
+    "rarityLevel": 10,
+    "craftingPrice": 300
+  },
+  {
+    "id": 231,
+    "rarityLevel": 80,
+    "craftingPrice": 60
+  },
+  {
+    "id": 232,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 233,
+    "rarityLevel": "",
+    "craftingPrice": 500
+  },
+  {
+    "id": 234,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 235,
+    "rarityLevel": 30,
+    "craftingPrice": 160
+  },
+  {
+    "id": 236,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 237,
+    "rarityLevel": 20,
+    "craftingPrice": 220
+  },
+  {
+    "id": 238,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 239,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 240,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 241,
+    "rarityLevel": 30,
+    "craftingPrice": 160
+  },
+  {
+    "id": 242,
+    "rarityLevel": 10,
+    "craftingPrice": 240
+  },
+  {
+    "id": 243,
+    "rarityLevel": 5,
+    "craftingPrice": ""
+  },
+  {
+    "id": 244,
+    "rarityLevel": 5,
+    "craftingPrice": ""
+  },
+  {
+    "id": 245,
+    "rarityLevel": 5,
+    "craftingPrice": ""
+  },
+  {
+    "id": 246,
+    "rarityLevel": 5,
+    "craftingPrice": 420
+  },
+  {
+    "id": 247,
+    "rarityLevel": 4,
+    "craftingPrice": 480
+  },
+  {
+    "id": 248,
+    "rarityLevel": 3,
+    "craftingPrice": 540
+  },
+  {
+    "id": 249,
+    "rarityLevel": 1,
+    "craftingPrice": 600
+  },
+  {
+    "id": 250,
+    "rarityLevel": 1,
+    "craftingPrice": 600
+  },
+  {
+    "id": 251,
+    "rarityLevel": 1,
+    "craftingPrice": 800
+  },
+  {
+    "id": 252,
+    "rarityLevel": 10,
+    "craftingPrice": 180
+  },
+  {
+    "id": 253,
+    "rarityLevel": 7,
+    "craftingPrice": 260
+  },
+  {
+    "id": 254,
+    "rarityLevel": 4,
+    "craftingPrice": 360
+  },
+  {
+    "id": 255,
+    "rarityLevel": 10,
+    "craftingPrice": 180
+  },
+  {
+    "id": 256,
+    "rarityLevel": 7,
+    "craftingPrice": 260
+  },
+  {
+    "id": 257,
+    "rarityLevel": 4,
+    "craftingPrice": 360
+  },
+  {
+    "id": 258,
+    "rarityLevel": 10,
+    "craftingPrice": 180
+  },
+  {
+    "id": 259,
+    "rarityLevel": 7,
+    "craftingPrice": 260
+  },
+  {
+    "id": 260,
+    "rarityLevel": 4,
+    "craftingPrice": 360
+  },
+  {
+    "id": 261,
+    "rarityLevel": 100,
+    "craftingPrice": 20
+  },
+  {
+    "id": 262,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 263,
+    "rarityLevel": 100,
+    "craftingPrice": 20
+  },
+  {
+    "id": 264,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 265,
+    "rarityLevel": 100,
+    "craftingPrice": 20
+  },
+  {
+    "id": 266,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 267,
+    "rarityLevel": 60,
+    "craftingPrice": 40
+  },
+  {
+    "id": 268,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 269,
+    "rarityLevel": 60,
+    "craftingPrice": 40
+  },
+  {
+    "id": 270,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 271,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 272,
+    "rarityLevel": 20,
+    "craftingPrice": 180
+  },
+  {
+    "id": 273,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 274,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 275,
+    "rarityLevel": 20,
+    "craftingPrice": 180
+  },
+  {
+    "id": 276,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 277,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 278,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 279,
+    "rarityLevel": 40,
+    "craftingPrice": 100
+  },
+  {
+    "id": 280,
+    "rarityLevel": 100,
+    "craftingPrice": 20
+  },
+  {
+    "id": 281,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 282,
+    "rarityLevel": 20,
+    "craftingPrice": 200
+  },
+  {
+    "id": 283,
+    "rarityLevel": 70,
+    "craftingPrice": 40
+  },
+  {
+    "id": 284,
+    "rarityLevel": 40,
+    "craftingPrice": 100
+  },
+  {
+    "id": 285,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 286,
+    "rarityLevel": 40,
+    "craftingPrice": 100
+  },
+  {
+    "id": 287,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 288,
+    "rarityLevel": 30,
+    "craftingPrice": 140
+  },
+  {
+    "id": 289,
+    "rarityLevel": 10,
+    "craftingPrice": 280
+  },
+  {
+    "id": 290,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 291,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 292,
+    "rarityLevel": 10,
+    "craftingPrice": 220
+  },
+  {
+    "id": 293,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 294,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 295,
+    "rarityLevel": 20,
+    "craftingPrice": 180
+  },
+  {
+    "id": 296,
+    "rarityLevel": 70,
+    "craftingPrice": 40
+  },
+  {
+    "id": 297,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 298,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 299,
+    "rarityLevel": 20,
+    "craftingPrice": 180
+  },
+  {
+    "id": 300,
+    "rarityLevel": 70,
+    "craftingPrice": 40
+  },
+  {
+    "id": 301,
+    "rarityLevel": 40,
+    "craftingPrice": 80
+  },
+  {
+    "id": 302,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 303,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 304,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 305,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 306,
+    "rarityLevel": 20,
+    "craftingPrice": 200
+  },
+  {
+    "id": 307,
+    "rarityLevel": 70,
+    "craftingPrice": 40
+  },
+  {
+    "id": 308,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 309,
+    "rarityLevel": 70,
+    "craftingPrice": 40
+  },
+  {
+    "id": 310,
+    "rarityLevel": 30,
+    "craftingPrice": 140
+  },
+  {
+    "id": 311,
+    "rarityLevel": 70,
+    "craftingPrice": 60
+  },
+  {
+    "id": 312,
+    "rarityLevel": 70,
+    "craftingPrice": 60
+  },
+  {
+    "id": 313,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 314,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 315,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 316,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 317,
+    "rarityLevel": 40,
+    "craftingPrice": 80
+  },
+  {
+    "id": 318,
+    "rarityLevel": 70,
+    "craftingPrice": 40
+  },
+  {
+    "id": 319,
+    "rarityLevel": 30,
+    "craftingPrice": 140
+  },
+  {
+    "id": 320,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 321,
+    "rarityLevel": 20,
+    "craftingPrice": 160
+  },
+  {
+    "id": 322,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 323,
+    "rarityLevel": 30,
+    "craftingPrice": 140
+  },
+  {
+    "id": 324,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 325,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 326,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 327,
+    "rarityLevel": 50,
+    "craftingPrice": 80
+  },
+  {
+    "id": 328,
+    "rarityLevel": 70,
+    "craftingPrice": 40
+  },
+  {
+    "id": 329,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 330,
+    "rarityLevel": 10,
+    "craftingPrice": 260
+  },
+  {
+    "id": 331,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 332,
+    "rarityLevel": 40,
+    "craftingPrice": 100
+  },
+  {
+    "id": 333,
+    "rarityLevel": 70,
+    "craftingPrice": 60
+  },
+  {
+    "id": 334,
+    "rarityLevel": 10,
+    "craftingPrice": 260
+  },
+  {
+    "id": 335,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 336,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 337,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 338,
+    "rarityLevel": 40,
+    "craftingPrice": 120
+  },
+  {
+    "id": 339,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 340,
+    "rarityLevel": 20,
+    "craftingPrice": 160
+  },
+  {
+    "id": 341,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 342,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 343,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 344,
+    "rarityLevel": 20,
+    "craftingPrice": 160
+  },
+  {
+    "id": 345,
+    "rarityLevel": 10,
+    "craftingPrice": 220
+  },
+  {
+    "id": 346,
+    "rarityLevel": 5,
+    "craftingPrice": 280
+  },
+  {
+    "id": 347,
+    "rarityLevel": 10,
+    "craftingPrice": 220
+  },
+  {
+    "id": 348,
+    "rarityLevel": 5,
+    "craftingPrice": 280
+  },
+  {
+    "id": 349,
+    "rarityLevel": 60,
+    "craftingPrice": 40
+  },
+  {
+    "id": 350,
+    "rarityLevel": 10,
+    "craftingPrice": 300
+  },
+  {
+    "id": 351,
+    "rarityLevel": 50,
+    "craftingPrice": 120
+  },
+  {
+    "id": 352,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 353,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 354,
+    "rarityLevel": 20,
+    "craftingPrice": 160
+  },
+  {
+    "id": 355,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 356,
+    "rarityLevel": 20,
+    "craftingPrice": 160
+  },
+  {
+    "id": 357,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 358,
+    "rarityLevel": 30,
+    "craftingPrice": 120
+  },
+  {
+    "id": 359,
+    "rarityLevel": 20,
+    "craftingPrice": 180
+  },
+  {
+    "id": 360,
+    "rarityLevel": 30,
+    "craftingPrice": 80
+  },
+  {
+    "id": 361,
+    "rarityLevel": 60,
+    "craftingPrice": 60
+  },
+  {
+    "id": 362,
+    "rarityLevel": 20,
+    "craftingPrice": 160
+  },
+  {
+    "id": 363,
+    "rarityLevel": 80,
+    "craftingPrice": 20
+  },
+  {
+    "id": 364,
+    "rarityLevel": 50,
+    "craftingPrice": 100
+  },
+  {
+    "id": 365,
+    "rarityLevel": 20,
+    "craftingPrice": 200
+  },
+  {
+    "id": 366,
+    "rarityLevel": 60,
+    "craftingPrice": 80
+  },
+  {
+    "id": 367,
+    "rarityLevel": 30,
+    "craftingPrice": 140
+  },
+  {
+    "id": 368,
+    "rarityLevel": 30,
+    "craftingPrice": 140
+  },
+  {
+    "id": 369,
+    "rarityLevel": 20,
+    "craftingPrice": 180
+  },
+  {
+    "id": 370,
+    "rarityLevel": 80,
+    "craftingPrice": 40
+  },
+  {
+    "id": 371,
+    "rarityLevel": 5,
+    "craftingPrice": 420
+  },
+  {
+    "id": 372,
+    "rarityLevel": 4,
+    "craftingPrice": 480
+  },
+  {
+    "id": 373,
+    "rarityLevel": 3,
+    "craftingPrice": 540
+  },
+  {
+    "id": 374,
+    "rarityLevel": 5,
+    "craftingPrice": 420
+  },
+  {
+    "id": 375,
+    "rarityLevel": 4,
+    "craftingPrice": 480
+  },
+  {
+    "id": 376,
+    "rarityLevel": 3,
+    "craftingPrice": 540
+  },
+  {
+    "id": 377,
+    "rarityLevel": 1,
+    "craftingPrice": 550
+  },
+  {
+    "id": 378,
+    "rarityLevel": 1,
+    "craftingPrice": 550
+  },
+  {
+    "id": 379,
+    "rarityLevel": 1,
+    "craftingPrice": 550
+  },
+  {
+    "id": 380,
+    "rarityLevel": 5,
+    "craftingPrice": ""
+  },
+  {
+    "id": 381,
+    "rarityLevel": 5,
+    "craftingPrice": ""
+  },
+  {
+    "id": 382,
+    "rarityLevel": "",
+    "craftingPrice": 600
+  },
+  {
+    "id": 383,
+    "rarityLevel": "",
+    "craftingPrice": 600
+  },
+  {
+    "id": 384,
+    "rarityLevel": "",
+    "craftingPrice": 600
+  },
+  {
+    "id": 385,
+    "rarityLevel": 1,
+    "craftingPrice": 800
+  },
+  {
+    "id": 386,
+    "rarityLevel": "",
+    "craftingPrice": 600
+  }
+]

@@ -1,5 +1,5 @@
 const fs = require('fs');
-const basePokedex = require('../src/data/pokedex.json');
+const basePokedex = require('./output.json');
 const baseTypes = require('../src/data/types.json');
 
 const colours = {

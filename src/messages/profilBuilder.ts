@@ -50,10 +50,11 @@ const buildProfil = ({
   const formattedUserPokedex = getCleanUserPokedexArray(pokedex);
 
   exampleEmbed.addFields({
-    name: 'Pokemon acquis',
+    name: 'Pokemon acquis / manquants',
     value: pokedex.length === 0
       ? 'Aucun :('
-      : formattedUserPokedex.reduce((valueStr, currentPokemonObj) => `${valueStr.length > 0 ? `${valueStr}, ` : ''}#${currentPokemonObj.id} ${currentPokemonObj.nbr > 1 ? `(${currentPokemonObj.nbr})` : ''}`, ''),
+      : 'Liste impossible à charger, trop de données. Voir le GDOC. Une solution est en cours de developpement.',
+    // : formattedUserPokedex.reduce((valueStr, currentPokemonObj) => `${valueStr.length > 0 ? `${valueStr}, ` : ''}#${currentPokemonObj.id} ${currentPokemonObj.nbr > 1 ? `(${currentPokemonObj.nbr})` : ''}`, ''),
   });
 
   /* exampleEmbed.addFields({

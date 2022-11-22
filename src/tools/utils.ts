@@ -13,7 +13,14 @@ const getDateFormat = () => 'DD/MM/YYYY';
 
 const getTodayDateFormated = () => dayjs().tz('Europe/Paris').format(getDateFormat());
 
-const getNowDateTimeFormated = () => dayjs().tz('Europe/Paris').format(getDateTimeFormat());
+const getNowDateTimeFormated = () => {
+  const ret = dayjs().tz('Europe/Paris').format(getDateTimeFormat());
+  console.log(dayjs());
+  console.log(dayjs().tz('Europe/Paris'));
+  console.log(dayjs().tz('Europe/Paris').format(getDateTimeFormat()));
+  console.log(ret);
+  return ret;
+};
 
 const wasBeforeDailyReset = (lastQuestDate: Date) => {
   const lastQuestDateTime = dayjs(lastQuestDate).tz('Europe/Paris');

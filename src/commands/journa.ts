@@ -39,6 +39,10 @@ export default {
         strRewardBase += '\n**Ton `!bonus` est disponible !**';
       }
 
+      if (usersModel.hasClaims(user)) {
+        strRewardBase += '\n**Tu as un `!claim` disponible !**';
+      }
+
       message.reply(strRewardBase);
 
       return;

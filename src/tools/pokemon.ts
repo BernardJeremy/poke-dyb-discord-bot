@@ -7,11 +7,18 @@ const EXCLUSION_POKEMON_ID_THRESHHOLD = 151;
 const getRandomPokemon = (): Pokemon => {
   const seed = getRandomInt(1, 100);
 
-  const eligiblePokemonList = pokedex.filter((pokemon) => (
-    pokemon.id < EXCLUSION_POKEMON_ID_THRESHHOLD && seed >= EXCLUSION_RARITY_THRESHHOLD
-      ? pokemon.rarityLevel < EXCLUSION_RARITY_THRESHHOLD && pokemon.rarityLevel > seed
-      : pokemon.rarityLevel > seed
-  ));
+  const eligiblePokemonList = pokedex.filter((pokemon) => {
+    if (pokemon.id <= EXCLUSION_POKEMON_ID_THRESHHOLD) {
+      if (seed >= EXCLUSION_RARITY_THRESHHOLD
+        || pokemon.rarityLevel > EXCLUSION_RARITY_THRESHHOLD
+        || pokemon.rarityLevel < seed) {
+        return false;
+      }
+      return true;
+    }
+
+    return pokemon.rarityLevel >= seed;
+  });
 
   return eligiblePokemonList[Math.floor(Math.random() * eligiblePokemonList.length)];
 };

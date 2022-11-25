@@ -1,24 +1,18 @@
-import dayjs, { extend } from 'dayjs';
-import isoWeek from 'dayjs/plugin/isoWeek';
-import utc from 'dayjs/plugin/utc';
-import timezone from 'dayjs/plugin/timezone'; // dependent on utc plugin
-
-extend(isoWeek);
-extend(utc);
-extend(timezone);
+import { isSameDay } from 'date-fns';
+import { formatToTimeZone, convertToTimeZone } from 'date-fns-timezone';
 
 const getDateTimeFormat = () => 'DD/MM/YYYY HH:mm';
 
 const getDateFormat = () => 'DD/MM/YYYY';
 
-const getTodayDateFormated = () => dayjs().tz('Europe/Paris').format(getDateFormat());
+const getTodayDateFormated = () => formatToTimeZone(new Date(), getDateFormat(), { timeZone: 'Europe/Paris' });
 
-const getNowDateTimeFormated = () => dayjs().tz('Europe/Paris').format(getDateTimeFormat());
+const getNowDateTimeFormated = () => formatToTimeZone(new Date(), getDateTimeFormat(), { timeZone: 'Europe/Paris' });
 
 const wasBeforeDailyReset = (lastQuestDate: Date) => {
-  const lastQuestDateTime = dayjs(lastQuestDate).tz('Europe/Paris');
+  const lastQuestDateTime = convertToTimeZone(lastQuestDate, { timeZone: 'Europe/Paris' });
 
-  return !lastQuestDateTime.isSame(dayjs(), 'day');
+  return !isSameDay(lastQuestDateTime, new Date());
 };
 
 const countUnique = (iterable: Array<any>) => new Set(iterable).size;

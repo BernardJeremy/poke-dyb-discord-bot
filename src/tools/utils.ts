@@ -11,8 +11,12 @@ const getNowDateTimeFormated = () => formatToTimeZone(new Date(), getDateTimeFor
 
 const wasBeforeDailyReset = (lastQuestDate: Date) => {
   const lastQuestDateTime = convertToTimeZone(lastQuestDate, { timeZone: 'Europe/Paris' });
+  const today = convertToTimeZone(new Date(), { timeZone: 'Europe/Paris' });
 
-  return !isSameDay(lastQuestDateTime, new Date());
+  console.log(lastQuestDateTime, 'vs', today);
+  console.log('isSameDay', isSameDay(lastQuestDateTime, today));
+
+  return !isSameDay(lastQuestDateTime, today);
 };
 
 const countUnique = (iterable: Array<any>) => new Set(iterable).size;

@@ -12,7 +12,7 @@ const seed = 40;// getRandomInt(1, 100);
 const eligiblePokemonList = pokedex.filter((pokemon) => {
   if (pokemon.id <= EXCLUSION_POKEMON_ID_THRESHHOLD) {
     if (seed >= EXCLUSION_RARITY_THRESHHOLD
-      || pokemon.rarityLevel > EXCLUSION_RARITY_THRESHHOLD
+      || pokemon.rarityLevel >= EXCLUSION_RARITY_THRESHHOLD
       || pokemon.rarityLevel < seed) {
       return false;
     }

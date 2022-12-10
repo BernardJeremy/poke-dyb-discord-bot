@@ -1,3 +1,4 @@
+import { convertToTimeZone } from 'date-fns-timezone';
 import * as usersModel from '../models/users';
 
 const {
@@ -12,7 +13,7 @@ export default {
   async execute() {
     const allUsers = usersModel.getAllUsers();
     const users: User[] = JSON.parse(JSON.stringify(allUsers));
-    const now = new Date();
+    const now = convertToTimeZone(new Date(), { timeZone: 'Europe/Paris' });
     const dayNbr = now.getDate();
     const monthNbr = now.getMonth() + 1;
 

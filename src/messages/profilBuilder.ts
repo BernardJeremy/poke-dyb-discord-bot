@@ -42,7 +42,11 @@ const buildProfil = ({
   );
 
   if (currentReputation) {
-    exampleEmbed.addFields({ name: 'Réputation Mr. Fuji', value: `${currentReputation.name} (${tower.reputation - (currentReputation.pointAccumulation + 1 - currentReputation.pointForNextLevel)} / ${currentReputation.pointForNextLevel})`, inline: true });
+    if (currentReputation.id < towerData.reputations.length) {
+      exampleEmbed.addFields({ name: 'Réputation Mr. Fuji', value: `${currentReputation.name} (${tower.reputation - (currentReputation.pointAccumulation + 1 - currentReputation.pointForNextLevel)} / ${currentReputation.pointForNextLevel})`, inline: true });
+    } else {
+      exampleEmbed.addFields({ name: 'Réputation Mr. Fuji', value: `${currentReputation.name}`, inline: true });
+    }
   }
 
   exampleEmbed.addFields({ name: '\u200B', value: '\u200B' });
@@ -54,6 +58,7 @@ const buildProfil = ({
     value: pokedex.length === 0
       ? 'Aucun :('
       : 'Liste impossible à charger, trop de données. Voir le GDOC. Une solution est en cours de developpement.',
+    // eslint-disable-next-line max-len
     // : formattedUserPokedex.reduce((valueStr, currentPokemonObj) => `${valueStr.length > 0 ? `${valueStr}, ` : ''}#${currentPokemonObj.id} ${currentPokemonObj.nbr > 1 ? `(${currentPokemonObj.nbr})` : ''}`, ''),
   });
 

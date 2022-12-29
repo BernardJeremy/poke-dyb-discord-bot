@@ -52,7 +52,7 @@ export default {
       captureRate: parseInt(SAFARI_STARTING_CATCH_RATE, 10),
       escapeRate: parseInt(SAFARI_STARTING_ESCAPE_RATE, 10),
       statusText: `
-      ${safariCost} 🎫 t'on été prélevés.
+      ${safariCost} 🎫 t'ont été prélevés.
       [#${pokemonObj.id}] ${pokemonObj.name} vous regarde attentivement.
       Tu ${user.pokedex.includes(pokemonObj.id) ? `disposes de ${user.pokedex.filter((pokemonId) => pokemonId === pokemonObj.id).length} exemplaire(s) de ce Pokemon` : 'ne dispose pas de ce Pokemon'}`,
       ongoing: true,

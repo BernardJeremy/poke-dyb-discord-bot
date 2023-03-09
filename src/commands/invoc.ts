@@ -79,7 +79,7 @@ export default {
           },
         });
       });
-      message.channel.send(`${message.author} vient de réaliser la ${totalInvoc}eme invocations ! Il permet à tous le monde d'obtenir 1000 ${COIN_EMOJI_ID} (\`!claim\` pour les récupérer) ! Merci à lui.`);
+      message.channel.send(`${message.author} vient de réaliser la ${totalInvoc}eme invocations ! Il/Elle permet à tous le monde d'obtenir 1000 ${COIN_EMOJI_ID} (\`!claim\` pour les récupérer) ! Merci à lui / elle.`);
     }
   },
 };

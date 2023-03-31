@@ -35,7 +35,7 @@ export default {
     }
 
     if (pokemonObj.craftingPrice < 0) {
-      message.reply('Ce pokemon n\' pas craftable, désolé. Bonne chance dans les `!invoc` !');
+      message.reply('Ce pokemon n\'est pas craftable, désolé. Bonne chance dans les `!invoc` !');
       return;
     }
 

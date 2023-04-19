@@ -50,6 +50,11 @@ export default {
       message.reply(`Tu n'as que ${targetPokemonList.length} exemplaire(s) de ce pokemon`);
       return;
     }
+   
+    if (nbrToDez === targetPokemonList.length) {
+      message.reply(`Tu ne peux pas dez le dernier exemplaire d'un pokemon (et l'assurance ne rembourse plus)`);
+      return;
+    }
 
     user.pokedex = removePokemonFromList(user.pokedex, pokemonNbr, nbrToDez);
 

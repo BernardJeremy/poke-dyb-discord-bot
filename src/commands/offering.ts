@@ -94,7 +94,7 @@ export default {
     await message.reply(
       buildCard(pokemonObj, {
         displayType: DisplayTypes.CaughtPokemon,
-        content: `**Arceus** t'offre en remerciement **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as actuellement ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length}`,
+        content: `**Arceus** t'offre en remerciement **[#${pokemonObj.id}] ${pokemonObj.name}**. Tu en as actuellement ${user.pokedex.filter((pokemon) => pokemonObj.id === pokemon).length} et il te reste ${user.dust}${DUST_EMOJI_ID}`,
       }),
     );
   },

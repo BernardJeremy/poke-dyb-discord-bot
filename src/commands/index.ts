@@ -20,6 +20,8 @@ import ban from './ban';
 import unban from './unban';
 import livedex from './livedex';
 import optihv from './optihv';
+import dezalldouble from './dezalldouble';
+import offering from './offering';
 
 const commands = [
   pokemon,
@@ -29,6 +31,8 @@ const commands = [
   craft,
   invoc,
   dez,
+  dezalldouble,
+  offering,
   hv,
   trade,
   claim,

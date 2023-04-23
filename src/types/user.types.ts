@@ -21,6 +21,7 @@ interface UserRatio {
   safari: number,
   safariSuccess: number,
   safariSuccessPercentage?: number,
+  arceus: number,
 }
 
 interface User {

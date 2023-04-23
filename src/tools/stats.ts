@@ -71,6 +71,9 @@ const getAverageRatio = (usersList: User[]): UserRatio => {
   const totalSafariSuccess = usersList.reduce((total, user) => (
     user.ratio.safariSuccess + total
   ), 0);
+  const totalArceus = usersList.reduce((total, user) => (
+    user.ratio.arceus + total
+  ), 0);
 
   return {
     invoc: totalInvoc,
@@ -88,6 +91,7 @@ const getAverageRatio = (usersList: User[]): UserRatio => {
     safariSuccessPercentage: Math.round(
       (totalSafariSuccess / totalSafari) * 100,
     ),
+    arceus: totalArceus,
   };
 };
 

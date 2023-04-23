@@ -31,6 +31,7 @@ const getInitRatioValue = () => (
     towerSuccess: 0,
     safari: 0,
     safariSuccess: 0,
+    arceus: 0,
   });
 
 const createUser = (userAccountData: DiscordUserData) => {

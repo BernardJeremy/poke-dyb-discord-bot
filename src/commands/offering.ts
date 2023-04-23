@@ -18,17 +18,17 @@ const offeringListArray: OfferingData[] = [
   {
     min: 41,
     max: 60,
-    dustCost: 100,
+    dustCost: 50,
   },
   {
     min: 21,
     max: 40,
-    dustCost: 200,
+    dustCost: 100,
   },
   {
     min: 6,
     max: 20,
-    dustCost: 300,
+    dustCost: 250,
   },
   {
     min: 0,

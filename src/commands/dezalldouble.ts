@@ -27,7 +27,7 @@ export default {
 
     for (let i = 0; i < userPokedex.length; i += 1) {
       const currentPokemon = userPokedex[i];
-      if (currentPokemon.nbr > 1) {
+      if (currentPokemon.nbr > 1 && currentPokemon.craftingPrice > 0) {
         const nbrToDez = currentPokemon.nbr - 1;
         nbrDezTotal += nbrToDez;
         nbrUniquePokemonTotal += 1;

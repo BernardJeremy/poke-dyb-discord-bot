@@ -7128,5 +7128,1984 @@
         "color": "#F95587",
         "rarityLevel": 0,
         "craftingPrice": 600
+    },
+    {
+        "id": 387,
+        "name": "Tortipouss",
+        "stats": {
+            "HP": 55,
+            "Attack": 68,
+            "Defense": 64,
+            "Sp. Attack": 45,
+            "Sp. Defense": 55,
+            "Speed": 31
+        },
+        "types": [
+            "Plante"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 10,
+        "craftingPrice": 180
+    },
+    {
+        "id": 388,
+        "name": "Boskara",
+        "stats": {
+            "HP": 75,
+            "Attack": 89,
+            "Defense": 85,
+            "Sp. Attack": 55,
+            "Sp. Defense": 65,
+            "Speed": 36
+        },
+        "types": [
+            "Plante"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 7,
+        "craftingPrice": 260
+    },
+    {
+        "id": 389,
+        "name": "Torterra",
+        "stats": {
+            "HP": 95,
+            "Attack": 109,
+            "Defense": 105,
+            "Sp. Attack": 75,
+            "Sp. Defense": 85,
+            "Speed": 56
+        },
+        "types": [
+            "Plante",
+            "Sol"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 4,
+        "craftingPrice": 360
+    },
+    {
+        "id": 390,
+        "name": "Ouisticram",
+        "stats": {
+            "HP": 44,
+            "Attack": 58,
+            "Defense": 44,
+            "Sp. Attack": 58,
+            "Sp. Defense": 44,
+            "Speed": 61
+        },
+        "types": [
+            "Feu"
+        ],
+        "color": "#EE8130",
+        "rarityLevel": 10,
+        "craftingPrice": 180
+    },
+    {
+        "id": 391,
+        "name": "Chimpenfeu",
+        "stats": {
+            "HP": 64,
+            "Attack": 78,
+            "Defense": 52,
+            "Sp. Attack": 78,
+            "Sp. Defense": 52,
+            "Speed": 81
+        },
+        "types": [
+            "Feu",
+            "Combat"
+        ],
+        "color": "#EE8130",
+        "rarityLevel": 7,
+        "craftingPrice": 260
+    },
+    {
+        "id": 392,
+        "name": "Simiabraz",
+        "stats": {
+            "HP": 76,
+            "Attack": 104,
+            "Defense": 71,
+            "Sp. Attack": 104,
+            "Sp. Defense": 71,
+            "Speed": 108
+        },
+        "types": [
+            "Feu",
+            "Combat"
+        ],
+        "color": "#EE8130",
+        "rarityLevel": 4,
+        "craftingPrice": 360
+    },
+    {
+        "id": 393,
+        "name": "Tiplouf",
+        "stats": {
+            "HP": 53,
+            "Attack": 51,
+            "Defense": 53,
+            "Sp. Attack": 61,
+            "Sp. Defense": 56,
+            "Speed": 40
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 10,
+        "craftingPrice": 180
+    },
+    {
+        "id": 394,
+        "name": "Prinplouf",
+        "stats": {
+            "HP": 64,
+            "Attack": 66,
+            "Defense": 68,
+            "Sp. Attack": 81,
+            "Sp. Defense": 76,
+            "Speed": 50
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 7,
+        "craftingPrice": 260
+    },
+    {
+        "id": 395,
+        "name": "Pingoléon",
+        "stats": {
+            "HP": 84,
+            "Attack": 86,
+            "Defense": 88,
+            "Sp. Attack": 111,
+            "Sp. Defense": 101,
+            "Speed": 60
+        },
+        "types": [
+            "Eau",
+            "Acier"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 4,
+        "craftingPrice": 360
+    },
+    {
+        "id": 396,
+        "name": "Étourmi",
+        "stats": {
+            "HP": 40,
+            "Attack": 55,
+            "Defense": 30,
+            "Sp. Attack": 30,
+            "Sp. Defense": 30,
+            "Speed": 60
+        },
+        "types": [
+            "Normal",
+            "Vol"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 100,
+        "craftingPrice": 20
+    },
+    {
+        "id": 397,
+        "name": "Étourvol",
+        "stats": {
+            "HP": 55,
+            "Attack": 75,
+            "Defense": 50,
+            "Sp. Attack": 40,
+            "Sp. Defense": 40,
+            "Speed": 80
+        },
+        "types": [
+            "Normal",
+            "Vol"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 60,
+        "craftingPrice": 60
+    },
+    {
+        "id": 398,
+        "name": "Étouraptor",
+        "stats": {
+            "HP": 85,
+            "Attack": 120,
+            "Defense": 70,
+            "Sp. Attack": 50,
+            "Sp. Defense": 60,
+            "Speed": 100
+        },
+        "types": [
+            "Normal",
+            "Vol"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 30,
+        "craftingPrice": 120
+    },
+    {
+        "id": 399,
+        "name": "Keunotor",
+        "stats": {
+            "HP": 59,
+            "Attack": 45,
+            "Defense": 40,
+            "Sp. Attack": 35,
+            "Sp. Defense": 40,
+            "Speed": 31
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 100,
+        "craftingPrice": 20
+    },
+    {
+        "id": 400,
+        "name": "Castorno",
+        "stats": {
+            "HP": 79,
+            "Attack": 85,
+            "Defense": 60,
+            "Sp. Attack": 55,
+            "Sp. Defense": 60,
+            "Speed": 71
+        },
+        "types": [
+            "Normal",
+            "Eau"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 50,
+        "craftingPrice": 100
+    },
+    {
+        "id": 401,
+        "name": "Crikzik",
+        "stats": {
+            "HP": 37,
+            "Attack": 25,
+            "Defense": 41,
+            "Sp. Attack": 25,
+            "Sp. Defense": 41,
+            "Speed": 25
+        },
+        "types": [
+            "Insecte"
+        ],
+        "color": "#A6B91A",
+        "rarityLevel": 80,
+        "craftingPrice": 40
+    },
+    {
+        "id": 402,
+        "name": "Mélokrik",
+        "stats": {
+            "HP": 77,
+            "Attack": 85,
+            "Defense": 51,
+            "Sp. Attack": 55,
+            "Sp. Defense": 51,
+            "Speed": 65
+        },
+        "types": [
+            "Insecte"
+        ],
+        "color": "#A6B91A",
+        "rarityLevel": 50,
+        "craftingPrice": 80
+    },
+    {
+        "id": 403,
+        "name": "Lixy",
+        "stats": {
+            "HP": 45,
+            "Attack": 65,
+            "Defense": 34,
+            "Sp. Attack": 40,
+            "Sp. Defense": 34,
+            "Speed": 45
+        },
+        "types": [
+            "Electrique"
+        ],
+        "color": "#F7D02C",
+        "rarityLevel": 80,
+        "craftingPrice": 40
+    },
+    {
+        "id": 404,
+        "name": "Luxio",
+        "stats": {
+            "HP": 60,
+            "Attack": 85,
+            "Defense": 49,
+            "Sp. Attack": 60,
+            "Sp. Defense": 49,
+            "Speed": 60
+        },
+        "types": [
+            "Electrique"
+        ],
+        "color": "#F7D02C",
+        "rarityLevel": 50,
+        "craftingPrice": 100
+    },
+    {
+        "id": 405,
+        "name": "Luxray",
+        "stats": {
+            "HP": 80,
+            "Attack": 120,
+            "Defense": 79,
+            "Sp. Attack": 95,
+            "Sp. Defense": 79,
+            "Speed": 70
+        },
+        "types": [
+            "Electrique"
+        ],
+        "color": "#F7D02C",
+        "rarityLevel": 20,
+        "craftingPrice": 160
+    },
+    {
+        "id": 406,
+        "name": "Rozbouton",
+        "stats": {
+            "HP": 40,
+            "Attack": 30,
+            "Defense": 35,
+            "Sp. Attack": 50,
+            "Sp. Defense": 70,
+            "Speed": 55
+        },
+        "types": [
+            "Plante",
+            "Poison"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 100,
+        "craftingPrice": 20
+    },
+    {
+        "id": 407,
+        "name": "Roserade",
+        "stats": {
+            "HP": 60,
+            "Attack": 70,
+            "Defense": 65,
+            "Sp. Attack": 125,
+            "Sp. Defense": 105,
+            "Speed": 90
+        },
+        "types": [
+            "Plante",
+            "Poison"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 408,
+        "name": "Kranidos",
+        "stats": {
+            "HP": 67,
+            "Attack": 125,
+            "Defense": 40,
+            "Sp. Attack": 30,
+            "Sp. Defense": 30,
+            "Speed": 58
+        },
+        "types": [
+            "Roche"
+        ],
+        "color": "#B6A136",
+        "rarityLevel": 10,
+        "craftingPrice": 220
+    },
+    {
+        "id": 409,
+        "name": "Charkos",
+        "stats": {
+            "HP": 97,
+            "Attack": 165,
+            "Defense": 60,
+            "Sp. Attack": 65,
+            "Sp. Defense": 50,
+            "Speed": 58
+        },
+        "types": [
+            "Roche"
+        ],
+        "color": "#B6A136",
+        "rarityLevel": 5,
+        "craftingPrice": 280
+    },
+    {
+        "id": 410,
+        "name": "Dinoclier",
+        "stats": {
+            "HP": 30,
+            "Attack": 42,
+            "Defense": 118,
+            "Sp. Attack": 42,
+            "Sp. Defense": 88,
+            "Speed": 30
+        },
+        "types": [
+            "Roche",
+            "Acier"
+        ],
+        "color": "#B6A136",
+        "rarityLevel": 10,
+        "craftingPrice": 220
+    },
+    {
+        "id": 411,
+        "name": "Bastiodon",
+        "stats": {
+            "HP": 60,
+            "Attack": 52,
+            "Defense": 168,
+            "Sp. Attack": 47,
+            "Sp. Defense": 138,
+            "Speed": 30
+        },
+        "types": [
+            "Roche",
+            "Acier"
+        ],
+        "color": "#B6A136",
+        "rarityLevel": 5,
+        "craftingPrice": 280
+    },
+    {
+        "id": 412,
+        "name": "Cheniti",
+        "stats": {
+            "HP": 40,
+            "Attack": 29,
+            "Defense": 45,
+            "Sp. Attack": 29,
+            "Sp. Defense": 45,
+            "Speed": 36
+        },
+        "types": [
+            "Insecte"
+        ],
+        "color": "#A6B91A",
+        "rarityLevel": 100,
+        "craftingPrice": 20
+    },
+    {
+        "id": 413,
+        "name": "Cheniselle",
+        "stats": {
+            "HP": 60,
+            "Attack": 59,
+            "Defense": 85,
+            "Sp. Attack": 79,
+            "Sp. Defense": 105,
+            "Speed": 36
+        },
+        "types": [
+            "Insecte",
+            "Plante"
+        ],
+        "color": "#A6B91A",
+        "rarityLevel": 80,
+        "craftingPrice": 60
+    },
+    {
+        "id": 414,
+        "name": "Papilord",
+        "stats": {
+            "HP": 70,
+            "Attack": 94,
+            "Defense": 50,
+            "Sp. Attack": 94,
+            "Sp. Defense": 50,
+            "Speed": 66
+        },
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "color": "#A6B91A",
+        "rarityLevel": 50,
+        "craftingPrice": 100
+    },
+    {
+        "id": 415,
+        "name": "Apitrini",
+        "stats": {
+            "HP": 30,
+            "Attack": 30,
+            "Defense": 42,
+            "Sp. Attack": 30,
+            "Sp. Defense": 42,
+            "Speed": 70
+        },
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "color": "#A6B91A",
+        "rarityLevel": 80,
+        "craftingPrice": 40
+    },
+    {
+        "id": 416,
+        "name": "Apireine",
+        "stats": {
+            "HP": 70,
+            "Attack": 80,
+            "Defense": 102,
+            "Sp. Attack": 80,
+            "Sp. Defense": 102,
+            "Speed": 40
+        },
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "color": "#A6B91A",
+        "rarityLevel": 30,
+        "craftingPrice": 120
+    },
+    {
+        "id": 417,
+        "name": "Pachirisu",
+        "stats": {
+            "HP": 60,
+            "Attack": 45,
+            "Defense": 70,
+            "Sp. Attack": 45,
+            "Sp. Defense": 90,
+            "Speed": 95
+        },
+        "types": [
+            "Electrique"
+        ],
+        "color": "#F7D02C",
+        "rarityLevel": 60,
+        "craftingPrice": 60
+    },
+    {
+        "id": 418,
+        "name": "Mustébouée",
+        "stats": {
+            "HP": 55,
+            "Attack": 65,
+            "Defense": 35,
+            "Sp. Attack": 60,
+            "Sp. Defense": 30,
+            "Speed": 85
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 80,
+        "craftingPrice": 40
+    },
+    {
+        "id": 419,
+        "name": "Mustéflott",
+        "stats": {
+            "HP": 85,
+            "Attack": 105,
+            "Defense": 55,
+            "Sp. Attack": 85,
+            "Sp. Defense": 50,
+            "Speed": 115
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 30,
+        "craftingPrice": 140
+    },
+    {
+        "id": 420,
+        "name": "Ceribou",
+        "stats": {
+            "HP": 45,
+            "Attack": 35,
+            "Defense": 45,
+            "Sp. Attack": 62,
+            "Sp. Defense": 53,
+            "Speed": 35
+        },
+        "types": [
+            "Plante"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 100,
+        "craftingPrice": 20
+    },
+    {
+        "id": 421,
+        "name": "Ceriflor",
+        "stats": {
+            "HP": 70,
+            "Attack": 60,
+            "Defense": 70,
+            "Sp. Attack": 87,
+            "Sp. Defense": 78,
+            "Speed": 85
+        },
+        "types": [
+            "Plante"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 50,
+        "craftingPrice": 100
+    },
+    {
+        "id": 422,
+        "name": "Sancoki",
+        "stats": {
+            "HP": 76,
+            "Attack": 48,
+            "Defense": 48,
+            "Sp. Attack": 57,
+            "Sp. Defense": 62,
+            "Speed": 34
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 80,
+        "craftingPrice": 60
+    },
+    {
+        "id": 423,
+        "name": "Tritosor",
+        "stats": {
+            "HP": 111,
+            "Attack": 83,
+            "Defense": 68,
+            "Sp. Attack": 92,
+            "Sp. Defense": 82,
+            "Speed": 39
+        },
+        "types": [
+            "Eau",
+            "Sol"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 30,
+        "craftingPrice": 120
+    },
+    {
+        "id": 424,
+        "name": "Capidextre",
+        "stats": {
+            "HP": 75,
+            "Attack": 100,
+            "Defense": 66,
+            "Sp. Attack": 60,
+            "Sp. Defense": 66,
+            "Speed": 115
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 20,
+        "craftingPrice": 160
+    },
+    {
+        "id": 425,
+        "name": "Baudrive",
+        "stats": {
+            "HP": 90,
+            "Attack": 50,
+            "Defense": 34,
+            "Sp. Attack": 60,
+            "Sp. Defense": 44,
+            "Speed": 70
+        },
+        "types": [
+            "Spectre",
+            "Vol"
+        ],
+        "color": "#735797",
+        "rarityLevel": 60,
+        "craftingPrice": 80
+    },
+    {
+        "id": 426,
+        "name": "Grodrive",
+        "stats": {
+            "HP": 150,
+            "Attack": 80,
+            "Defense": 44,
+            "Sp. Attack": 90,
+            "Sp. Defense": 54,
+            "Speed": 80
+        },
+        "types": [
+            "Spectre",
+            "Vol"
+        ],
+        "color": "#735797",
+        "rarityLevel": 30,
+        "craftingPrice": 140
+    },
+    {
+        "id": 427,
+        "name": "Laporeille",
+        "stats": {
+            "HP": 55,
+            "Attack": 66,
+            "Defense": 44,
+            "Sp. Attack": 44,
+            "Sp. Defense": 56,
+            "Speed": 85
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 60,
+        "craftingPrice": 60
+    },
+    {
+        "id": 428,
+        "name": "Lockpin",
+        "stats": {
+            "HP": 65,
+            "Attack": 76,
+            "Defense": 84,
+            "Sp. Attack": 54,
+            "Sp. Defense": 96,
+            "Speed": 105
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 30,
+        "craftingPrice": 140
+    },
+    {
+        "id": 429,
+        "name": "Magirêve",
+        "stats": {
+            "HP": 60,
+            "Attack": 60,
+            "Defense": 60,
+            "Sp. Attack": 105,
+            "Sp. Defense": 105,
+            "Speed": 105
+        },
+        "types": [
+            "Spectre"
+        ],
+        "color": "#735797",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 430,
+        "name": "Corboss",
+        "stats": {
+            "HP": 100,
+            "Attack": 125,
+            "Defense": 52,
+            "Sp. Attack": 105,
+            "Sp. Defense": 52,
+            "Speed": 71
+        },
+        "types": [
+            "Ténèbre",
+            "Vol"
+        ],
+        "color": "#705746",
+        "rarityLevel": 20,
+        "craftingPrice": 200
+    },
+    {
+        "id": 431,
+        "name": "Chaglam",
+        "stats": {
+            "HP": 49,
+            "Attack": 55,
+            "Defense": 42,
+            "Sp. Attack": 42,
+            "Sp. Defense": 37,
+            "Speed": 85
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 80,
+        "craftingPrice": 60
+    },
+    {
+        "id": 432,
+        "name": "Chaffreux",
+        "stats": {
+            "HP": 71,
+            "Attack": 82,
+            "Defense": 64,
+            "Sp. Attack": 64,
+            "Sp. Defense": 59,
+            "Speed": 112
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 30,
+        "craftingPrice": 120
+    },
+    {
+        "id": 433,
+        "name": "Korillon",
+        "stats": {
+            "HP": 45,
+            "Attack": 30,
+            "Defense": 50,
+            "Sp. Attack": 65,
+            "Sp. Defense": 50,
+            "Speed": 45
+        },
+        "types": [
+            "Psy"
+        ],
+        "color": "#F95587",
+        "rarityLevel": 50,
+        "craftingPrice": 100
+    },
+    {
+        "id": 434,
+        "name": "Moufouette",
+        "stats": {
+            "HP": 63,
+            "Attack": 63,
+            "Defense": 47,
+            "Sp. Attack": 41,
+            "Sp. Defense": 41,
+            "Speed": 74
+        },
+        "types": [
+            "Poison",
+            "Ténèbre"
+        ],
+        "color": "#A33EA1",
+        "rarityLevel": 100,
+        "craftingPrice": 20
+    },
+    {
+        "id": 435,
+        "name": "Moufflair",
+        "stats": {
+            "HP": 103,
+            "Attack": 93,
+            "Defense": 67,
+            "Sp. Attack": 71,
+            "Sp. Defense": 61,
+            "Speed": 84
+        },
+        "types": [
+            "Poison",
+            "Ténèbre"
+        ],
+        "color": "#A33EA1",
+        "rarityLevel": 40,
+        "craftingPrice": 120
+    },
+    {
+        "id": 436,
+        "name": "Archéomire",
+        "stats": {
+            "HP": 57,
+            "Attack": 24,
+            "Defense": 86,
+            "Sp. Attack": 24,
+            "Sp. Defense": 86,
+            "Speed": 23
+        },
+        "types": [
+            "Acier",
+            "Psy"
+        ],
+        "color": "#B7B7CE",
+        "rarityLevel": 60,
+        "craftingPrice": 60
+    },
+    {
+        "id": 437,
+        "name": "Archéodong",
+        "stats": {
+            "HP": 67,
+            "Attack": 89,
+            "Defense": 116,
+            "Sp. Attack": 79,
+            "Sp. Defense": 116,
+            "Speed": 33
+        },
+        "types": [
+            "Acier",
+            "Psy"
+        ],
+        "color": "#B7B7CE",
+        "rarityLevel": 20,
+        "craftingPrice": 160
+    },
+    {
+        "id": 438,
+        "name": "Manzaï",
+        "stats": {
+            "HP": 50,
+            "Attack": 80,
+            "Defense": 95,
+            "Sp. Attack": 10,
+            "Sp. Defense": 45,
+            "Speed": 10
+        },
+        "types": [
+            "Roche"
+        ],
+        "color": "#B6A136",
+        "rarityLevel": 40,
+        "craftingPrice": 80
+    },
+    {
+        "id": 439,
+        "name": "Mime Jr",
+        "stats": {
+            "HP": 20,
+            "Attack": 25,
+            "Defense": 45,
+            "Sp. Attack": 70,
+            "Sp. Defense": 90,
+            "Speed": 60
+        },
+        "types": [
+            "Psy",
+            "Fée"
+        ],
+        "color": "#F95587",
+        "rarityLevel": 40,
+        "craftingPrice": 80
+    },
+    {
+        "id": 440,
+        "name": "Ptiravi",
+        "stats": {
+            "HP": 100,
+            "Attack": 5,
+            "Defense": 5,
+            "Sp. Attack": 15,
+            "Sp. Defense": 65,
+            "Speed": 30
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 40,
+        "craftingPrice": 80
+    },
+    {
+        "id": 441,
+        "name": "Pijako",
+        "stats": {
+            "HP": 76,
+            "Attack": 65,
+            "Defense": 45,
+            "Sp. Attack": 92,
+            "Sp. Defense": 42,
+            "Speed": 91
+        },
+        "types": [
+            "Normal",
+            "Vol"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 60,
+        "craftingPrice": 60
+    },
+    {
+        "id": 442,
+        "name": "Spiritomb",
+        "stats": {
+            "HP": 50,
+            "Attack": 92,
+            "Defense": 108,
+            "Sp. Attack": 92,
+            "Sp. Defense": 108,
+            "Speed": 35
+        },
+        "types": [
+            "Spectre",
+            "Ténèbre"
+        ],
+        "color": "#735797",
+        "rarityLevel": 20,
+        "craftingPrice": 180
+    },
+    {
+        "id": 443,
+        "name": "Griknot",
+        "stats": {
+            "HP": 58,
+            "Attack": 70,
+            "Defense": 45,
+            "Sp. Attack": 40,
+            "Sp. Defense": 45,
+            "Speed": 42
+        },
+        "types": [
+            "Dragon",
+            "Sol"
+        ],
+        "color": "#6F35FC",
+        "rarityLevel": 5,
+        "craftingPrice": 420
+    },
+    {
+        "id": 444,
+        "name": "Carmache",
+        "stats": {
+            "HP": 68,
+            "Attack": 90,
+            "Defense": 65,
+            "Sp. Attack": 50,
+            "Sp. Defense": 55,
+            "Speed": 82
+        },
+        "types": [
+            "Dragon",
+            "Sol"
+        ],
+        "color": "#6F35FC",
+        "rarityLevel": 4,
+        "craftingPrice": 480
+    },
+    {
+        "id": 445,
+        "name": "Carchacrok",
+        "stats": {
+            "HP": 108,
+            "Attack": 130,
+            "Defense": 95,
+            "Sp. Attack": 80,
+            "Sp. Defense": 85,
+            "Speed": 102
+        },
+        "types": [
+            "Dragon",
+            "Sol"
+        ],
+        "color": "#6F35FC",
+        "rarityLevel": 3,
+        "craftingPrice": 540
+    },
+    {
+        "id": 446,
+        "name": "Goinfrex",
+        "stats": {
+            "HP": 135,
+            "Attack": 85,
+            "Defense": 40,
+            "Sp. Attack": 40,
+            "Sp. Defense": 85,
+            "Speed": 5
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 40,
+        "craftingPrice": 80
+    },
+    {
+        "id": 447,
+        "name": "Riolu",
+        "stats": {
+            "HP": 40,
+            "Attack": 70,
+            "Defense": 40,
+            "Sp. Attack": 35,
+            "Sp. Defense": 40,
+            "Speed": 60
+        },
+        "types": [
+            "Combat"
+        ],
+        "color": "#C22E28",
+        "rarityLevel": 30,
+        "craftingPrice": 80
+    },
+    {
+        "id": 448,
+        "name": "Lucario",
+        "stats": {
+            "HP": 70,
+            "Attack": 110,
+            "Defense": 70,
+            "Sp. Attack": 115,
+            "Sp. Defense": 70,
+            "Speed": 90
+        },
+        "types": [
+            "Combat",
+            "Acier"
+        ],
+        "color": "#C22E28",
+        "rarityLevel": 5,
+        "craftingPrice": 450
+    },
+    {
+        "id": 449,
+        "name": "Hippopotas",
+        "stats": {
+            "HP": 68,
+            "Attack": 72,
+            "Defense": 78,
+            "Sp. Attack": 38,
+            "Sp. Defense": 42,
+            "Speed": 32
+        },
+        "types": [
+            "Sol"
+        ],
+        "color": "#E2BF65",
+        "rarityLevel": 60,
+        "craftingPrice": 60
+    },
+    {
+        "id": 450,
+        "name": "Hippodocus",
+        "stats": {
+            "HP": 108,
+            "Attack": 112,
+            "Defense": 118,
+            "Sp. Attack": 68,
+            "Sp. Defense": 72,
+            "Speed": 47
+        },
+        "types": [
+            "Sol"
+        ],
+        "color": "#E2BF65",
+        "rarityLevel": 20,
+        "craftingPrice": 160
+    },
+    {
+        "id": 451,
+        "name": "Rapion",
+        "stats": {
+            "HP": 40,
+            "Attack": 50,
+            "Defense": 90,
+            "Sp. Attack": 30,
+            "Sp. Defense": 55,
+            "Speed": 65
+        },
+        "types": [
+            "Poison",
+            "Insecte"
+        ],
+        "color": "#A33EA1",
+        "rarityLevel": 80,
+        "craftingPrice": 40
+    },
+    {
+        "id": 452,
+        "name": "Drascore",
+        "stats": {
+            "HP": 70,
+            "Attack": 90,
+            "Defense": 110,
+            "Sp. Attack": 60,
+            "Sp. Defense": 75,
+            "Speed": 95
+        },
+        "types": [
+            "Poison",
+            "Ténèbre"
+        ],
+        "color": "#A33EA1",
+        "rarityLevel": 20,
+        "craftingPrice": 160
+    },
+    {
+        "id": 453,
+        "name": "Cradopaud",
+        "stats": {
+            "HP": 48,
+            "Attack": 61,
+            "Defense": 40,
+            "Sp. Attack": 61,
+            "Sp. Defense": 40,
+            "Speed": 50
+        },
+        "types": [
+            "Poison",
+            "Combat"
+        ],
+        "color": "#A33EA1",
+        "rarityLevel": 60,
+        "craftingPrice": 60
+    },
+    {
+        "id": 454,
+        "name": "Coatox",
+        "stats": {
+            "HP": 83,
+            "Attack": 106,
+            "Defense": 65,
+            "Sp. Attack": 86,
+            "Sp. Defense": 65,
+            "Speed": 85
+        },
+        "types": [
+            "Poison",
+            "Combat"
+        ],
+        "color": "#A33EA1",
+        "rarityLevel": 20,
+        "craftingPrice": 160
+    },
+    {
+        "id": 455,
+        "name": "Vortente",
+        "stats": {
+            "HP": 74,
+            "Attack": 100,
+            "Defense": 72,
+            "Sp. Attack": 90,
+            "Sp. Defense": 72,
+            "Speed": 46
+        },
+        "types": [
+            "Plante"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 40,
+        "craftingPrice": 100
+    },
+    {
+        "id": 456,
+        "name": "Écayon",
+        "stats": {
+            "HP": 49,
+            "Attack": 49,
+            "Defense": 56,
+            "Sp. Attack": 49,
+            "Sp. Defense": 61,
+            "Speed": 66
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 80,
+        "craftingPrice": 40
+    },
+    {
+        "id": 457,
+        "name": "Luminéon",
+        "stats": {
+            "HP": 69,
+            "Attack": 69,
+            "Defense": 76,
+            "Sp. Attack": 69,
+            "Sp. Defense": 86,
+            "Speed": 91
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 40,
+        "craftingPrice": 100
+    },
+    {
+        "id": 458,
+        "name": "Babimanta",
+        "stats": {
+            "HP": 45,
+            "Attack": 20,
+            "Defense": 50,
+            "Sp. Attack": 60,
+            "Sp. Defense": 120,
+            "Speed": 50
+        },
+        "types": [
+            "Eau",
+            "Vol"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 40,
+        "craftingPrice": 80
+    },
+    {
+        "id": 459,
+        "name": "Blizzi",
+        "stats": {
+            "HP": 60,
+            "Attack": 62,
+            "Defense": 50,
+            "Sp. Attack": 62,
+            "Sp. Defense": 60,
+            "Speed": 40
+        },
+        "types": [
+            "Plante",
+            "Glace"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 80,
+        "craftingPrice": 40
+    },
+    {
+        "id": 460,
+        "name": "Blizzaroi",
+        "stats": {
+            "HP": 90,
+            "Attack": 92,
+            "Defense": 75,
+            "Sp. Attack": 92,
+            "Sp. Defense": 85,
+            "Speed": 60
+        },
+        "types": [
+            "Plante",
+            "Glace"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 20,
+        "craftingPrice": 160
+    },
+    {
+        "id": 461,
+        "name": "Dimoret",
+        "stats": {
+            "HP": 70,
+            "Attack": 120,
+            "Defense": 65,
+            "Sp. Attack": 45,
+            "Sp. Defense": 85,
+            "Speed": 125
+        },
+        "types": [
+            "Ténèbre",
+            "Glace"
+        ],
+        "color": "#705746",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 462,
+        "name": "Magnézone",
+        "stats": {
+            "HP": 70,
+            "Attack": 70,
+            "Defense": 115,
+            "Sp. Attack": 130,
+            "Sp. Defense": 90,
+            "Speed": 60
+        },
+        "types": [
+            "Electrique",
+            "Acier"
+        ],
+        "color": "#F7D02C",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 463,
+        "name": "Coudlangue",
+        "stats": {
+            "HP": 110,
+            "Attack": 85,
+            "Defense": 95,
+            "Sp. Attack": 80,
+            "Sp. Defense": 95,
+            "Speed": 50
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 20,
+        "craftingPrice": 200
+    },
+    {
+        "id": 464,
+        "name": "Rhinastoc",
+        "stats": {
+            "HP": 115,
+            "Attack": 140,
+            "Defense": 130,
+            "Sp. Attack": 55,
+            "Sp. Defense": 55,
+            "Speed": 40
+        },
+        "types": [
+            "Sol",
+            "Roche"
+        ],
+        "color": "#E2BF65",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 465,
+        "name": "Bouldeneu",
+        "stats": {
+            "HP": 100,
+            "Attack": 100,
+            "Defense": 125,
+            "Sp. Attack": 110,
+            "Sp. Defense": 50,
+            "Speed": 50
+        },
+        "types": [
+            "Plante"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 466,
+        "name": "Élekable",
+        "stats": {
+            "HP": 75,
+            "Attack": 123,
+            "Defense": 67,
+            "Sp. Attack": 95,
+            "Sp. Defense": 85,
+            "Speed": 95
+        },
+        "types": [
+            "Electrique"
+        ],
+        "color": "#F7D02C",
+        "rarityLevel": 20,
+        "craftingPrice": 200
+    },
+    {
+        "id": 467,
+        "name": "Maganon",
+        "stats": {
+            "HP": 75,
+            "Attack": 95,
+            "Defense": 67,
+            "Sp. Attack": 125,
+            "Sp. Defense": 95,
+            "Speed": 83
+        },
+        "types": [
+            "Feu"
+        ],
+        "color": "#EE8130",
+        "rarityLevel": 20,
+        "craftingPrice": 200
+    },
+    {
+        "id": 468,
+        "name": "Togekiss",
+        "stats": {
+            "HP": 85,
+            "Attack": 50,
+            "Defense": 95,
+            "Sp. Attack": 120,
+            "Sp. Defense": 115,
+            "Speed": 80
+        },
+        "types": [
+            "Fée",
+            "Vol"
+        ],
+        "color": "#D685AD",
+        "rarityLevel": 0,
+        "craftingPrice": 500
+    },
+    {
+        "id": 469,
+        "name": "Yanmega",
+        "stats": {
+            "HP": 86,
+            "Attack": 76,
+            "Defense": 86,
+            "Sp. Attack": 116,
+            "Sp. Defense": 56,
+            "Speed": 95
+        },
+        "types": [
+            "Insecte",
+            "Vol"
+        ],
+        "color": "#A6B91A",
+        "rarityLevel": 30,
+        "craftingPrice": 140
+    },
+    {
+        "id": 470,
+        "name": "Phyllali",
+        "stats": {
+            "HP": 65,
+            "Attack": 110,
+            "Defense": 130,
+            "Sp. Attack": 60,
+            "Sp. Defense": 65,
+            "Speed": 95
+        },
+        "types": [
+            "Plante"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 0,
+        "craftingPrice": 300
+    },
+    {
+        "id": 471,
+        "name": "Givrali",
+        "stats": {
+            "HP": 65,
+            "Attack": 60,
+            "Defense": 110,
+            "Sp. Attack": 130,
+            "Sp. Defense": 95,
+            "Speed": 65
+        },
+        "types": [
+            "Glace"
+        ],
+        "color": "#96D9D6",
+        "rarityLevel": 0,
+        "craftingPrice": 300
+    },
+    {
+        "id": 472,
+        "name": "Scorvol",
+        "stats": {
+            "HP": 75,
+            "Attack": 95,
+            "Defense": 125,
+            "Sp. Attack": 45,
+            "Sp. Defense": 75,
+            "Speed": 95
+        },
+        "types": [
+            "Sol",
+            "Vol"
+        ],
+        "color": "#E2BF65",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 473,
+        "name": "Mammochon",
+        "stats": {
+            "HP": 110,
+            "Attack": 130,
+            "Defense": 80,
+            "Sp. Attack": 70,
+            "Sp. Defense": 60,
+            "Speed": 80
+        },
+        "types": [
+            "Glace",
+            "Sol"
+        ],
+        "color": "#96D9D6",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 474,
+        "name": "Porygon-Z",
+        "stats": {
+            "HP": 85,
+            "Attack": 80,
+            "Defense": 70,
+            "Sp. Attack": 135,
+            "Sp. Defense": 75,
+            "Speed": 90
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 0,
+        "craftingPrice": 500
+    },
+    {
+        "id": 475,
+        "name": "Gallame",
+        "stats": {
+            "HP": 68,
+            "Attack": 125,
+            "Defense": 65,
+            "Sp. Attack": 65,
+            "Sp. Defense": 115,
+            "Speed": 80
+        },
+        "types": [
+            "Psy",
+            "Combat"
+        ],
+        "color": "#F95587",
+        "rarityLevel": 5,
+        "craftingPrice": 450
+    },
+    {
+        "id": 476,
+        "name": "Tarinorme",
+        "stats": {
+            "HP": 60,
+            "Attack": 55,
+            "Defense": 145,
+            "Sp. Attack": 75,
+            "Sp. Defense": 150,
+            "Speed": 40
+        },
+        "types": [
+            "Roche",
+            "Acier"
+        ],
+        "color": "#B6A136",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 477,
+        "name": "Noctunoir",
+        "stats": {
+            "HP": 45,
+            "Attack": 100,
+            "Defense": 135,
+            "Sp. Attack": 65,
+            "Sp. Defense": 135,
+            "Speed": 45
+        },
+        "types": [
+            "Spectre"
+        ],
+        "color": "#735797",
+        "rarityLevel": 10,
+        "craftingPrice": 240
+    },
+    {
+        "id": 478,
+        "name": "Momartik",
+        "stats": {
+            "HP": 70,
+            "Attack": 80,
+            "Defense": 70,
+            "Sp. Attack": 80,
+            "Sp. Defense": 70,
+            "Speed": 110
+        },
+        "types": [
+            "Glace",
+            "Spectre"
+        ],
+        "color": "#96D9D6",
+        "rarityLevel": 5,
+        "craftingPrice": 450
+    },
+    {
+        "id": 479,
+        "name": "Motisma",
+        "stats": {
+            "HP": 50,
+            "Attack": 50,
+            "Defense": 77,
+            "Sp. Attack": 95,
+            "Sp. Defense": 77,
+            "Speed": 91
+        },
+        "types": [
+            "Electrique",
+            "Spectre"
+        ],
+        "color": "#F7D02C",
+        "rarityLevel": 50,
+        "craftingPrice": 100
+    },
+    {
+        "id": 480,
+        "name": "Créhelf",
+        "stats": {
+            "HP": 75,
+            "Attack": 75,
+            "Defense": 130,
+            "Sp. Attack": 75,
+            "Sp. Defense": 130,
+            "Speed": 95
+        },
+        "types": [
+            "Psy"
+        ],
+        "color": "#F95587",
+        "rarityLevel": 5,
+        "craftingPrice": -1
+    },
+    {
+        "id": 481,
+        "name": "Créfollet",
+        "stats": {
+            "HP": 80,
+            "Attack": 105,
+            "Defense": 105,
+            "Sp. Attack": 105,
+            "Sp. Defense": 105,
+            "Speed": 80
+        },
+        "types": [
+            "Psy"
+        ],
+        "color": "#F95587",
+        "rarityLevel": 5,
+        "craftingPrice": -1
+    },
+    {
+        "id": 482,
+        "name": "Créfadet",
+        "stats": {
+            "HP": 75,
+            "Attack": 125,
+            "Defense": 70,
+            "Sp. Attack": 125,
+            "Sp. Defense": 70,
+            "Speed": 115
+        },
+        "types": [
+            "Psy"
+        ],
+        "color": "#F95587",
+        "rarityLevel": 5,
+        "craftingPrice": -1
+    },
+    {
+        "id": 483,
+        "name": "Dialga",
+        "stats": {
+            "HP": 100,
+            "Attack": 120,
+            "Defense": 120,
+            "Sp. Attack": 150,
+            "Sp. Defense": 100,
+            "Speed": 90
+        },
+        "types": [
+            "Acier",
+            "Dragon"
+        ],
+        "color": "#B7B7CE",
+        "rarityLevel": 0,
+        "craftingPrice": 600
+    },
+    {
+        "id": 484,
+        "name": "Palkia",
+        "stats": {
+            "HP": 90,
+            "Attack": 120,
+            "Defense": 100,
+            "Sp. Attack": 150,
+            "Sp. Defense": 120,
+            "Speed": 100
+        },
+        "types": [
+            "Eau",
+            "Dragon"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 0,
+        "craftingPrice": 600
+    },
+    {
+        "id": 485,
+        "name": "Heatran",
+        "stats": {
+            "HP": 91,
+            "Attack": 90,
+            "Defense": 106,
+            "Sp. Attack": 130,
+            "Sp. Defense": 106,
+            "Speed": 77
+        },
+        "types": [
+            "Feu",
+            "Acier"
+        ],
+        "color": "#EE8130",
+        "rarityLevel": 3,
+        "craftingPrice": 500
+    },
+    {
+        "id": 486,
+        "name": "Regigigas",
+        "stats": {
+            "HP": 110,
+            "Attack": 160,
+            "Defense": 110,
+            "Sp. Attack": 80,
+            "Sp. Defense": 110,
+            "Speed": 100
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 3,
+        "craftingPrice": 500
+    },
+    {
+        "id": 487,
+        "name": "Giratina",
+        "stats": {
+            "HP": 150,
+            "Attack": 100,
+            "Defense": 120,
+            "Sp. Attack": 100,
+            "Sp. Defense": 120,
+            "Speed": 90
+        },
+        "types": [
+            "Spectre",
+            "Dragon"
+        ],
+        "color": "#735797",
+        "rarityLevel": 0,
+        "craftingPrice": 600
+    },
+    {
+        "id": 488,
+        "name": "Cresselia",
+        "stats": {
+            "HP": 120,
+            "Attack": 70,
+            "Defense": 120,
+            "Sp. Attack": 75,
+            "Sp. Defense": 130,
+            "Speed": 85
+        },
+        "types": [
+            "Psy"
+        ],
+        "color": "#F95587",
+        "rarityLevel": 3,
+        "craftingPrice": 500
+    },
+    {
+        "id": 489,
+        "name": "Phione",
+        "stats": {
+            "HP": 80,
+            "Attack": 80,
+            "Defense": 80,
+            "Sp. Attack": 80,
+            "Sp. Defense": 80,
+            "Speed": 80
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 1,
+        "craftingPrice": 800
+    },
+    {
+        "id": 490,
+        "name": "Manaphy",
+        "stats": {
+            "HP": 100,
+            "Attack": 100,
+            "Defense": 100,
+            "Sp. Attack": 100,
+            "Sp. Defense": 100,
+            "Speed": 100
+        },
+        "types": [
+            "Eau"
+        ],
+        "color": "#6390F0",
+        "rarityLevel": 1,
+        "craftingPrice": 800
+    },
+    {
+        "id": 491,
+        "name": "Darkrai",
+        "stats": {
+            "HP": 70,
+            "Attack": 90,
+            "Defense": 90,
+            "Sp. Attack": 135,
+            "Sp. Defense": 90,
+            "Speed": 125
+        },
+        "types": [
+            "Ténèbre"
+        ],
+        "color": "#705746",
+        "rarityLevel": 1,
+        "craftingPrice": 800
+    },
+    {
+        "id": 492,
+        "name": "Shaymin",
+        "stats": {
+            "HP": 100,
+            "Attack": 100,
+            "Defense": 100,
+            "Sp. Attack": 100,
+            "Sp. Defense": 100,
+            "Speed": 100
+        },
+        "types": [
+            "Plante"
+        ],
+        "color": "#7AC74C",
+        "rarityLevel": 1,
+        "craftingPrice": 800
+    },
+    {
+        "id": 493,
+        "name": "Arceus",
+        "stats": {
+            "HP": 120,
+            "Attack": 120,
+            "Defense": 120,
+            "Sp. Attack": 120,
+            "Sp. Defense": 120,
+            "Speed": 120
+        },
+        "types": [
+            "Normal"
+        ],
+        "color": "#A8A77A",
+        "rarityLevel": 0,
+        "craftingPrice": -1
     }
 ]

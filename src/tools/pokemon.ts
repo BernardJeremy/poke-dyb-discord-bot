@@ -2,7 +2,7 @@ import pokedex from '../data/pokedex.json';
 import { getRandomInt } from './utils';
 
 const EXCLUSION_RARITY_THRESHHOLD = 60;
-const EXCLUSION_POKEMON_ID_THRESHHOLD = 151;
+const EXCLUSION_POKEMON_ID_THRESHHOLD = 386;
 
 const getRandomPokemon = (): Pokemon => {
   const seed = getRandomInt(1, 100);
@@ -23,10 +23,22 @@ const getRandomPokemon = (): Pokemon => {
   return eligiblePokemonList[Math.floor(Math.random() * eligiblePokemonList.length)];
 };
 
-const getRandomPokemonWithRarity = (minRarity: number, maxRarity: number) => {
-  const eligiblePokemonList = pokedex.filter((pokemon) => (
-    pokemon.rarityLevel >= minRarity && pokemon.rarityLevel <= maxRarity
+const getRandomPokemonWithRarity = (
+  minRarity: number,
+  maxRarity: number,
+  maxPokemonId = 0,
+) => {
+  let eligiblePokemonList = pokedex.filter((pokemon) => (
+    pokemon.rarityLevel >= minRarity
+    && pokemon.rarityLevel <= maxRarity
+    && pokemon.id !== 493
   ));
+
+  if (maxPokemonId) {
+    eligiblePokemonList = pokedex.filter((pokemon) => (
+      pokemon.id <= maxPokemonId
+    ));
+  }
 
   return eligiblePokemonList[Math.floor(Math.random() * eligiblePokemonList.length)];
 };

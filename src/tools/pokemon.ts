@@ -31,7 +31,6 @@ const getRandomPokemonWithRarity = (
   let eligiblePokemonList = pokedex.filter((pokemon) => (
     pokemon.rarityLevel >= minRarity
     && pokemon.rarityLevel <= maxRarity
-    && pokemon.id !== 493
   ));
 
   if (maxPokemonId) {

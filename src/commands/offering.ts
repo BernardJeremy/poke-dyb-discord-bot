@@ -75,7 +75,7 @@ export default {
       return;
     }
 
-    const pokemonObj: Pokemon = getRandomPokemonWithRarity(offeringData.min, offeringData.max, 386);
+    const pokemonObj: Pokemon = getRandomPokemonWithRarity(offeringData.min, offeringData.max);
     if (!pokemonObj) {
       message.reply(`Unable to fin pokemon to generate : ${offeringData.min}% / ${offeringData.max}%`);
       return;
